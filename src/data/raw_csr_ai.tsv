@@ -1,0 +1,100 @@
+1	Tsinghua University	清华大学	中国内地
+2	Peking University	北京大学	中国内地
+3	Carnegie Mellon University	卡内基梅隆大学	美国
+4	Zhejiang University	浙江大学	中国内地
+5	Shanghai Jiao Tong University	上海交通大学	中国内地
+6	Nanyang Technological University	南洋理工大学	新加坡
+7	Nanjing University	南京大学	中国内地
+8	KAIST	韩国科学技术院	韩国
+9	USTC	中国科学技术大学	中国内地
+10	University of Illinois at Urbana-Champaign	伊利诺伊大学厄巴纳-香槟分校	美国
+11	Chinese Academy of Sciences	中国科学院	中国内地
+12	Stanford University	斯坦福大学	美国
+13	Massachusetts Institute of Technology	麻省理工学院	美国
+14	University of California, Berkeley	加州大学伯克利分校	美国
+15	HKUST	香港科技大学	中国香港
+16	Harbin Institute of Technology	哈尔滨工业大学	中国内地
+17	National University of Singapore	新加坡国立大学	新加坡
+18	University of California, San Diego	加州大学圣迭戈分校	美国
+19	MBZUAI	穆罕默德·本·扎耶德人工智能大学	阿联酋
+20	Fudan University	复旦大学	中国内地
+21	Chinese University of Hong Kong	香港中文大学	中国香港
+22	Seoul National University	首尔大学	韩国
+23	University of Maryland, College Park	马里兰大学帕克分校	美国
+24	Renmin University of China	中国人民大学	中国内地
+25	Cornell University	康奈尔大学	美国
+26	New York University	纽约大学	美国
+27	EPFL	洛桑联邦理工学院	瑞士
+28	Georgia Institute of Technology	佐治亚理工学院	美国
+29	Technion	以色列理工学院	以色列
+30	University of California, Los Angeles	加州大学洛杉矶分校	美国
+31	Wuhan University	武汉大学	中国内地
+32	Johns Hopkins University	约翰斯·霍普金斯大学	美国
+33	University of Washington	华盛顿大学	美国
+34	University of Hong Kong	香港大学	中国香港
+35	University of Edinburgh	爱丁堡大学	英国
+36	University of Pennsylvania	宾夕法尼亚大学	美国
+37	University of Texas at Austin	得克萨斯大学奥斯汀分校	美国
+38	UESTC	电子科技大学	中国内地
+39	Beihang University	北京航空航天大学	中国内地
+40	Sun Yat-sen University	中山大学	中国内地
+41	University of Wisconsin - Madison	威斯康星大学麦迪逊分校	美国
+42	TU Munich	慕尼黑工业大学	德国
+43	ETH Zurich	苏黎世联邦理工学院	瑞士
+44	University of Oxford	牛津大学	英国
+45	University of Cambridge	剑桥大学	英国
+46	Max Planck Society	马克斯·普朗克学会	德国
+47	Singapore Management University	新加坡管理大学	新加坡
+48	Tel Aviv University	特拉维夫大学	以色列
+49	University of Michigan	密歇根大学	美国
+50	Southeast University	东南大学	中国内地
+51	CUHK (SZ)	香港中文大学（深圳）	中国内地
+52	Princeton University	普林斯顿大学	美国
+53	University of Massachusetts Amherst	马萨诸塞大学阿默斯特分校	美国
+54	University of Southern California	南加州大学	美国
+55	University of North Carolina	北卡罗来纳大学教堂山分校	美国
+56	Northeastern University	美国东北大学	美国
+57	University of Toronto	多伦多大学	加拿大
+58	BUPT	北京邮电大学	中国内地
+59	Columbia University	哥伦比亚大学	美国
+60	Imperial College London	帝国理工学院	英国
+61	University of Tokyo	东京大学	日本
+62	Monash University	莫纳什大学	澳大利亚
+63	The Hong Kong Polytechnic University	香港理工大学	中国香港
+64	Boston University	波士顿大学	美国
+65	University of Virginia	弗吉尼亚大学	美国
+66	Westlake University	西湖大学	中国内地
+67	University of Amsterdam	阿姆斯特丹大学	荷兰
+68	City University of Hong Kong	香港城市大学	中国香港
+69	HUST	华中科技大学	中国内地
+70	Nankai University	南开大学	中国内地
+71	POSTECH	浦项科技大学	韩国
+72	University of Alberta	阿尔伯塔大学	加拿大
+73	Purdue University	普渡大学	美国
+74	Xiamen University	厦门大学	中国内地
+75	University of Central Florida	中佛罗里达大学	美国
+76	Harvard University	哈佛大学	美国
+77	Xidian University	西安电子科技大学	中国内地
+78	University of Melbourne	墨尔本大学	澳大利亚
+79	Texas A&M University	得克萨斯A&M大学	美国
+80	University of Montreal	蒙特利尔大学	加拿大
+81	University of Illinois at Chicago	伊利诺伊大学芝加哥分校	美国
+82	Australian National University	澳大利亚国立大学	澳大利亚
+83	Duke University	杜克大学	美国
+84	Shenzhen University	深圳大学	中国内地
+85	Adelaide University	阿德莱德大学	澳大利亚
+86	Pennsylvania State University	宾夕法尼亚州立大学	美国
+87	University of Tübingen	蒂宾根大学	德国
+88	University of Waterloo	滑铁卢大学	加拿大
+89	KAUST	阿卜杜拉国王科技大学	沙特阿拉伯
+90	Arizona State University	亚利桑那州立大学	美国
+91	Tianjin University	天津大学	中国内地
+92	University of Copenhagen	哥本哈根大学	丹麦
+93	University of Sydney	悉尼大学	澳大利亚
+94	Jilin University	吉林大学	中国内地
+95	Yonsei University	延世大学	韩国
+96	University of British Columbia	不列颠哥伦比亚大学	加拿大
+97	Rutgers University	罗格斯大学	美国
+98	University of Surrey	萨里大学	英国
+99	TU Darmstadt	达姆施塔特工业大学	德国
+100	Xi'an Jiaotong University	西安交通大学	中国内地

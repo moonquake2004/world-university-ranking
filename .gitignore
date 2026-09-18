@@ -1,0 +1,4 @@
+src/stage1.json
+src/subject.json
+src/*.log
+.DS_Store

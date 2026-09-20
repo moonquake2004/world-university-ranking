@@ -29,7 +29,7 @@ HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>世界大学综合排名前300 · 2026 | Global University Composite Ranking</title>
+<title>世界大学综合排名前500 · 2026 | Global University Composite Ranking</title>
 <style>
 :root{
   --bg:#070b14; --panel:#0d1524; --panel2:#101b2f; --line:#1d2c47;
@@ -172,19 +172,19 @@ footer a{color:var(--sub);text-decoration:none}
   <button class="tbtn" id="tbtn" onclick="toggleTheme()">浅色 Light</button>
   <header>
     <div>
-      <h1>世界大学综合排名前 300<span class="en">Global University Composite Ranking · Top 300</span></h1>
+      <h1>世界大学综合排名前 500<span class="en">Global University Composite Ranking · Top 500</span></h1>
     </div>
     <div class="editions" id="editions"></div>
   </header>
   <div class="sub-line">
     独立学术评估机构 · 研究性综合排名<span class="tag">非官方聚合</span><span class="tag" style="color:#a78bff;border-color:#a78bff55">学科子榜：CS / AI / 传播学</span>
-    方法论：四榜百分位归一 × 方法学公信力加权 × 跨榜共识门槛（覆盖各榜 Top 300，区间名次按中值折算）—— <b>不是名次的简单平均</b>
+    方法论：四榜百分位归一 × 方法学公信力加权 × 跨榜共识门槛（覆盖各榜 Top 500，区间名次按中值折算）—— <b>不是名次的简单平均</b>
     <span class="en">Percentile normalisation · credibility-weighted · cross-ranking consensus gate</span>
     <div id="err">图表库加载失败（网络受限）。排名表格与筛选功能不受影响。</div>
   </div>
 
   <div class="tabs">
-    <button class="tab on" data-v="main">综合总榜 TOP 300<small>Composite · overall</small></button>
+    <button class="tab on" data-v="main">综合总榜 TOP 500<small>Composite · overall</small></button>
     <button class="tab" data-v="cs">学科榜 · 计算机 CS<small>Subject ranking · Computer Science</small></button>
     <button class="tab" data-v="ai">学科榜 · 人工智能 AI<small>Subject ranking · Artificial Intelligence</small></button>
     <button class="tab" data-v="comm">学科榜 · 传播学<small>Subject ranking · Communication &amp; Media</small></button>
@@ -193,9 +193,9 @@ footer a{color:var(--sub);text-decoration:none}
   <div class="kpis" id="kpis"></div>
 
   <div class="grid">
-    <div class="panel"><h3>上榜国家/地区分布 <small>Universities by Country / Region · Top 300</small></h3><div id="cCountry" class="chart"></div></div>
+    <div class="panel"><h3>上榜国家/地区分布 <small>Universities by Country / Region · Top 500</small></h3><div id="cCountry" class="chart"></div></div>
     <div class="panel"><h3>Top 10 在四大榜单中的名次轨迹 <small>Rank trajectory of composite Top 10 across the four rankings</small></h3><div id="cBump" class="chart"></div></div>
-    <div class="panel"><h3>综合 300 强入榜结构 <small>Cross-ranking coverage structure</small></h3><div id="cCover" class="chart"></div></div>
+    <div class="panel"><h3>综合 500 强入榜结构 <small>Cross-ranking coverage structure</small></h3><div id="cCover" class="chart"></div></div>
     <div class="panel"><h3>四榜平均名次 vs 综合名次 <small>Mean sub-ranking position vs composite position</small></h3><div id="cScatter" class="chart"></div></div>
   </div>
 
@@ -235,7 +235,7 @@ footer a{color:var(--sub);text-decoration:none}
 
   <div class="sec-title">单榜入围参考名单 <small>Single-ranking reference list · 不占综合榜席位</small></div>
   <div class="panel" style="padding-bottom:14px">
-    <p style="font-size:12.5px;color:var(--sub);margin-bottom:10px" id="spIntro">以下院校仅进入某一个榜单的 Top 300，多为专科/科研机构或单一范式受益者。综合榜要求跨榜共识（≥2 榜），故单列供参考，不占综合席位。
+    <p style="font-size:12.5px;color:var(--sub);margin-bottom:10px" id="spIntro">以下院校仅进入某一个榜单的 Top 500，多为专科/科研机构或单一范式受益者。综合榜要求跨榜共识（≥2 榜），故单列供参考，不占综合席位。
     <span style="color:var(--faint)">Institutes appearing in only one ranking (mostly specialised or single-paradigm beneficiaries) — listed separately.</span></p>
     <table class="small-tbl"><thead><tr><th>院校 Institution</th><th>国家</th><th>唯一入围榜单</th><th>该榜名次</th><th>综合分(参考)</th></tr></thead><tbody id="tb2"></tbody></table>
   </div>
@@ -306,7 +306,7 @@ const KEYMAP = {qs:"qs", the:"the", us:"usnews", arw:"arwu"};
 const $ = s => document.querySelector(s);
 
 /* ---------- editions badges ---------- */
-const SHORT = {qs:"QS 2027 · Top300", the:"THE 2026 · Top300", us:"U.S. News 2026-27 · Top300", arw:"软科 ARWU 2026 · Top300"};
+const SHORT = {qs:"QS 2027 · Top500", the:"THE 2026 · Top500", us:"U.S. News 2026-27 · Top500", arw:"软科 ARWU 2026 · Top500"};
 function buildBadges(){$("#editions").innerHTML = [["qs","QS"],["the","THE"],["us","U.S. News"],["arw","软科 ARWU"]].map(([k,l])=>{
   const e = META.editions[KEYMAP[k]];
   return `<span class="badge"><b style="color:${LC[k]}">${SHORT[k]}</b> · ${e.pub} 发布</span>`;
@@ -379,7 +379,7 @@ document.querySelectorAll(".fbtn").forEach(b=>b.addEventListener("click",()=>{
 render();
 
 /* ---------- special list ---------- */
-$("#spIntro").innerHTML = $("#spIntro").innerHTML.replace("Top 300，","Top 300（共 "+META.n_single+" 所），");
+$("#spIntro").innerHTML = $("#spIntro").innerHTML.replace("Top 500，","Top 500（共 "+META.n_single+" 所），");
 function buildSpecial(){$("#tb2").innerHTML = SPECIAL.map(s=>{
   const ln = {qs:"QS 2027",the:"THE 2026",usnews:"U.S. News 2026-27",arwu:"软科 ARWU 2026"}[s.list];
   return `<tr><td><b>${s.zh}</b> <span style="color:var(--faint);font-size:11.5px">${s.en}</span></td><td style="color:var(--sub)">${s.country}</td><td style="color:${LC[KEYMAP[s.list]]}">${ln}</td><td>No.${s.d}</td><td>${s.comp.toFixed(1)}</td></tr>`;
@@ -389,9 +389,9 @@ buildSpecial();
 /* ---------- methodology ---------- */
 const steps = [
  ["统一口径：并列均位法 + 区间名次中值","四榜并列规则不一（QS 并列跳号、THE 官方跳号、U.S. News 同率并列）。并列院校映射为所占名次区间的算术均值；THE 201-250/251-300 与软科 101-150/151-200/201-300 等官方区间名次，按区间中值折算，不虚构精确名次。","Ties via occupied-slot averaging; banded ranks via midpoints."],
- ["榜内百分位归一，不做原始分对齐","各榜分数量纲互不可比（QS 声誉问卷 / THE 五维指标 / U.S. News 13 项文献计量 / ARWU 诺奖+高被引）。取 score = 100×(N−均位)/(N−1)（N=300）：榜内第 1 名得 100 分、第 300 位趋近 0。未进某榜 Top300 记 0 分——结构性短板如实计入，不做权重稀释。","Percentile scores replace raw scores."],
+ ["榜内百分位归一，不做原始分对齐","各榜分数量纲互不可比（QS 声誉问卷 / THE 五维指标 / U.S. News 13 项文献计量 / ARWU 诺奖+高被引）。取 score = 100×(N−均位)/(N−1)（N=500）：榜内第 1 名得 100 分、第 500 位趋近 0。未进某榜 Top500 记 0 分——结构性短板如实计入，不做权重稀释。","Percentile scores replace raw scores."],
  ["方法学公信力加权","THE 30%（五维度最均衡、引文采用分数化计数）；U.S. News 25% 与 ARWU 25%（客观但偏文献计量/理科）；QS 20%（声誉与国际化主导，主观问卷占比最高、年度间名次漂移最大）。","Credibility weighting; absence scored 0."],
- ["跨榜共识门槛","综合榜要求至少进入 2 个榜单 Top 300。仅凭单榜入围的专科/研究机构（如梅奥诊所医学院、比萨高等师范学校、魏茨曼科学研究所）不占综合席位，另列「单榜参考名单」，避免单一评价范式绑架综合结论。","Consensus gate: ≥2 of 4 rankings."],
+ ["跨榜共识门槛","综合榜要求至少进入 2 个榜单 Top 500。仅凭单榜入围的专科/研究机构（如梅奥诊所医学院、比萨高等师范学校、魏茨曼科学研究所）不占综合席位，另列「单榜参考名单」，避免单一评价范式绑架综合结论。","Consensus gate: ≥2 of 4 rankings."],
  ["断位与稳健性披露","综合分并列时按 覆盖榜数 → THE 均位 → U.S. News 均位 → 字母序 断位；同时公布每校四榜百分位标准差 σ，供使用者自行评估名次背后的一致性/分歧度。","Tie-breakers & dispersion metric σ."]
 ];
 $("#steps").innerHTML = steps.map((s,i)=>`<div class="step"><div class="no"></div><div><b>${i+1}. ${s[0]}</b><p>${s[1]} <span class="en">${s[2]}</span></p></div></div>`).join("");
@@ -403,7 +403,7 @@ function buildWt(){$("#wt").innerHTML = [["the","THE 2026","五维度均衡：�
 buildWt();
 
 /* ---------- footer ---------- */
-$("#foot").innerHTML = `数据来源：QS 2027（2026-06 发布）· THE 2026（2025-10 发布）· U.S. News Best Global Universities 2026-27（2026-06 发布）· 软科 ARWU 2026（2026-08 发布）。名次与原始分均取自各榜官方公开发布（U.S. News 官方总分未公开可得，仅采用其名次）。101-300 区间：THE 取自官方页面内嵌数据库（201 名后为官方区间）；QS 取自官方数据双源交叉；U.S. News 官方存在同率并列跳号，按官方显示顺序连续编号；软科 101 名后为官方区间名单。<br>
+$("#foot").innerHTML = `数据来源：QS 2027（2026-06 发布）· THE 2026（2025-10 发布）· U.S. News Best Global Universities 2026-27（2026-06 发布）· 软科 ARWU 2026（2026-08 发布）。名次与原始分均取自各榜官方公开发布（U.S. News 官方总分未公开可得，仅采用其名次）。101-500 区间：THE 取自官方页面内嵌数据库（201 名后为官方区间）；QS 取自官方数据双源交叉；U.S. News 官方存在同率并列跳号，按官方显示顺序连续编号；软科 101 名后为官方区间名单。<br>
 Data sources: topuniversities.com · timeshighereducation.com · usnews.com Best Global Universities · shanghairanking.com. 中文译名为通行译法。<br>
 <b style="color:var(--sub)">免责声明</b>：本看板为独立研究性综合评估，方法论与权重由评估机构设定，不代表任何官方立场；排名仅供比较参考，不构成升学/资助决策依据。生成时间 Generated: __GENDATE__<br>
 <b style="color:var(--sub)">学科榜数据源</b>：CSRankings 2026（DBLP 顶会发表口径，2016-2026 窗口）· QS/THE/U.S. News/软科 2026 学科排名（CS 五源、AI 三源交叉；传播学仅 QS+软科两源——THE 无独立传播学学科榜、U.S. News 世界学科榜不覆盖该领域）。学科榜方法论与综合榜一致，详见各子榜页首说明。`;
@@ -463,16 +463,16 @@ function drawCharts(){
   echarts.init($("#cScatter")).setOption({
     grid:{left:56,right:24,top:14,bottom:44},
     tooltip:{formatter:p=>{const r=FINAL[p.dataIndex];return r.zh+"<br>综合第"+r.r+" · 四榜平均位次 "+Math.round(p.value[1])+" · 入榜"+r.appear+"个";}},
-    xAxis:{type:"value",inverse:true,min:1,max:300,...AX},
-    yAxis:{type:"value",inverse:true,min:1,max:300,...AX},
+    xAxis:{type:"value",inverse:true,min:1,max:META.topn,...AX},
+    yAxis:{type:"value",inverse:true,min:1,max:META.topn,...AX},
     series:[{type:"scatter",symbolSize:p=>p[2]===4?7:(p[2]===3?6:4.5),
       data:FINAL.map(r=>{const ps=LISTS.map(k=>r[k]?r[k].pct:null).filter(v=>v!==null);
         const mean=ps.reduce((a,b)=>a+b,0)/ps.length; const mp=Math.round((1-mean/100)*(LIST_N)+0.5);
         return {value:[r.r,mp,r.appear],itemStyle:{color:r.appear===4?LC.qs:(r.appear===3?LC.us:LC.arw)}};}),
-      markLine:{silent:true,symbol:"none",lineStyle:{color:t.dash,type:"dashed"},data:[[{coord:[1,1]},{coord:[300,300]}]],label:{show:false}}}],
+      markLine:{silent:true,symbol:"none",lineStyle:{color:t.dash,type:"dashed"},data:[[{coord:[1,1]},{coord:[META.topn,META.topn]}]],label:{show:false}}}],
   });
 }
-const LIST_N = 300;
+const LIST_N = META.topn;
 
 /* ---------- modal ---------- */
 let mChart=null;

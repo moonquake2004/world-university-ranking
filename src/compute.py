@@ -22,145 +22,15 @@ EDITIONS = {
     "arwu":   {"name": "软科 ARWU 2026",                            "pub": "2026-08"},
 }
 
-STOP = {"the", "of", "at", "in", "and", "de", "la"}
-TOKMAP = {"universite": "university", "universiteit": "university",
-          "universitat": "university", "universidade": "university",
-          "university": "university", "universidad": "university"}
-
-# 归一化key -> 规范id (仅列归一化后仍无法自然合并的)
-OVERRIDES = {
-    "ucl": "university college london",
-    "epfl": "epfl",
-    "ecole polytechnique federale lausanne": "epfl",
-    "federal institute technology lausanne swiss": "epfl",
-    "psl paris research university": "psl university",
-    "psl university": "psl university",
-    "university psl": "psl university",
-    "nanyang technological university singapore": "nanyang technological university",
-    "university washington seattle": "university washington",
-    "lmu munich": "lmu munich",
-    "munich university": "lmu munich",
-    "ludwig maximilians university munchen": "lmu munich",
-    "heidelberg university": "heidelberg university",
-    "ruprecht karls university heidelberg": "heidelberg university",
-    "university heidelberg": "heidelberg university",
-    "freie university berlin": "freie universitat berlin",
-    "free university berlin": "freie universitat berlin",
-    "pennsylvania state university university park": "pennsylvania state university",
-    "pennsylvania state university park": "pennsylvania state university",
-    "university illinois urbana champaign": "university illinois urbana champaign",
-    "purdue university west lafayette": "purdue university",
-    "purdue university lafayette west": "purdue university",
-    "university minnesota twin cities": "university minnesota",
-    "university minnesota cities twin": "university minnesota",
-    "university ohio columbus state": "ohio state university",
-    "university texas southwestern medical center": "university texas southwestern medical center",
-    "adelaide university": "university adelaide",
-    "new south wales university sydney": "university new south wales",
-    "university south wales new": "university new south wales",
-    "unsw sydney": "university new south wales",
-    "university melbourne": "university melbourne",
-    "sun yat sen university": "sun yat sen university",
-    "karolinska institute": "karolinska institutet",
-    "karolinska institutet": "karolinska institutet",
-    "institute polytechnique paris": "institut polytechnique paris",
-    "university science technology china": "university science technology china",
-    "university science technology beijing china": "university science technology china",
-    "china academy sciences university": "university chinese academy sciences",
-    "university chinese academy sciences": "university chinese academy sciences",
-    "paris sciences lettres psl research university paris": "psl university",
-    # ---- 101-300 扩展后新增的跨榜别名合并 ----
-    "universiti malaya": "malaya university",
-    "kfupm": "fahd king minerals petroleum university",
-    "advanced institute korea science technology": "kaist",
-    "milan polytechnic university": "di milano politecnico",
-    "center research university wageningen": "research university wageningen",
-    "berlin technical university": "berlin technische university",
-    "dresden tu": "dresden technische university",
-    "dresden technical university": "dresden technische university",
-    "dresden technology university": "dresden technische university",
-    "autonomous barcelona university": "autonoma barcelona university",
-    "erlangen nuremberg university": "alexander erlangen friedrich nurnberg university",
-    "autonomous madrid university": "autonoma madrid university",
-    "tuebingen university": "tubingen university",
-    "darmstadt technical university": "darmstadt technische university",
-    "porto university": "do porto university",
-    "goettingen university": "gottingen university",
-    "charles prague university": "charles university",
-    "campus pittsburgh university": "pittsburgh university",
-    "nijmegen radboud university": "radboud university",
-    "university wuerzburg": "university wurzburg",
-    "university muenster": "university munster",
-    "duesseldorf heine heinrich university": "dusseldorf heine heinrich university",
-    "tech virginia": "institute polytechnic state university virginia",
-    "center dallas medical southwestern texas university": "center medical southwestern texas university",
-    "penn state": "pennsylvania state university",
-    "amherst massachusetts university": "massachusetts university",
-    "icahn medicine mount sinai school": "icahn medicine school",
-    # ---- 定向扫描后补充 ----
-    "moscow state university": "lomonosov moscow state university",
-    "ntnu norwegian science technology university": "norwegian science technology university",
-    "brook suny stony university": "brook stony university",
-    "uclouvain": "catholique louvain university",
-    "bangalore indian institute science": "indian institute science",
-}
-
-def _sortkey_tokens(s):
-    return " ".join(sorted(s.split()))
-
-OVERRIDES = {_sortkey_tokens(k): _sortkey_tokens(v) for k, v in OVERRIDES.items()}
-
-def norm_key(name):
-    s = unicodedata.normalize("NFKD", name)
-    s = "".join(c for c in s if not unicodedata.combining(c))
-    s = s.lower()
-    s = re.sub(r"\(.*?\)", " ", s)          # 去括号缩写
-    s = s.replace("&", " and ")
-    s = re.sub(r"[^a-z0-9]+", " ", s)
-    toks = [TOKMAP.get(t, t) for t in s.split()]
-    toks = [t for t in toks if t not in STOP]
-    key = " ".join(sorted(set(toks)))
-    return OVERRIDES.get(key, key)
-
-def load(fname):
-    rows = []
-    for line in (DATA / fname).read_text(encoding="utf-8").splitlines():
-        if not line.strip():
-            continue
-        p = line.split("\t")
-        try:
-            rank = int(p[0])
-        except ValueError:
-            rank = p[0].strip()  # 区间名次字符串, 如 "201-250"
-        try:
-            sc = float(p[4]) if len(p) > 4 and p[4] else None
-        except ValueError:
-            sc = None  # 区间分数串(如"54.3-56.3")不作数值处理
-        rows.append({"rank": rank, "en": p[1], "zh": p[2],
-                     "country": p[3], "score": sc})
-    return rows
+from matchlib import norm_key, load, tie_positions
 
 def load_full(short):
-    f1 = f"raw_{short}.tsv"
-    f2 = f"raw_{short}_101_300.tsv"
-    rows = load(f1)
-    if (DATA / f2).exists():
-        rows += load(f2)
+    rows = load(f"raw_{short}.tsv")
+    for suffix in ("101_300", "301_500"):
+        f2 = f"raw_{short}_{suffix}.tsv"
+        if (DATA / f2).exists():
+            rows += load(f2)
     return rows
-
-def tie_positions(rows):
-    """按连续相同display rank分组, pos_avg = 所占用行位置(1-based)的均值"""
-    n = len(rows)
-    out, i = [], 0
-    while i < n:
-        j = i
-        while j + 1 < n and rows[j + 1]["rank"] == rows[i]["rank"]:
-            j += 1
-        avg = (i + 1 + j + 1) / 2.0
-        for k in range(i, j + 1):
-            out.append(avg)
-        i = j + 1
-    return out, n
 
 UNIV = {}   # key -> record
 per_list_report = {}
@@ -214,7 +84,7 @@ def sortkey(item):
 ordered = sorted(UNIV.items(), key=sortkey)
 # 共识门槛: 综合榜须至少进入2个榜单Top300; 单榜院校进入"专科型参考名单"
 GATE = 2
-TOPN = 300
+TOPN = 500
 eligible = [(k, v) for k, v in ordered if v["appear"] >= GATE]
 single = [(k, v) for k, v in ordered if v["appear"] < GATE]
 top100 = eligible[:TOPN]

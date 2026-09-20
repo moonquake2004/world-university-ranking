@@ -125,6 +125,19 @@ _extra = {
     "alabama tuscaloosa university": "university alabama",
     "norman oklahoma university": "oklahoma university",
     "carolina columbia south university": "carolina south university",
+    "kebangsaan malaysia universiti": "malaysia national university",
+    "malaysia teknologi universiti": "malaysia technology university",
+    "polytechnic turin university": "di politecnico torino",
+    "campinas estadual university": "campinas university",
+    "campinas state university": "campinas university",
+    "ii rome tor university vergata": "rome tor university vergata",
+    "catholic heart sacred university": "cattolica cuore del sacro universita",
+    "buffalo suny university": "buffalo university",
+    "china medical southern university": "medical southern university",
+    "brunswick jersey new rutgers state university": "brunswick new rutgers university",
+    "polytechnic university valencia": "politecnica university valencia",
+    "a china f northwest university": "a f northwest university",
+    "china southwest university": "southwest university",
     "university washington": "university washington",
 }
 OVERRIDES.update({_sortkey_tokens(k): _sortkey_tokens(v) for k, v in _extra.items()})
@@ -133,6 +146,7 @@ def norm_key(name):
     s = unicodedata.normalize("NFKD", name)
     s = "".join(c for c in s if not unicodedata.combining(c))
     s = s.lower()
+    s = s.replace("\u2019","").replace("'","")   # 去撇号: Hawai'i/St George's
     s = re.sub(r"\(.*?\)", " ", s)          # 去括号缩写
     s = s.replace("&", " and ")
     s = re.sub(r"[^a-z0-9]+", " ", s)

@@ -1,6 +1,6 @@
-# 世界大学综合排名 Top 300 + CS/AI 学科榜 · 数据看板
+# 世界大学综合排名 Top 500 + CS/AI/传播学 学科榜 · 数据看板
 
-> Global University Composite Ranking (Top 300) with CS & AI subject sub-rankings — a self-contained dark-theme dashboard.
+> Global University Composite Ranking (Top 500) with CS / AI / Communication subject sub-rankings — a self-contained dark-theme dashboard.
 
 **在线看板 Live:** https://moonquake2004.github.io/world-university-ranking/
 
@@ -10,7 +10,7 @@
 
 | 视图 | 数据源 | 输出 |
 |---|---|---|
-| 综合总榜 | QS 2027 · THE 2026 · U.S. News 2026-27 · 软科 ARWU 2026（各 Top 300） | 综合 Top 300 + 146 所单榜参考 |
+| 综合总榜 | QS 2027 · THE 2026 · U.S. News 2026-27 · 软科 ARWU 2026（各 Top 500） | 综合 Top 500 + 261 所单榜参考 |
 | 学科榜 · CS | CSRankings 2026 · THE Subject CS 2026 · U.S. News CS 26-27 · 软科 GRAS CS 2026 · QS CS 2026 | CS 综合 Top 100 |
 | 学科榜 · AI | CSRankings-AI · U.S. News-AI · 软科 GRAS-AI 2026 | AI 综合 91 校 + CS↔AI 对照 |
 | 学科榜 · 传播学 | QS Communication & Media Studies 2026 · 软科 GRAS Communication 2026（THE 无独立传播学榜、U.S. News 世界学科榜不覆盖） | 双源综合 104 席（分数线并列全保留） |

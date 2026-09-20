@@ -120,6 +120,11 @@ _extra = {
     "et lettres paris psl research sciences university": "psl university",
     "university maryland": "college maryland park university",
     "ludwig maximilian munich university": "lmu munich",
+    "catholic chile pontifical university": "catolica chile pontificia university",
+    "oslomet oslo metropolitan university": "oslo metropolitan university",
+    "alabama tuscaloosa university": "university alabama",
+    "norman oklahoma university": "oklahoma university",
+    "carolina columbia south university": "carolina south university",
     "university washington": "university washington",
 }
 OVERRIDES.update({_sortkey_tokens(k): _sortkey_tokens(v) for k, v in _extra.items()})

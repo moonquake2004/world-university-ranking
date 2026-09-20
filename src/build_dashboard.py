@@ -262,6 +262,7 @@ footer a{color:var(--sub);text-decoration:none}
         <div class="spacer"></div>
         <span class="hint" id="scnt"></span>
       </div>
+      <div class="hint" id="subLegend" style="margin:2px 0 10px;font-size:12px">名次标注说明：<b style="color:#43e0b0">数字</b> = 该榜精确名次 ｜ <b style="color:#f4b878">如 101-150</b> = 该榜官方区间名次（百分位按区间中值折算）｜ <b style="color:var(--sub)">—</b> = 未入该榜 ｜ 来源数 <b>2/2</b> = 双榜均收录。</div>
       <div class="tbl-scroll">
         <table><thead><tr id="sHead"></tr></thead><tbody id="stb"></tbody></table>
       </div>
@@ -339,7 +340,7 @@ window.addEventListener("load",()=>{ setTimeout(()=>{ if(!echOk()) noEch(); }, 1
 const tb = $("#tb");
 function chip(list, r){
   const v = r[KEYMAP[list]];
-  if(!v) return `<span class="lmiss">—</span>`;
+  if(!v) return `<span class="lmiss" title="未入该榜（'该学科榜'）">—</span>`;
   const a = {qs:"rgba(32,201,151,.13)",the:"rgba(255,107,129,.13)",us:"rgba(91,141,239,.15)",arw:"rgba(244,162,89,.13)"}[list];
   return `<span class="lchip" style="background:${a};color:${LC[list]};border:1px solid ${LC[list]}55" title="${LFULL[list]} 名次 ${v.d} · 百分位 ${v.pct}${v.sc!=null?" · 原始分 "+v.sc:""}">${v.d}</span>`;
 }
@@ -600,7 +601,7 @@ function showSub(sub){
     ? "计算机科学学科综合榜 · 五源交叉：CSRankings 顶会发表量 + QS/THE/U.S. News/软科 四大学科榜。与综合榜同一套方法（百分位归一 × 公信力加权 × ≥2 源共识门槛），各源统一取 Top 100 可比池；区间名次按中值折算。"
     : sub==="ai"
     ? "人工智能学科综合榜 · 三源交叉：CSRankings-AI（顶会口径）+ U.S. News-AI（文献计量口径）+ 软科 GRAS-AI 2026（2025 年首发新学科）。QS/THE 无独立 AI 学科榜故为三源；门槛为 ≥2/3 源。"
-    : "传播学与媒体研究学科综合榜 · 经核查该领域覆盖参差：<b>QS</b>（Communication &amp; Media Studies 2026，第16届，声誉+引用双轨，277 校）与<b>软科 GRAS</b>（Communication 2026，SSCI 文献计量）设独立学科榜；<b>THE 无独立传播学榜</b>（官方将 Communication 归入 Social Sciences），<b>U.S. News 世界学科榜 51 学科中无传播学</b>（中文圈所谓「US News 传播学排名」多为误传）。仅两源可用，范式互补（主观声誉 vs 客观计量）故取 50/50 等权；不设 ≥2 门槛、单源院校如实标注 1/2；两源均取 Top 100 池，分数线并列全保留（故共 104 席）。");
+    : "传播学与媒体研究学科综合榜 · 经核查该领域覆盖参差：<b>QS</b>（Communication &amp; Media Studies 2026，第16届，声誉+引用双轨，277 校）与<b>软科 GRAS</b>（Communication 2026，SSCI 文献计量）设独立学科榜；<b>THE 无独立传播学榜</b>（官方将 Communication 归入 Social Sciences），<b>U.S. News 世界学科榜 51 学科中无传播学</b>（中文圈所谓「US News 传播学排名」多为误传）。仅两源可用，范式互补（主观声誉 vs 客观计量）故取 50/50 等权；不设 ≥2 门槛、单源院校如实标注 1/2。<b>本榜为两榜全量名单</b>：QS 该学科全部 277 所 + 软科全部 200 所，并集 327 校全部列出（百分位按各自全量池计算）。");
   $("#subWeights").innerHTML = srcs.map(s=>`<span class="w" style="border-color:${SC[s]}66;color:${SC[s]};background:${SC[s]}14">${subData(sub).labels[s]} · ${(subData(sub).weights[s]*100).toFixed(0)}%</span>`).join("");
   const byC={}; rows.forEach(r=>byC[r.country]=(byC[r.country]||0)+1);
   const full=rows.filter(r=>r.appear===srcs.length).length;

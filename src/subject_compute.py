@@ -13,7 +13,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from matchlib import norm_key, load, load_full, tie_positions, norm_country
 
 BASE = Path(__file__).parent
-TOPN = 100
+TOPN = {"cs": 100, "ai": 100, "comm": 10**9}  # 传播学全量列出
+POOL = {"cs": 100, "ai": 100, "comm": None}  # 池深: comm 用全量
 
 SOURCES = {
     "cs": {
@@ -46,7 +47,9 @@ for row in stage["data"]:
 def build_subject(subject):
     UNIV = {}
     for sname, (fname, w, label) in SOURCES[subject].items():
-        rows = load(fname)[:100]  # 统一池深100行
+        rows = load(fname)
+        if POOL[subject]:
+            rows = rows[:POOL[subject]]
         positions, n = tie_positions(rows)
         assert n == len(rows)
         for idx, r in enumerate(rows):
@@ -96,9 +99,10 @@ def build_subject(subject):
     for zh, lst in zhg.items():
         if len(lst) > 1:
             print("  ZH-CONFLICT:", zh, lst)
-    top = eligible[:TOPN]
-    if len(eligible) > TOPN:  # 分数线上并列全保留
-        last = top[-1][1]["composite"]; j = TOPN
+    topn = TOPN[subject]
+    top = eligible[:topn]
+    if len(eligible) > topn:  # 分数线上并列全保留
+        last = top[-1][1]["composite"]; j = topn
         while j < len(eligible) and eligible[j][1]["composite"] == last:
             top.append(eligible[j]); j += 1
     out = []
@@ -114,7 +118,7 @@ def build_subject(subject):
         print("   ", x["r"], x["zh"], x["comp"], ds)
     print("  尾部3:", [(x["r"], x["zh"], x["comp"]) for x in out[-3:]])
     print("  未入选(单源Top10):", [(v["en"], v["composite"]) for k, v in single[:10]])
-    print("  门槛后落选:", [(v["en"], v["composite"], v["appear"]) for k, v in eligible[TOPN:TOPN+5]])
+    print("  门槛后落选:", [(v["en"], v["composite"], v["appear"]) for k, v in eligible[topn:topn+5]])
     return {"weights": weights, "labels": {s: SOURCES[subject][s][2] for s in weights}, "gate": gate, "rows": out}
 
 result = {"cs": build_subject("cs"), "ai": build_subject("ai"), "comm": build_subject("comm")}

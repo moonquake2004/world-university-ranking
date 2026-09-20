@@ -36,10 +36,30 @@ HTML = r"""<!DOCTYPE html>
   --txt:#e9effb; --sub:#93a7c7; --faint:#5c7099;
   --gold:#ffd166; --qs:#20c997; --the:#ff6b81; --us:#5b8def; --arw:#f4a259;
   --accent:#7aa5ff;
+  --glow1:#14264a; --glow2:#10203d; --inputbg:#0a1322; --theadbg:#0e1930;
+  --barbg:#152238; --chipbg:rgba(20,32,56,.6); --modalbg:linear-gradient(180deg,#12203a,#0c1526);
+  --rowline:rgba(29,44,71,.55); --dashline:rgba(29,44,71,.7); --boxbg:rgba(10,18,34,.7);
 }
+:root[data-theme="light"]{
+  --bg:#eef1f8; --panel:#ffffff; --panel2:#f7f9fd; --line:#dbe3f0;
+  --txt:#182339; --sub:#4d5d7c; --faint:#8b98b3; --gold:#c98a00; --accent:#4f6ef7;
+  --glow1:#d9e5ff; --glow2:#e9f0ff; --inputbg:#f2f5fb; --theadbg:#eef2fa;
+  --barbg:#e2e8f4; --chipbg:#f2f5fb; --modalbg:linear-gradient(180deg,#ffffff,#f4f7fd);
+  --rowline:#e6ebf5; --dashline:#dde5f2; --boxbg:#f4f7fc;
+}
+:root[data-theme="light"] .a4{background:rgba(13,159,110,.1);color:#087a53;border-color:rgba(13,159,110,.35)}
+:root[data-theme="light"] .a3{background:rgba(55,99,214,.1);color:#2f5fd0;border-color:rgba(55,99,214,.35)}
+:root[data-theme="light"] .a2{background:rgba(196,113,23,.1);color:#b05e0e;border-color:rgba(196,113,23,.35)}
+:root[data-theme="light"] .tab.on{background:rgba(79,110,247,.12);color:#2f5fd0}
+:root[data-theme="light"] #err{background:#fdecec;border-color:#e5b4b4;color:#b02a37}
+:root[data-theme="light"] .kpi::after{background:linear-gradient(90deg,var(--accent),transparent)}
+:root[data-theme="light"] .medal{color:#fff}
+.tbtn{position:fixed;right:clamp(14px,3vw,44px);top:18px;z-index:60;background:var(--panel);border:1px solid var(--line);
+  color:var(--txt);border-radius:20px;padding:8px 16px;font-size:13px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.tbtn:hover{border-color:var(--accent)}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:radial-gradient(1200px 600px at 70% -10%, #14264a 0%, transparent 60%),
-     radial-gradient(900px 500px at 0% 0%, #10203d 0%, transparent 55%), var(--bg);
+body{background:radial-gradient(1200px 600px at 70% -10%, var(--glow1) 0%, transparent 60%),
+     radial-gradient(900px 500px at 0% 0%, var(--glow2) 0%, transparent 55%), var(--bg);
   color:var(--txt); font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,"Noto Sans SC",sans-serif;
   min-height:100vh; padding:28px clamp(14px,3vw,44px) 60px;}
 .wrap{max-width:1440px;margin:0 auto}
@@ -47,13 +67,13 @@ header{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-
 h1{font-size:clamp(22px,3vw,34px);letter-spacing:1px}
 h1 .en{display:block;font-size:13px;color:var(--sub);font-weight:400;letter-spacing:2px;margin-top:6px;text-transform:uppercase}
 .editions{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;max-width:640px}
-.badge{border:1px solid var(--line);background:rgba(20,32,56,.6);border-radius:20px;padding:5px 12px;font-size:12px;color:var(--sub)}
+.badge{border:1px solid var(--line);background:var(--chipbg);border-radius:20px;padding:5px 12px;font-size:12px;color:var(--sub)}
 .badge b{color:var(--txt);font-weight:600}
 .sub-line{color:var(--faint);font-size:12.5px;margin:6px 0 22px;line-height:1.7}
 .sub-line .tag{color:var(--gold);border:1px solid rgba(255,209,102,.35);border-radius:4px;padding:1px 7px;margin:0 4px;font-size:11.5px}
 /* tabs */
 .tabs{display:flex;gap:8px;margin:2px 0 18px;flex-wrap:wrap}
-.tab{padding:9px 22px;border-radius:10px;border:1px solid var(--line);background:#0a1322;color:var(--sub);
+.tab{padding:9px 22px;border-radius:10px;border:1px solid var(--line);background:var(--inputbg);color:var(--sub);
   font-size:14px;cursor:pointer;transition:.15s}
 .tab.on{background:linear-gradient(135deg,rgba(122,165,255,.22),rgba(143,107,255,.18));border-color:var(--accent);color:#dbe7ff;font-weight:700}
 .tab small{display:block;font-size:10px;color:var(--faint);font-weight:400;letter-spacing:.5px}
@@ -64,7 +84,7 @@ h1 .en{display:block;font-size:13px;color:var(--sub);font-weight:400;letter-spac
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:20px}
 .kpi{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px 18px;position:relative;overflow:hidden}
 .kpi::after{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,var(--accent),transparent)}
-.kpi .v{font-size:clamp(22px,2.4vw,30px);font-weight:700;color:#fff;font-variant-numeric:tabular-nums}
+.kpi .v{font-size:clamp(22px,2.4vw,30px);font-weight:700;color:var(--txt);font-variant-numeric:tabular-nums}
 .kpi .v small{font-size:13px;color:var(--sub);font-weight:400;margin-left:3px}
 .kpi .t{font-size:13px;color:var(--txt);margin-top:5px}
 .kpi .e{font-size:10.5px;color:var(--faint);margin-top:2px;letter-spacing:.4px}
@@ -79,16 +99,16 @@ h1 .en{display:block;font-size:13px;color:var(--sub);font-weight:400;letter-spac
 .chart.tall{height:380px}
 /* table */
 .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 12px}
-.controls input,.controls select{background:#0a1322;border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:7px 12px;font-size:13px;outline:none;min-width:150px}
+.controls input,.controls select{background:var(--inputbg);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:7px 12px;font-size:13px;outline:none;min-width:150px}
 .controls input:focus{border-color:var(--accent)}
-.fbtn{background:#0a1322;border:1px solid var(--line);color:var(--sub);border-radius:16px;padding:5px 13px;font-size:12px;cursor:pointer}
+.fbtn{background:var(--inputbg);border:1px solid var(--line);color:var(--sub);border-radius:16px;padding:5px 13px;font-size:12px;cursor:pointer}
 .fbtn.on{background:rgba(122,165,255,.16);border-color:var(--accent);color:#cfe0ff}
 .spacer{flex:1}
 .hint{font-size:11.5px;color:var(--faint)}
 .tbl-scroll{overflow:auto;max-height:750px;border:1px solid var(--line);border-radius:12px}
 table{width:100%;border-collapse:collapse;font-size:13px;min-width:980px}
-thead th{position:sticky;top:0;background:#0e1930;z-index:3;color:var(--sub);font-weight:600;text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
-tbody td{padding:9px 12px;border-bottom:1px solid rgba(29,44,71,.55);vertical-align:middle;white-space:nowrap}
+thead th{position:sticky;top:0;background:var(--theadbg);z-index:3;color:var(--sub);font-weight:600;text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+tbody td{padding:9px 12px;border-bottom:1px solid var(--rowline);vertical-align:middle;white-space:nowrap}
 tbody tr{cursor:pointer;transition:background .15s}
 tbody tr:hover{background:rgba(122,165,255,.07)}
 tr.top1 td:first-child{color:var(--gold)}
@@ -101,9 +121,9 @@ tr.top1 td:first-child{color:var(--gold)}
 .score{display:flex;align-items:center;gap:8px;min-width:130px}
 .score .n{font-weight:700;font-variant-numeric:tabular-nums;width:44px}
 .bar{height:5px;border-radius:3px;background:linear-gradient(90deg,#3b6cff,#8f6bff);flex:none}
-.bar-bg{width:90px;background:#152238;border-radius:3px;height:5px;overflow:hidden}
+.bar-bg{width:90px;background:var(--barbg);border-radius:3px;height:5px;overflow:hidden}
 .lchip{display:inline-flex;min-width:38px;height:22px;padding:0 5px;border-radius:6px;align-items:center;justify-content:center;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
-.lmiss{color:#3f5273;font-weight:400}
+.lmiss{color:var(--faint);font-weight:400}
 .app{display:inline-block;padding:2px 9px;border-radius:10px;font-size:11px}
 .a4{background:rgba(32,201,151,.14);color:#43e0b0;border:1px solid rgba(32,201,151,.4)}
 .a3{background:rgba(91,141,239,.14);color:#8fb0ff;border:1px solid rgba(91,141,239,.4)}
@@ -113,7 +133,7 @@ tr.top1 td:first-child{color:var(--gold)}
 .method{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;margin-bottom:16px}
 @media(max-width:1080px){.method{grid-template-columns:1fr}}
 .steps{counter-reset:st}
-.step{display:flex;gap:14px;padding:11px 0;border-bottom:1px dashed rgba(29,44,71,.7)}
+.step{display:flex;gap:14px;padding:11px 0;border-bottom:1px dashed var(--dashline)}
 .step:last-child{border-bottom:none}
 .step .no{counter-increment:st;flex:none;width:30px;height:30px;border-radius:8px;background:rgba(122,165,255,.12);border:1px solid rgba(122,165,255,.35);color:#bcd0ff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
 .step .no::before{content:counter(st)}
@@ -122,24 +142,24 @@ tr.top1 td:first-child{color:var(--gold)}
 .step p .en{color:var(--faint)}
 .wtab{width:100%;border-collapse:collapse;font-size:12.5px;min-width:0}
 .wtab th{color:var(--sub);text-align:left;padding:8px;border-bottom:1px solid var(--line);font-weight:600;position:static;background:none}
-.wtab td{padding:8px;border-bottom:1px solid rgba(29,44,71,.5);white-space:normal}
+.wtab td{padding:8px;border-bottom:1px solid var(--dashline);white-space:normal}
 .dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:7px}
 /* special + modal + footer */
 .small-tbl{width:100%;border-collapse:collapse;font-size:12.5px;min-width:0}
 .small-tbl th{color:var(--sub);text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);position:static;background:none}
-.small-tbl td{padding:8px 10px;border-bottom:1px solid rgba(29,44,71,.5)}
+.small-tbl td{padding:8px 10px;border-bottom:1px solid var(--dashline)}
 #mask{position:fixed;inset:0;background:rgba(3,6,12,.72);display:none;z-index:50;backdrop-filter:blur(3px)}
-#modal{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(760px,92vw);max-height:88vh;overflow:auto;background:linear-gradient(180deg,#12203a,#0c1526);border:1px solid var(--line);border-radius:16px;z-index:51;display:none;padding:22px 26px}
+#modal{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(760px,92vw);max-height:88vh;overflow:auto;background:var(--modalbg);border:1px solid var(--line);border-radius:16px;z-index:51;display:none;padding:22px 26px}
 #modal.open,#mask.open{display:block}
 #modal h2{font-size:19px}
 #modal h2 small{display:block;color:var(--faint);font-size:12px;font-weight:400;margin-top:4px}
 .mgrid{display:grid;grid-template-columns:340px 1fr;gap:18px;margin-top:14px}
 @media(max-width:700px){.mgrid{grid-template-columns:1fr}}
 .mstat{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.mstat .box{flex:1;min-width:100px;background:rgba(10,18,34,.7);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.mstat .box{flex:1;min-width:100px;background:var(--boxbg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
 .mstat .box .k{font-size:11px;color:var(--faint)}
 .mstat .box .v{font-size:17px;font-weight:700;margin-top:3px}
-.xbtn{position:absolute;top:14px;right:16px;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:#0c1526;color:var(--sub);font-size:15px;cursor:pointer}
+.xbtn{position:absolute;top:14px;right:16px;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--inputbg);color:var(--sub);font-size:15px;cursor:pointer}
 footer{margin-top:34px;color:var(--faint);font-size:11.5px;line-height:1.9;border-top:1px solid var(--line);padding-top:16px}
 footer a{color:var(--sub);text-decoration:none}
 .sec-title{font-size:16px;margin:26px 0 12px;display:flex;align-items:baseline;gap:10px}
@@ -149,6 +169,7 @@ footer a{color:var(--sub);text-decoration:none}
 </head>
 <body>
 <div class="wrap">
+  <button class="tbtn" id="tbtn" onclick="toggleTheme()">浅色 Light</button>
   <header>
     <div>
       <h1>世界大学综合排名前 300<span class="en">Global University Composite Ranking · Top 300</span></h1>
@@ -260,7 +281,22 @@ function cdnErr(){window.__noech=true;}
 const PAYLOAD = __DATA__;
 const FINAL = PAYLOAD.final, SPECIAL = PAYLOAD.special, META = PAYLOAD.meta;
 const LISTS = ["qs","the","usnews","arwu"];
-const LC = {qs:"#20c997", the:"#ff6b81", us:"#5b8def", arw:"#f4a259"};
+const LC_D = {qs:"#20c997", the:"#ff6b81", us:"#5b8def", arw:"#f4a259"};
+const LC_L = {qs:"#0d9f6e", the:"#d43a55", us:"#3763d6", arw:"#c47117"};
+let LC = LC_D;
+function isLight(){ return document.documentElement.dataset.theme==="light"; }
+function TH(){ return isLight()
+  ? {axis:"#c9d4e6",label:"#5a6a8a",labelHi:"#24324f",split:"#e3e9f4",panel:"#ffffff",faint:"#8b98b3",dash:"#b9c6de",
+     pal:["#c99700","#2f5fd0","#0f9d76","#d43a55","#c96f1f","#6d4fc4","#0e8fa8","#64748b","#7a9a2e","#b0528c"],
+     bar:"#4f6ef7",other:"#a9b8d6",china:"#e5484d",good:"#0d9668",warn:"#b05e0e",bad:"#d43a55"}
+  : {axis:"#2a3c5e",label:"#93a7c7",labelHi:"#c6d4ec",split:"rgba(29,44,71,.5)",panel:"#0d1524",faint:"#3f5273",dash:"#3b527e",
+     pal:["#ffd166","#5b8def","#20c997","#ff6b81","#f4a259","#8f6bff","#4dd0e1","#e0e0e0","#c5e1a5","#f48fb1"],
+     bar:"#7aa5ff",other:"#35507f",china:"#ff6b6b",good:"#43e0b0",warn:"#f4b878",bad:"#ff6b81"}; }
+function applyThemeVars(){ LC = isLight()?LC_L:LC_D; SC = isLight()?SC_L:SC_D; }
+(function(){ let t=null; try{t=localStorage.getItem("wurTheme")}catch(e){}
+  if(location.search.includes("theme=light"))t="light"; if(location.search.includes("theme=dark"))t="dark";
+  if(t==="light") document.documentElement.dataset.theme="light"; })();
+if(isLight())LC=LC_L;
 const LNAME = {qs:"QS", the:"THE", us:"US News", arw:"ARWU 软科"};
 const LFULL = {qs:"QS World University Rankings 2027", the:"THE World University Rankings 2026", us:"U.S. News Best Global Universities 2026-27", arw:"软科世界大学学术排名 ARWU 2026"};
 const LW = {qs:0.20, the:0.30, us:0.25, arw:0.25};
@@ -269,10 +305,11 @@ const $ = s => document.querySelector(s);
 
 /* ---------- editions badges ---------- */
 const SHORT = {qs:"QS 2027 · Top300", the:"THE 2026 · Top300", us:"U.S. News 2026-27 · Top300", arw:"软科 ARWU 2026 · Top300"};
-$("#editions").innerHTML = [["qs","QS"],["the","THE"],["us","U.S. News"],["arw","软科 ARWU"]].map(([k,l])=>{
+function buildBadges(){$("#editions").innerHTML = [["qs","QS"],["the","THE"],["us","U.S. News"],["arw","软科 ARWU"]].map(([k,l])=>{
   const e = META.editions[KEYMAP[k]];
   return `<span class="badge"><b style="color:${LC[k]}">${SHORT[k]}</b> · ${e.pub} 发布</span>`;
-}).join("");
+}).join("");}
+buildBadges();
 
 /* ---------- KPIs ---------- */
 const byCountry = {};
@@ -341,10 +378,11 @@ render();
 
 /* ---------- special list ---------- */
 $("#spIntro").innerHTML = $("#spIntro").innerHTML.replace("Top 300，","Top 300（共 "+META.n_single+" 所），");
-$("#tb2").innerHTML = SPECIAL.map(s=>{
+function buildSpecial(){$("#tb2").innerHTML = SPECIAL.map(s=>{
   const ln = {qs:"QS 2027",the:"THE 2026",usnews:"U.S. News 2026-27",arwu:"软科 ARWU 2026"}[s.list];
   return `<tr><td><b>${s.zh}</b> <span style="color:var(--faint);font-size:11.5px">${s.en}</span></td><td style="color:var(--sub)">${s.country}</td><td style="color:${LC[KEYMAP[s.list]]}">${ln}</td><td>No.${s.d}</td><td>${s.comp.toFixed(1)}</td></tr>`;
-}).join("");
+}).join("");}
+buildSpecial();
 
 /* ---------- methodology ---------- */
 const steps = [
@@ -355,11 +393,12 @@ const steps = [
  ["断位与稳健性披露","综合分并列时按 覆盖榜数 → THE 均位 → U.S. News 均位 → 字母序 断位；同时公布每校四榜百分位标准差 σ，供使用者自行评估名次背后的一致性/分歧度。","Tie-breakers & dispersion metric σ."]
 ];
 $("#steps").innerHTML = steps.map((s,i)=>`<div class="step"><div class="no"></div><div><b>${i+1}. ${s[0]}</b><p>${s[1]} <span class="en">${s[2]}</span></p></div></div>`).join("");
-$("#wt").innerHTML = [["the","THE 2026","五维度均衡：教学/研究/引用/国际化/产业，引用指标分数化处理，方法透明"],
+function buildWt(){$("#wt").innerHTML = [["the","THE 2026","五维度均衡：教学/研究/引用/国际化/产业，引用指标分数化处理，方法透明"],
   ["us","U.S. News 26-27","13 项文献计量指标（Scopus/WoS），全球+区域声誉仅占 25%，客观可复核，但无教学维度"],
   ["arw","ARWU 2026","诺奖校友/教师、高被引科学家、NSF 高分期刊论文等硬指标，抗刷分能力最强，但严重偏理科"],
   ["qs","QS 2027","学术声誉 40%+雇主声誉等，反映全球认可度与国际化，但问卷主导、易受品牌惯性影响"]
-].map(([k,l,why])=>`<tr><td style="white-space:nowrap"><span class="dot" style="background:${LC[k]}"></span><b>${l}</b></td><td style="font-weight:700;color:${LC[k]}">${(LW[k]*100).toFixed(0)}%</td><td style="color:var(--sub);font-size:12px">${why}</td></tr>`).join("");
+].map(([k,l,why])=>`<tr><td style="white-space:nowrap"><span class="dot" style="background:${LC[k]}"></span><b>${l}</b></td><td style="font-weight:700;color:${LC[k]}">${(LW[k]*100).toFixed(0)}%</td><td style="color:var(--sub);font-size:12px">${why}</td></tr>`).join("");}
+buildWt();
 
 /* ---------- footer ---------- */
 $("#foot").innerHTML = `数据来源：QS 2027（2026-06 发布）· THE 2026（2025-10 发布）· U.S. News Best Global Universities 2026-27（2026-06 发布）· 软科 ARWU 2026（2026-08 发布）。名次与原始分均取自各榜官方公开发布（U.S. News 官方总分未公开可得，仅采用其名次）。101-300 区间：THE 取自官方页面内嵌数据库（201 名后为官方区间）；QS 取自官方数据双源交叉；U.S. News 官方存在同率并列跳号，按官方显示顺序连续编号；软科 101 名后为官方区间名单。<br>
@@ -370,26 +409,27 @@ Data sources: topuniversities.com · timeshighereducation.com · usnews.com Best
 /* ---------- charts ---------- */
 function drawCharts(){
   if(!echOk()) return;
-  const AX = {axisLine:{lineStyle:{color:"#2a3c5e"}}, axisLabel:{color:"#93a7c7",fontSize:11}, splitLine:{lineStyle:{color:"rgba(29,44,71,.5)"}}};
+  const t = TH();
+  const AX = {axisLine:{lineStyle:{color:t.axis}}, axisLabel:{color:t.label,fontSize:11}, splitLine:{lineStyle:{color:t.split}}};
   // country bar
   const cs = cOpts.slice(0,15).map(c=>[c,byCountry[c]]).reverse();
   echarts.init($("#cCountry")).setOption({
     grid:{left:80,right:40,top:8,bottom:22},
-    xAxis:{type:"value",...AX}, yAxis:{type:"category",data:cs.map(x=>x[0]),...AX,axisLabel:{color:"#c6d4ec",fontSize:11.5}},
+    xAxis:{type:"value",...AX}, yAxis:{type:"category",data:cs.map(x=>x[0]),...AX,axisLabel:{color:t.labelHi,fontSize:11.5}},
     tooltip:{trigger:"axis",axisPointer:{type:"shadow"}},
     series:[{type:"bar",data:cs.map(x=>x[1]),barWidth:13,
-      label:{show:true,position:"right",color:"#93a7c7",fontSize:11},
-      itemStyle:{borderRadius:[0,7,7,0],color:p=>["中国内地","中国香港"].includes(cs[p.dataIndex][0])?"#ff6b6b":(cs[p.dataIndex][0]==="美国"?"#5b8def":"#35507f")}}]
+      label:{show:true,position:"right",color:t.label,fontSize:11},
+      itemStyle:{borderRadius:[0,7,7,0],color:p=>["中国内地","中国香港"].includes(cs[p.dataIndex][0])?t.china:(cs[p.dataIndex][0]==="美国"?t.bar:t.other)}}]
   });
   // bump: top10 across 4 rankings ordered by weight
   const T10 = FINAL.filter(r=>r.r<=10);
   const order = [["qs","QS 27",.20],["arw","ARWU 26",.25],["us","US News",.25],["the","THE 26",.30]];
-  const pal = ["#ffd166","#5b8def","#20c997","#ff6b81","#f4a259","#8f6bff","#4dd0e1","#e0e0e0","#c5e1a5","#f48fb1"];
+  const pal = t.pal;
   echarts.init($("#cBump")).setOption({
     grid:{left:44,right:150,top:8,bottom:26},
     legend:{show:false},
     tooltip:{trigger:"axis",formatter:ps=>ps[0].name+"<br>"+ps.map(p=>p.marker+p.seriesName+": 第"+p.value+"名").join("<br>")},
-    xAxis:{type:"category",data:order.map(o=>o[1]),...AX,axisLabel:{color:"#c6d4ec",fontSize:12}},
+    xAxis:{type:"category",data:order.map(o=>o[1]),...AX,axisLabel:{color:t.labelHi,fontSize:12}},
     yAxis:{type:"value",inverse:true,min:1,max:30,interval:5,...AX},
     series:T10.map((r,i)=>({name:r.zh,type:"line",symbolSize:8,lineStyle:{width:2.4,color:pal[i]},itemStyle:{color:pal[i]},
       endLabel:{show:true,color:pal[i],fontSize:11,distance:6,formatter:p=>r.zh},
@@ -401,20 +441,20 @@ function drawCharts(){
   echarts.init($("#cWeight")).setOption({
     tooltip:{formatter:p=>`${p.name}: ${p.value}%`},
     series:[{type:"pie",radius:["52%","78%"],center:["50%","52%"],
-      label:{color:"#c6d4ec",fontSize:11,formatter:"{b}\n{c}%"},
+      label:{color:t.labelHi,fontSize:11,formatter:"{b}\n{c}%"},
       data:[{name:"THE",value:30,itemStyle:{color:LC.the}},{name:"U.S. News",value:25,itemStyle:{color:LC.us}},
             {name:"ARWU",value:25,itemStyle:{color:LC.arw}},{name:"QS",value:20,itemStyle:{color:LC.qs}}],
-      itemStyle:{borderColor:"#0d1524",borderWidth:2}}]
+      itemStyle:{borderColor:t.panel,borderWidth:2}}]
   });
   // coverage structure
   const n2=FINAL.filter(r=>r.appear===2).length, n3=FINAL.filter(r=>r.appear===3).length, n4=FINAL.filter(r=>r.appear===4).length;
   echarts.init($("#cCover")).setOption({
     grid:{left:88,right:50,top:14,bottom:26},
-    xAxis:{type:"value",...AX}, yAxis:{type:"category",data:["双榜入围","三榜入围","四榜全入","单榜(仅参考)"],...AX,axisLabel:{color:"#c6d4ec",fontSize:12}},
+    xAxis:{type:"value",...AX}, yAxis:{type:"category",data:["双榜入围","三榜入围","四榜全入","单榜(仅参考)"],...AX,axisLabel:{color:t.labelHi,fontSize:12}},
     tooltip:{trigger:"axis",axisPointer:{type:"shadow"}},
     series:[{type:"bar",barWidth:26,
-      label:{show:true,position:"right",color:"#c6d4ec",fontSize:12},
-      data:[{value:n2,itemStyle:{color:"#f4a259"}},{value:n3,itemStyle:{color:"#5b8def"}},{value:n4,itemStyle:{color:"#20c997"}},{value:META.n_single,itemStyle:{color:"#35507f"}}],
+      label:{show:true,position:"right",color:t.labelHi,fontSize:12},
+      data:[{value:n2,itemStyle:{color:LC.arw}},{value:n3,itemStyle:{color:LC.us}},{value:n4,itemStyle:{color:LC.qs}},{value:META.n_single,itemStyle:{color:t.other}}],
       itemStyle:{borderRadius:[0,8,8,0]}}]
   });
   // scatter: mean pos of sub-rankings vs composite rank
@@ -426,8 +466,8 @@ function drawCharts(){
     series:[{type:"scatter",symbolSize:p=>p[2]===4?7:(p[2]===3?6:4.5),
       data:FINAL.map(r=>{const ps=LISTS.map(k=>r[k]?r[k].pct:null).filter(v=>v!==null);
         const mean=ps.reduce((a,b)=>a+b,0)/ps.length; const mp=Math.round((1-mean/100)*(LIST_N)+0.5);
-        return {value:[r.r,mp,r.appear],itemStyle:{color:r.appear===4?"#20c997":(r.appear===3?"#5b8def":"#f4a259")}};}),
-      markLine:{silent:true,symbol:"none",lineStyle:{color:"#3b527e",type:"dashed"},data:[[{coord:[1,1]},{coord:[300,300]}]],label:{show:false}}}],
+        return {value:[r.r,mp,r.appear],itemStyle:{color:r.appear===4?LC.qs:(r.appear===3?LC.us:LC.arw)}};}),
+      markLine:{silent:true,symbol:"none",lineStyle:{color:t.dash,type:"dashed"},data:[[{coord:[1,1]},{coord:[300,300]}]],label:{show:false}}}],
   });
 }
 const LIST_N = 300;
@@ -439,7 +479,7 @@ function openM(rk){
   const rows = [["the","THE 2026"],["us","U.S. News 26-27"],["arw","软科 ARWU 2026"],["qs","QS 2027"]].map(([k,l])=>{
     const v=r[KEYMAP[k]]; 
     return `<tr><td style="white-space:nowrap"><span class="dot" style="background:${LC[k]}"></span>${l}</td>
-      <td>${v?("第 "+v.d+" 名"):'<span style="color:#3f5273">未入该榜百强</span>'}</td>
+      <td>${v?("第 "+v.d+" 名"):'<span style="color:var(--faint)">未入该榜百强</span>'}</td>
       <td>${v?v.pct:"—"}</td><td>${v&&v.sc!=null?v.sc:"—"}</td></tr>`;
   }).join("");
   $("#mbody").innerHTML = `<h2>${r.zh}<small>${r.en} · ${r.country}</small></h2>
@@ -447,7 +487,7 @@ function openM(rk){
       <div class="box"><div class="k">综合排名 Overall</div><div class="v" style="color:var(--gold)">No.${r.r}</div></div>
       <div class="box"><div class="k">综合分 Composite</div><div class="v">${r.comp.toFixed(2)}</div></div>
       <div class="box"><div class="k">入榜数 Coverage</div><div class="v">${r.appear} / 4</div></div>
-      <div class="box"><div class="k">离散度 σ</div><div class="v" style="color:${r.spread<8?"#43e0b0":(r.spread<16?"#f4b878":"#ff6b81")}">${r.spread}</div></div>
+      <div class="box"><div class="k">离散度 σ</div><div class="v" style="color:${(()=>{const q=TH();return r.spread<8?q.good:(r.spread<16?q.warn:q.bad)})()}">${r.spread}</div></div>
     </div>
     <table class="small-tbl" style="margin-top:14px"><thead><tr><th>榜单</th><th>榜内名次</th><th>百分位分</th><th>官方原始分</th></tr></thead><tbody>${rows}</tbody></table>
     <p style="font-size:11.5px;color:var(--faint);margin-top:8px">σ 为四榜百分位分的标准差（缺榜按 0 计）：σ 越小，说明该院校在四种评价范式下结论越一致。</p>`;
@@ -457,10 +497,10 @@ function openM(rk){
     mChart.setOption({
       tooltip:{},
       radar:{indicator:["QS","THE","U.S. News","ARWU"].map(n=>({name:n,max:100})),
-        axisName:{color:"#93a7c7",fontSize:11}, splitArea:{show:false},
-        splitLine:{lineStyle:{color:"rgba(29,44,71,.8)"}}, axisLine:{lineStyle:{color:"#2a3c5e"}}},
+        axisName:{color:TH().label,fontSize:11}, splitArea:{show:false},
+        splitLine:{lineStyle:{color:TH().split}}, axisLine:{lineStyle:{color:TH().axis}}},
       series:[{type:"radar",data:[{name:r.zh,value:LISTS.map(k=>r[k]?r[k].pct:0),
-        areaStyle:{color:"rgba(122,165,255,.25)"},lineStyle:{color:"#7aa5ff"},itemStyle:{color:"#7aa5ff"}}]}]
+        areaStyle:{color:isLight()?"rgba(79,110,247,.18)":"rgba(122,165,255,.25)"},lineStyle:{color:TH().bar},itemStyle:{color:TH().bar}}]}]
     }, true);
     mChart.resize();
   }
@@ -472,7 +512,10 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeM();});
 
 /* ---------- subject views ---------- */
 const SUBJECT = __SUBJECT__;
-const SC = {csr:"#a78bfa",qs:"#20c997",the:"#ff6b81",usnews:"#5b8def",arwu:"#f4a259"};
+const SC_D = {csr:"#a78bfa",qs:"#20c997",the:"#ff6b81",usnews:"#5b8def",arwu:"#f4a259"};
+const SC_L = {csr:"#6d4fc4",qs:"#0d9f6e",the:"#d43a55",usnews:"#3763d6",arwu:"#c47117"};
+let SC = SC_D;
+if(isLight())SC=SC_L;
 const SUBED = {csr:"CSRankings 2026 · 顶会发表量",qs:"QS Subject CS 2026",the:"THE Subject CS 2026",usnews:"U.S. News Subject 26-27",arwu:"软科 GRAS 2026"};
 let CUR="main", SQ="", SFC="", SUBCUR="cs";
 function subSrcs(s){return Object.keys(SUBJECT[s].weights);}
@@ -510,22 +553,23 @@ function sRender(){
 function sCharts(){
   if(!echOk()) return;
   const data=subData(SUBCUR), rows=data.rows, srcs=subSrcs(SUBCUR);
-  const AX={axisLine:{lineStyle:{color:"#2a3c5e"}},axisLabel:{color:"#93a7c7",fontSize:11},splitLine:{lineStyle:{color:"rgba(29,44,71,.5)"}}};
+  const t=TH();
+  const AX={axisLine:{lineStyle:{color:t.axis}},axisLabel:{color:t.label,fontSize:11},splitLine:{lineStyle:{color:t.split}}};
   const t15=rows.slice(0,15).reverse();
   echarts.init($("#cSubBar")).setOption({
     grid:{left:120,right:46,top:8,bottom:22},
-    xAxis:{type:"value",max:100,...AX},yAxis:{type:"category",data:t15.map(r=>r.zh),...AX,axisLabel:{color:"#c6d4ec",fontSize:11.5}},
+    xAxis:{type:"value",max:100,...AX},yAxis:{type:"category",data:t15.map(r=>r.zh),...AX,axisLabel:{color:t.labelHi,fontSize:11.5}},
     tooltip:{trigger:"axis",axisPointer:{type:"shadow"}},
     series:[{type:"bar",data:t15.map(r=>r.comp),barWidth:14,
-      label:{show:true,position:"right",color:"#93a7c7",fontSize:11,formatter:p=>p.value.toFixed(1)},
-      itemStyle:{borderRadius:[0,7,7,0],color:p=>["中国内地","中国香港","中国台湾"].includes(t15[p.dataIndex].country)?"#ff6b6b":"#7aa5ff"}}]
+      label:{show:true,position:"right",color:t.label,fontSize:11,formatter:p=>p.value.toFixed(1)},
+      itemStyle:{borderRadius:[0,7,7,0],color:p=>["中国内地","中国香港","中国台湾"].includes(t15[p.dataIndex].country)?t.china:t.bar}}]
   },true);
   const T10=rows.slice(0,10);
-  const pal=["#ffd166","#5b8def","#20c997","#ff6b81","#f4a259","#8f6bff","#4dd0e1","#e0e0e0","#c5e1a5","#f48fb1"];
+  const pal=t.pal;
   echarts.init($("#cSubBump")).setOption({
     grid:{left:40,right:130,top:8,bottom:26},
     tooltip:{trigger:"axis",formatter:ps=>ps[0].name+"<br>"+ps.filter(p=>p.value!=null).map(p=>p.marker+p.seriesName+": 第"+p.value+"名").join("<br>")},
-    xAxis:{type:"category",data:srcs.map(s=>({csr:"CSRank",qs:"QS",the:"THE",usnews:"USNews",arwu:"ARWU"})[s]),...AX,axisLabel:{color:"#c6d4ec",fontSize:12}},
+    xAxis:{type:"category",data:srcs.map(s=>({csr:"CSRank",qs:"QS",the:"THE",usnews:"USNews",arwu:"ARWU"})[s]),...AX,axisLabel:{color:t.labelHi,fontSize:12}},
     yAxis:{type:"value",inverse:true,min:1,max:50,interval:10,...AX},
     series:T10.map((r,i)=>({name:r.zh,type:"line",symbolSize:8,lineStyle:{width:2.4,color:pal[i]},itemStyle:{color:pal[i]},
       endLabel:{show:true,color:pal[i],fontSize:11,distance:6,formatter:()=>r.zh},labelLayout:{hideOverlap:true},
@@ -540,12 +584,12 @@ function sCharts(){
   echarts.init($("#cCross")).setOption({
     grid:{left:56,right:30,top:16,bottom:44},
     tooltip:{formatter:p=>{const q=pts[p.dataIndex];return q.zh+"<br>CS 第"+q.x+" · AI 第"+q.y+(q.d>0?`<br>AI 相对强 ${q.d} 位`:`<br>CS 相对强 ${-q.d} 位`);}},
-    xAxis:{type:"value",name:"CS 榜名次",nameLocation:"middle",nameGap:28,inverse:true,min:1,max:100,...AX,nameTextStyle:{color:"#93a7c7"}},
-    yAxis:{type:"value",name:"AI 榜名次",inverse:true,min:1,max:100,...AX,nameTextStyle:{color:"#93a7c7"}},
+    xAxis:{type:"value",name:"CS 榜名次",nameLocation:"middle",nameGap:28,inverse:true,min:1,max:100,...AX,nameTextStyle:{color:t.label}},
+    yAxis:{type:"value",name:"AI 榜名次",inverse:true,min:1,max:100,...AX,nameTextStyle:{color:t.label}},
     series:[{type:"scatter",symbolSize:9,
-      data:pts.map(q=>({value:[q.x,q.y],itemStyle:{color:Math.abs(q.d)>=25?(q.d>0?"#43e0b0":"#ff6b81"):"#7aa5ff"}})),
-      label:{show:true,position:"top",fontSize:10,color:"#93a7c7",formatter:p=>{const q=pts[p.dataIndex];return Math.abs(q.d)>=30?q.zh:"";}},labelLayout:{hideOverlap:true},
-      markLine:{silent:true,symbol:"none",lineStyle:{color:"#3b527e",type:"dashed"},data:[[{coord:[1,1]},{coord:[100,100]}]],label:{show:false}}}]
+      data:pts.map(q=>({value:[q.x,q.y],itemStyle:{color:Math.abs(q.d)>=25?(q.d>0?t.good:t.bad):t.bar}})),
+      label:{show:true,position:"top",fontSize:10,color:t.label,formatter:p=>{const q=pts[p.dataIndex];return Math.abs(q.d)>=30?q.zh:"";}},labelLayout:{hideOverlap:true},
+      markLine:{silent:true,symbol:"none",lineStyle:{color:t.dash,type:"dashed"},data:[[{coord:[1,1]},{coord:[100,100]}]],label:{show:false}}}]
   },true);
 }
 function showSub(sub){
@@ -582,6 +626,19 @@ document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{
 if(["#cs","#ai"].includes(location.hash)){ setTimeout(()=>{ document.querySelector('.tab[data-v="'+location.hash.slice(1)+'"]').click(); },50); }
 $("#sq").addEventListener("input",e=>{SQ=e.target.value.trim().toLowerCase();sRender();});
 $("#sfc").addEventListener("change",e=>{SFC=e.target.value;sRender();});
+
+function disposeAll(){ ["cCountry","cBump","cCover","cScatter","cWeight","cSubBar","cSubBump","cCross"].forEach(id=>{const el=document.getElementById(id); if(el&&window.echarts)echarts.dispose(el);}); }
+function toggleTheme(){
+  const goLight=!isLight();
+  if(goLight)document.documentElement.dataset.theme="light"; else document.documentElement.removeAttribute("data-theme");
+  applyThemeVars();
+  try{localStorage.setItem("wurTheme",goLight?"light":"dark")}catch(e){}
+  $("#tbtn").textContent=goLight?"深色 Dark":"浅色 Light";
+  buildBadges(); buildWt(); buildSpecial(); render();
+  disposeAll(); if(echOk())drawCharts();
+  if(CUR!=="main")showSub(CUR);
+}
+$("#tbtn").textContent=isLight()?"深色 Dark":"浅色 Light";
 
 /* ---------- init charts ---------- */
 window.addEventListener("load",()=>{ if(echOk()){drawCharts(); window.addEventListener("resize",()=>{document.querySelectorAll(".chart,#cWeight,#mchart,#cCross").forEach(el=>{const c=echarts.getInstanceByDom(el);if(c)c.resize();});});} });

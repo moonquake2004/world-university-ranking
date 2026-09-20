@@ -28,7 +28,14 @@ SOURCES = {
         "usnews": ("raw_usnews_ai.tsv",0.35, "U.S. News-AI 26-27"),
         "arwu":   ("raw_arwu_ai.tsv",  0.25, "软科-AI 2026"),
     },
+    # 传播学: THE 无独立学科(归入 Social Sciences), U.S. News 世界学科榜无此学科
+    # 仅 QS(声誉+引用, 第16届) 与 软科GRAS(SSCI文献计量) 两源, 范式互补故等权
+    "comm": {
+        "qs":     ("raw_qs_comm.tsv",  0.50, "QS Communication & Media Studies 2026"),
+        "arwu":   ("raw_arwu_comm.tsv",0.50, "软科 GRAS Communication 2026"),
+    },
 }
+GATE = {"cs": 2, "ai": 2, "comm": 1}
 
 # 综合榜已有院校 -> 复用显示名与国家, 保证两榜一致
 stage = json.load(open(BASE / "stage1.json", encoding="utf-8"))
@@ -56,6 +63,10 @@ def build_subject(subject):
         if k in GLOBAL:
             g = GLOBAL[k]
             v["en"], v["zh"], v["country"] = g["en"], g["zh"], g["country"]
+    DISP_FIX = {"pennsylvania state university": ("Penn State University", "宾夕法尼亚州立大学")}
+    for k, v in UNIV.items():
+        if k in DISP_FIX:
+            v["en"], v["zh"] = DISP_FIX[k]
     # 综合分
     weights = {s: SOURCES[subject][s][1] for s in SOURCES[subject]}
     for k, v in UNIV.items():
@@ -74,18 +85,24 @@ def build_subject(subject):
         first = list(weights)[0]
         return (-v["composite"], -v["appear"], v["ranks"].get(first, {}).get("pos", 999), v["en"])
     ordered = sorted(UNIV.items(), key=sortkey)
-    eligible = [(k, v) for k, v in ordered if v["appear"] >= 2]
-    single = [(k, v) for k, v in ordered if v["appear"] < 2]
+    gate = GATE[subject]
+    eligible = [(k, v) for k, v in ordered if v["appear"] >= gate]
+    single = [(k, v) for k, v in ordered if v["appear"] < gate]
     # 中文同名多key告警
     zhg = {}
     for k, v in UNIV.items():
         zhg.setdefault(v["zh"], []).append(v["en"])
-    print(f"\n===== {subject.upper()} 池: {len(UNIV)} 校 | 多源: {len(eligible)} | 单源: {len(single)} =====")
+    print(f"\n===== {subject.upper()} 池: {len(UNIV)} 校 | 门槛>={gate} 入选: {len(eligible)} | 低于门槛: {len(single)} =====")
     for zh, lst in zhg.items():
         if len(lst) > 1:
             print("  ZH-CONFLICT:", zh, lst)
+    top = eligible[:TOPN]
+    if len(eligible) > TOPN:  # 分数线上并列全保留
+        last = top[-1][1]["composite"]; j = TOPN
+        while j < len(eligible) and eligible[j][1]["composite"] == last:
+            top.append(eligible[j]); j += 1
     out = []
-    for i, (k, v) in enumerate(eligible[:TOPN]):
+    for i, (k, v) in enumerate(top):
         out.append({"r": i + 1, "en": v["en"], "zh": v["zh"], "country": v["country"],
                     "comp": v["composite"], "appear": v["appear"], "spread": v["spread"],
                     "ranks": {s: ({"d": v["ranks"][s]["display"], "pct": v["ranks"][s]["pct"],
@@ -98,9 +115,9 @@ def build_subject(subject):
     print("  尾部3:", [(x["r"], x["zh"], x["comp"]) for x in out[-3:]])
     print("  未入选(单源Top10):", [(v["en"], v["composite"]) for k, v in single[:10]])
     print("  门槛后落选:", [(v["en"], v["composite"], v["appear"]) for k, v in eligible[TOPN:TOPN+5]])
-    return {"weights": weights, "labels": {s: SOURCES[subject][s][2] for s in weights}, "rows": out}
+    return {"weights": weights, "labels": {s: SOURCES[subject][s][2] for s in weights}, "gate": gate, "rows": out}
 
-result = {"cs": build_subject("cs"), "ai": build_subject("ai")}
+result = {"cs": build_subject("cs"), "ai": build_subject("ai"), "comm": build_subject("comm")}
 with open(BASE / "subject.json", "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=1)
 print("\nsubject.json written")

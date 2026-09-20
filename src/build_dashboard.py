@@ -177,7 +177,7 @@ footer a{color:var(--sub);text-decoration:none}
     <div class="editions" id="editions"></div>
   </header>
   <div class="sub-line">
-    独立学术评估机构 · 研究性综合排名<span class="tag">非官方聚合</span><span class="tag" style="color:#a78bff;border-color:#a78bff55">新增 CS / AI 学科子榜</span>
+    独立学术评估机构 · 研究性综合排名<span class="tag">非官方聚合</span><span class="tag" style="color:#a78bff;border-color:#a78bff55">学科子榜：CS / AI / 传播学</span>
     方法论：四榜百分位归一 × 方法学公信力加权 × 跨榜共识门槛（覆盖各榜 Top 300，区间名次按中值折算）—— <b>不是名次的简单平均</b>
     <span class="en">Percentile normalisation · credibility-weighted · cross-ranking consensus gate</span>
     <div id="err">图表库加载失败（网络受限）。排名表格与筛选功能不受影响。</div>
@@ -187,6 +187,7 @@ footer a{color:var(--sub);text-decoration:none}
     <button class="tab on" data-v="main">综合总榜 TOP 300<small>Composite · overall</small></button>
     <button class="tab" data-v="cs">学科榜 · 计算机 CS<small>Subject ranking · Computer Science</small></button>
     <button class="tab" data-v="ai">学科榜 · 人工智能 AI<small>Subject ranking · Artificial Intelligence</small></button>
+    <button class="tab" data-v="comm">学科榜 · 传播学<small>Subject ranking · Communication &amp; Media</small></button>
   </div>
   <div id="view-main">
   <div class="kpis" id="kpis"></div>
@@ -404,7 +405,7 @@ buildWt();
 $("#foot").innerHTML = `数据来源：QS 2027（2026-06 发布）· THE 2026（2025-10 发布）· U.S. News Best Global Universities 2026-27（2026-06 发布）· 软科 ARWU 2026（2026-08 发布）。名次与原始分均取自各榜官方公开发布（U.S. News 官方总分未公开可得，仅采用其名次）。101-300 区间：THE 取自官方页面内嵌数据库（201 名后为官方区间）；QS 取自官方数据双源交叉；U.S. News 官方存在同率并列跳号，按官方显示顺序连续编号；软科 101 名后为官方区间名单。<br>
 Data sources: topuniversities.com · timeshighereducation.com · usnews.com Best Global Universities · shanghairanking.com. 中文译名为通行译法。<br>
 <b style="color:var(--sub)">免责声明</b>：本看板为独立研究性综合评估，方法论与权重由评估机构设定，不代表任何官方立场；排名仅供比较参考，不构成升学/资助决策依据。生成时间 Generated: __GENDATE__<br>
-<b style="color:var(--sub)">学科榜数据源</b>：CSRankings 2026（DBLP 顶会发表口径，2016-2026 窗口）· QS/THE/U.S. News/软科 2026 学科排名（CS 五源、AI 三源交叉；AI 学科榜为软科 2025 年首发新学科）。学科榜方法论与综合榜一致，详见各子榜页首说明。`;
+<b style="color:var(--sub)">学科榜数据源</b>：CSRankings 2026（DBLP 顶会发表口径，2016-2026 窗口）· QS/THE/U.S. News/软科 2026 学科排名（CS 五源、AI 三源交叉；传播学仅 QS+软科两源——THE 无独立传播学学科榜、U.S. News 世界学科榜不覆盖该领域）。学科榜方法论与综合榜一致，详见各子榜页首说明。`;
 
 /* ---------- charts ---------- */
 function drawCharts(){
@@ -523,7 +524,7 @@ function subData(s){return SUBJECT[s];}
 function sChip(list,r){
   const v=r.ranks[list];
   if(!v) return `<span class="lmiss">—</span>`;
-  return `<span class="lchip" style="background:${SC[list]}1a;color:${SC[list]};border:1px solid ${SC[list]}55" title="${SUBED[list]} 名次 ${v.d} · 百分位 ${v.pct}">${v.d}</span>`;
+  return `<span class="lchip" style="background:${SC[list]}1a;color:${SC[list]};border:1px solid ${SC[list]}55" title="${subData(SUBCUR).labels[list]} 名次 ${v.d} · 百分位 ${v.pct}">${v.d}</span>`;
 }
 function sHead(){
   const srcs=subSrcs(SUBCUR);
@@ -546,7 +547,7 @@ function sRender(){
       <td class="cty">${r.country}</td>
       <td><div class="score"><span class="n">${r.comp.toFixed(1)}</span><span class="bar-bg"><span class="bar" style="width:${Math.round(r.comp)}px"></span></span></div></td>
       ${srcs.map(s=>`<td>${sChip(s,r)}</td>`).join("")}
-      <td><span class="app ${n===5?(r.appear===5?"a4":r.appear>=3?"a3":"a2"):(r.appear===3?"a4":"a2")}">${r.appear}/${n}</span></td>
+      <td><span class="app ${r.appear===n?"a4":(r.appear>=n-1&&n>=3?"a3":"a2")}">${r.appear}/${n}</span></td>
       <td><span class="spr">σ ${r.spread}</span></td></tr>`;
   }).join("");
 }
@@ -597,8 +598,10 @@ function showSub(sub){
   const srcs=subSrcs(sub), rows=subData(sub).rows;
   $("#subIntro").innerHTML = (sub==="cs"
     ? "计算机科学学科综合榜 · 五源交叉：CSRankings 顶会发表量 + QS/THE/U.S. News/软科 四大学科榜。与综合榜同一套方法（百分位归一 × 公信力加权 × ≥2 源共识门槛），各源统一取 Top 100 可比池；区间名次按中值折算。"
-    : "人工智能学科综合榜 · 三源交叉：CSRankings-AI（顶会口径）+ U.S. News-AI（文献计量口径）+ 软科 GRAS-AI 2026（2025 年首发新学科）。QS/THE 无独立 AI 学科榜故为三源；门槛为 ≥2/3 源。");
-  $("#subWeights").innerHTML = srcs.map(s=>`<span class="w" style="border-color:${SC[s]}66;color:${SC[s]};background:${SC[s]}14">${SUBED[s]} · ${(subData(sub).weights[s]*100).toFixed(0)}%</span>`).join("");
+    : sub==="ai"
+    ? "人工智能学科综合榜 · 三源交叉：CSRankings-AI（顶会口径）+ U.S. News-AI（文献计量口径）+ 软科 GRAS-AI 2026（2025 年首发新学科）。QS/THE 无独立 AI 学科榜故为三源；门槛为 ≥2/3 源。"
+    : "传播学与媒体研究学科综合榜 · 经核查该领域覆盖参差：<b>QS</b>（Communication &amp; Media Studies 2026，第16届，声誉+引用双轨，277 校）与<b>软科 GRAS</b>（Communication 2026，SSCI 文献计量）设独立学科榜；<b>THE 无独立传播学榜</b>（官方将 Communication 归入 Social Sciences），<b>U.S. News 世界学科榜 51 学科中无传播学</b>（中文圈所谓「US News 传播学排名」多为误传）。仅两源可用，范式互补（主观声誉 vs 客观计量）故取 50/50 等权；不设 ≥2 门槛、单源院校如实标注 1/2；两源均取 Top 100 池，分数线并列全保留（故共 104 席）。");
+  $("#subWeights").innerHTML = srcs.map(s=>`<span class="w" style="border-color:${SC[s]}66;color:${SC[s]};background:${SC[s]}14">${subData(sub).labels[s]} · ${(subData(sub).weights[s]*100).toFixed(0)}%</span>`).join("");
   const byC={}; rows.forEach(r=>byC[r.country]=(byC[r.country]||0)+1);
   const full=rows.filter(r=>r.appear===srcs.length).length;
   const china=(byC["中国内地"]||0)+(byC["中国香港"]||0)+(byC["中国台湾"]||0)+(byC["中国澳门"]||0);
@@ -611,6 +614,7 @@ function showSub(sub){
     {v:full,u:"所",t:"全源交叉命中",e:"In all "+srcs.length+" sources"},
     {v:stable?stable.zh:"-",u:"",t:"评价最稳（σ "+(stable?stable.spread:"-")+"）",e:stable?"综合第 "+stable.r+" 名":""}
   ].map(k=>`<div class="kpi"><div class="v" ${k.u?'':"style=font-size:19px"}>${k.v}<small>${k.u}</small></div><div class="t">${k.t}</div><div class="e">${k.e}</div></div>`).join("");
+  $("#cmpPanel").style.display = sub==="comm"?"none":"";
   sHead(); sRender();
   const cOptsS=Object.keys(byC).sort((a,b)=>byC[b]-byC[a]);
   $("#sfc").innerHTML=`<option value="">全部国家/地区 All regions</option>`+cOptsS.map(c=>`<option value="${c}">${c} (${byC[c]})</option>`).join("");
@@ -623,7 +627,7 @@ document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{
   $("#view-sub").style.display = CUR==="main"?"none":"";
   if(CUR!=="main") showSub(CUR);
 }));
-if(["#cs","#ai"].includes(location.hash)){ setTimeout(()=>{ document.querySelector('.tab[data-v="'+location.hash.slice(1)+'"]').click(); },50); }
+if(["#cs","#ai","#comm"].includes(location.hash)){ setTimeout(()=>{ document.querySelector('.tab[data-v="'+location.hash.slice(1)+'"]').click(); },50); }
 $("#sq").addEventListener("input",e=>{SQ=e.target.value.trim().toLowerCase();sRender();});
 $("#sfc").addEventListener("change",e=>{SFC=e.target.value;sRender();});
 

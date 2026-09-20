@@ -13,6 +13,7 @@
 | 综合总榜 | QS 2027 · THE 2026 · U.S. News 2026-27 · 软科 ARWU 2026（各 Top 300） | 综合 Top 300 + 146 所单榜参考 |
 | 学科榜 · CS | CSRankings 2026 · THE Subject CS 2026 · U.S. News CS 26-27 · 软科 GRAS CS 2026 · QS CS 2026 | CS 综合 Top 100 |
 | 学科榜 · AI | CSRankings-AI · U.S. News-AI · 软科 GRAS-AI 2026 | AI 综合 91 校 + CS↔AI 对照 |
+| 学科榜 · 传播学 | QS Communication & Media Studies 2026 · 软科 GRAS Communication 2026（THE 无独立传播学榜、U.S. News 世界学科榜不覆盖） | 双源综合 104 席（分数线并列全保留） |
 
 ## 方法论（非简单平均）
 
@@ -22,6 +23,7 @@
    - 综合榜：THE 30% ｜ U.S. News 25% ｜ ARWU 25% ｜ QS 20%
    - CS 榜：CSRankings 25% ｜ THE 20% ｜ U.S. News 20% ｜ ARWU 20% ｜ QS 15%
    - AI 榜：CSRankings-AI 40% ｜ U.S. News-AI 35% ｜ 软科-AI 25%
+   - 传播学：QS 50% ｜ 软科 50%（仅两源可用、声誉与计量范式互补故等权；不设 ≥2 门槛，单源院校标注 1/2）
 4. **跨榜共识门槛**：至少命中 2 个来源方可占综合席位；单源专科/研究机构另列参考名单。
 5. **稳健性披露**：每校公布各源百分位标准差 σ；断位规则 = 覆盖数 → THE → U.S. News → 字母序。
 

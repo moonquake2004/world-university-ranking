@@ -119,6 +119,7 @@ _extra = {
     "technion": "israel institute technology technion",
     "et lettres paris psl research sciences university": "psl university",
     "university maryland": "college maryland park university",
+    "ludwig maximilian munich university": "lmu munich",
     "university washington": "university washington",
 }
 OVERRIDES.update({_sortkey_tokens(k): _sortkey_tokens(v) for k, v in _extra.items()})

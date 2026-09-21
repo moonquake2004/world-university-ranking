@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 BASE = Path(__file__).parent
-OUT = BASE.parent  # 仓库根目录, 输出 index.html
+OUT = Path("/Users/waterfly/.qwenworkcn/workspace/mu73k71u6l26gpc6/outputs")
 OUT.mkdir(parents=True, exist_ok=True)
 
 d = json.load(open(BASE / "stage1.json", encoding="utf-8"))
@@ -188,6 +188,7 @@ footer a{color:var(--sub);text-decoration:none}
     <button class="tab" data-v="cs">学科榜 · 计算机 CS<small>Subject ranking · Computer Science</small></button>
     <button class="tab" data-v="ai">学科榜 · 人工智能 AI<small>Subject ranking · Artificial Intelligence</small></button>
     <button class="tab" data-v="comm">学科榜 · 传播学<small>Subject ranking · Communication &amp; Media</small></button>
+    <button class="tab" data-v="grad">硬数据榜 · 研究生科研实力<small>Hard-data · Research (Grad) Strength</small></button>
   </div>
   <div id="view-main">
   <div class="kpis" id="kpis"></div>
@@ -514,10 +515,11 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeM();});
 
 /* ---------- subject views ---------- */
 const SUBJECT = __SUBJECT__;
-const SC_D = {csr:"#a78bfa",qs:"#20c997",the:"#ff6b81",usnews:"#5b8def",arwu:"#f4a259"};
-const SC_L = {csr:"#6d4fc4",qs:"#0d9f6e",the:"#d43a55",usnews:"#3763d6",arwu:"#c47117"};
+const SC_D = {csr:"#a78bfa",qs:"#20c997",the:"#ff6b81",usnews:"#5b8def",arwu:"#f4a259",leiden:"#38bdf8",ni:"#f472b6",hici:"#facc15"};
+const SC_L = {csr:"#6d4fc4",qs:"#0d9f6e",the:"#d43a55",usnews:"#3763d6",arwu:"#c47117",leiden:"#0284c7",ni:"#db2777",hici:"#a16207"};
 let SC = SC_D;
 if(isLight())SC=SC_L;
+const SUBLBL = {csr:"CSRank",qs:"QS",the:"THE",usnews:"USNews",arwu:"ARWU",leiden:"Leiden",ni:"NatIdx",hici:"HCR"};
 const SUBED = {csr:"CSRankings 2026 · 顶会发表量",qs:"QS Subject CS 2026",the:"THE Subject CS 2026",usnews:"U.S. News Subject 26-27",arwu:"软科 GRAS 2026"};
 let CUR="main", SQ="", SFC="", SUBCUR="cs";
 function subSrcs(s){return Object.keys(SUBJECT[s].weights);}
@@ -530,7 +532,7 @@ function sChip(list,r){
 function sHead(){
   const srcs=subSrcs(SUBCUR);
   $("#sHead").innerHTML = `<th>综合<br>排名</th><th>大学 University</th><th>国家/地区</th><th>综合分<br>Score</th>`+
-    srcs.map(s=>`<th>${({csr:"CSRank",qs:"QS",the:"THE",usnews:"USNews",arwu:"ARWU"})[s]}</th>`).join("")+
+    srcs.map(s=>`<th>${SUBLBL[s]||s}</th>`).join("")+
     `<th>来源数</th><th>σ</th>`;
 }
 function sRender(){
@@ -571,14 +573,15 @@ function sCharts(){
   echarts.init($("#cSubBump")).setOption({
     grid:{left:40,right:130,top:8,bottom:26},
     tooltip:{trigger:"axis",formatter:ps=>ps[0].name+"<br>"+ps.filter(p=>p.value!=null).map(p=>p.marker+p.seriesName+": 第"+p.value+"名").join("<br>")},
-    xAxis:{type:"category",data:srcs.map(s=>({csr:"CSRank",qs:"QS",the:"THE",usnews:"USNews",arwu:"ARWU"})[s]),...AX,axisLabel:{color:t.labelHi,fontSize:12}},
+    xAxis:{type:"category",data:srcs.map(s=>SUBLBL[s]||s),...AX,axisLabel:{color:t.labelHi,fontSize:12}},
     yAxis:{type:"value",inverse:true,min:1,max:50,interval:10,...AX},
     series:T10.map((r,i)=>({name:r.zh,type:"line",symbolSize:8,lineStyle:{width:2.4,color:pal[i]},itemStyle:{color:pal[i]},
       endLabel:{show:true,color:pal[i],fontSize:11,distance:6,formatter:()=>r.zh},labelLayout:{hideOverlap:true},
       emphasis:{focus:"series"},
       data:srcs.map(s=>r.ranks[s]?r.ranks[s].d:null)}))
   },true);
-  // cross CS vs AI
+  // cross CS vs AI  (仅在 CS/AI 子榜展示)
+  if(SUBCUR==="cs"||SUBCUR==="ai"){
   const csMap={},aiMap={};
   subData("cs").rows.forEach(r=>csMap[r.zh]=r.r);
   subData("ai").rows.forEach(r=>aiMap[r.zh]=r.r);
@@ -593,6 +596,7 @@ function sCharts(){
       label:{show:true,position:"top",fontSize:10,color:t.label,formatter:p=>{const q=pts[p.dataIndex];return Math.abs(q.d)>=30?q.zh:"";}},labelLayout:{hideOverlap:true},
       markLine:{silent:true,symbol:"none",lineStyle:{color:t.dash,type:"dashed"},data:[[{coord:[1,1]},{coord:[100,100]}]],label:{show:false}}}]
   },true);
+  }
 }
 function showSub(sub){
   SUBCUR=sub; SQ="";SFC=""; $("#sq").value="";
@@ -601,7 +605,9 @@ function showSub(sub){
     ? "计算机科学学科综合榜 · 五源交叉：CSRankings 顶会发表量 + QS/THE/U.S. News/软科 四大学科榜。与综合榜同一套方法（百分位归一 × 公信力加权 × ≥2 源共识门槛），各源统一取 Top 100 可比池；区间名次按中值折算。"
     : sub==="ai"
     ? "人工智能学科综合榜 · 三源交叉：CSRankings-AI（顶会口径）+ U.S. News-AI（文献计量口径）+ 软科 GRAS-AI 2026（2025 年首发新学科）。QS/THE 无独立 AI 学科榜故为三源；门槛为 ≥2/3 源。"
-    : "传播学与媒体研究学科综合榜 · 经核查该领域覆盖参差：<b>QS</b>（Communication &amp; Media Studies 2026，第16届，声誉+引用双轨，277 校）与<b>软科 GRAS</b>（Communication 2026，SSCI 文献计量）设独立学科榜；<b>THE 无独立传播学榜</b>（官方将 Communication 归入 Social Sciences），<b>U.S. News 世界学科榜 51 学科中无传播学</b>（中文圈所谓「US News 传播学排名」多为误传）。仅两源可用，范式互补（主观声誉 vs 客观计量）故取 50/50 等权；不设 ≥2 门槛、单源院校如实标注 1/2。<b>本榜为两榜全量名单</b>：QS 该学科全部 277 所 + 软科全部 200 所，并集 327 校全部列出（百分位按各自全量池计算）。");
+    : sub==="comm"
+    ? "传播学与媒体研究学科综合榜 · 经核查该领域覆盖参差：<b>QS</b>（Communication &amp; Media Studies 2026，第16届，声誉+引用双轨，277 校）与<b>软科 GRAS</b>（Communication 2026，SSCI 文献计量）设独立学科榜；<b>THE 无独立传播学榜</b>（官方将 Communication 归入 Social Sciences），<b>U.S. News 世界学科榜 51 学科中无传播学</b>（中文圈所谓「US News 传播学排名」多为误传）。仅两源可用，范式互补（主观声誉 vs 客观计量）故取 50/50 等权；不设 ≥2 门槛、单源院校如实标注 1/2。<b>本榜为两榜全量名单</b>：QS 该学科全部 277 所 + 软科全部 200 所，并集 327 校全部列出（百分位按各自全量池计算）。"
+    : "<b>零声誉、纯硬数据</b>的「研究生科研实力」榜 · 三源交叉：CWTS Leiden 2025 <b>高被引论文量 P(top 10%)</b>（全学科 · 质量×规模，导师与研究生共同产出最直接代理，权重 35%）+ Nature Index 2026 <b>顶刊贡献 Share</b>（基础科学顶刊，35%）+ Clarivate <b>高被引科学家</b>人数（顶尖学者人才存量，30%）。三源均为客观文献计量、不含声誉调查，与综合榜的同行声誉口径互补，尤适合作读研/直博选导师与实验室的参考。<b>方法提示：</b>Leiden 仅覆盖大学、不含中科院/马普所等科研院所，故本榜采用「<b>按在场源归一化加权</b>」——每校在其可比子集上打分，避免科研院所因缺源被误罚；综合分 = Σ(权重×百分位)/Σ(在场权重)。门槛 ≥2 源，共 <b>709 校</b>入池、展示 Top 300（百分位按各源全量池计算）。");
   $("#subWeights").innerHTML = srcs.map(s=>`<span class="w" style="border-color:${SC[s]}66;color:${SC[s]};background:${SC[s]}14">${subData(sub).labels[s]} · ${(subData(sub).weights[s]*100).toFixed(0)}%</span>`).join("");
   const byC={}; rows.forEach(r=>byC[r.country]=(byC[r.country]||0)+1);
   const full=rows.filter(r=>r.appear===srcs.length).length;
@@ -615,7 +621,7 @@ function showSub(sub){
     {v:full,u:"所",t:"全源交叉命中",e:"In all "+srcs.length+" sources"},
     {v:stable?stable.zh:"-",u:"",t:"评价最稳（σ "+(stable?stable.spread:"-")+"）",e:stable?"综合第 "+stable.r+" 名":""}
   ].map(k=>`<div class="kpi"><div class="v" ${k.u?'':"style=font-size:19px"}>${k.v}<small>${k.u}</small></div><div class="t">${k.t}</div><div class="e">${k.e}</div></div>`).join("");
-  $("#cmpPanel").style.display = sub==="comm"?"none":"";
+  $("#cmpPanel").style.display = (sub==="comm"||sub==="grad")?"none":"";
   sHead(); sRender();
   const cOptsS=Object.keys(byC).sort((a,b)=>byC[b]-byC[a]);
   $("#sfc").innerHTML=`<option value="">全部国家/地区 All regions</option>`+cOptsS.map(c=>`<option value="${c}">${c} (${byC[c]})</option>`).join("");
@@ -628,7 +634,7 @@ document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{
   $("#view-sub").style.display = CUR==="main"?"none":"";
   if(CUR!=="main") showSub(CUR);
 }));
-if(["#cs","#ai","#comm"].includes(location.hash)){ setTimeout(()=>{ document.querySelector('.tab[data-v="'+location.hash.slice(1)+'"]').click(); },50); }
+if(["#cs","#ai","#comm","#grad"].includes(location.hash)){ setTimeout(()=>{ document.querySelector('.tab[data-v="'+location.hash.slice(1)+'"]').click(); },50); }
 $("#sq").addEventListener("input",e=>{SQ=e.target.value.trim().toLowerCase();sRender();});
 $("#sfc").addEventListener("change",e=>{SFC=e.target.value;sRender();});
 
@@ -655,6 +661,6 @@ window.addEventListener("load",()=>{ if(echOk()){drawCharts(); window.addEventLi
 import datetime
 gen = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
 html = HTML.replace("__DATA__", DATA_JS).replace("__SUBJECT__", SUBJECT_JS).replace("__GENDATE__", gen)
-outfile = OUT / "index.html"
+outfile = OUT / "世界大学综合排名Top500-2026看板.html"
 outfile.write_text(html, encoding="utf-8")
 print("written:", outfile, outfile.stat().st_size, "bytes")

@@ -12,7 +12,6 @@ import json, re, sys, unicodedata
 from pathlib import Path
 
 BASE = Path(__file__).parent
-DATA = BASE / "data"
 
 WEIGHTS = {"the": 0.30, "usnews": 0.25, "arwu": 0.25, "qs": 0.20}
 EDITIONS = {
@@ -28,7 +27,7 @@ def load_full(short):
     rows = load(f"raw_{short}.tsv")
     for suffix in ("101_300", "301_500"):
         f2 = f"raw_{short}_{suffix}.tsv"
-        if (DATA / f2).exists():
+        if (BASE / f2).exists():
             rows += load(f2)
     return rows
 

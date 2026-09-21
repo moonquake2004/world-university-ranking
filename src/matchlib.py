@@ -5,7 +5,6 @@ from pathlib import Path
 
 from pathlib import Path
 BASE = Path(__file__).parent
-DATA = BASE / "data"
 
 WEIGHTS = {"the": 0.30, "usnews": 0.25, "arwu": 0.25, "qs": 0.20}
 EDITIONS = {
@@ -157,7 +156,7 @@ def norm_key(name):
 
 def load(fname):
     rows = []
-    for line in (DATA / fname).read_text(encoding="utf-8").splitlines():
+    for line in (BASE / fname).read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
         p = line.split("\t")
@@ -177,7 +176,7 @@ def load_full(short):
     f1 = f"raw_{short}.tsv"
     f2 = f"raw_{short}_101_300.tsv"
     rows = load(f1)
-    if (DATA / f2).exists():
+    if (BASE / f2).exists():
         rows += load(f2)
     return rows
 

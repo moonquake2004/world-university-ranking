@@ -1,0 +1,2772 @@
+1	Harvard Univ	1187	40475	7770	0.192
+2	Shanghai Jiao Tong Univ	1138	38913	5312	0.137
+3	Zhejiang Univ	1127	35974	5384	0.15
+4	Sichuan Univ	1408	34717	4679	0.135
+5	Cent S Univ	1533	31557	4442	0.141
+6	Sun Yat-sen Univ	1412	30371	4088	0.135
+7	Univ Toronto	1083	28575	3751	0.131
+8	Huazhong Univ Sci & Technol	1140	28450	4372	0.154
+9	Peking Univ	1124	27880	3980	0.143
+10	Tsinghua Univ	1125	27466	4700	0.171
+11	Xi'an Jiaotong Univ	1419	24690	3265	0.132
+12	Univ Chin Acad Sci	10435	23589	3292	0.14
+13	Harbin Inst Technol	1409	23440	3291	0.14
+14	Wuhan Univ	1141	22809	3520	0.154
+15	Johns Hopkins Univ	1173	22714	3266	0.144
+16	Univ Michigan	1166	22684	3217	0.142
+17	Univ Coll London	325	22410	3618	0.161
+18	Univ Sci & Technol China	1128	21767	3248	0.149
+19	Univ São Paulo	1067	21422	1393	0.065
+20	Fudan Univ	1137	21327	2897	0.136
+21	Stanford Univ	1296	21098	4195	0.199
+22	Jilin Univ	1126	20753	2545	0.123
+23	Shandong Univ	1134	20560	2583	0.126
+24	Seoul Natl Univ	2340	20187	1906	0.094
+25	Tianjin Univ	1411	19893	2788	0.14
+26	Univ Penn	1272	19862	2995	0.151
+27	Univ Oxford	339	19249	3498	0.182
+28	Southeast Univ	1534	19013	2449	0.129
+29	Tongji Univ	1416	18626	2630	0.141
+30	Univ Tokyo	1114	18568	1547	0.083
+31	Chinese Acad Med Sci & Peking Union Med Coll	55225	18514	2133	0.115
+32	Zhengzhou Univ	3340	17867	2286	0.128
+33	Univ Melbourne	1058	17336	2295	0.132
+34	Univ Sydney	1062	17327	2301	0.133
+35	Natl Univ Singapore	1145	17157	2972	0.173
+36	Univ Washington - Seattle	1292	16967	2402	0.142
+37	Cornell Univ	1226	16835	2632	0.156
+38	Ohio State Univ	1202	16712	1879	0.112
+39	Univ British Columbia	1084	16653	2126	0.128
+40	Monash Univ	1057	16635	2369	0.142
+41	Univ Copenhagen	109	16518	2072	0.125
+42	Chongqing Univ	3331	16321	2446	0.15
+43	Univ Cambridge	282	16246	2916	0.179
+44	S China Univ Technol	1536	16192	2252	0.139
+45	Univ Florida	1214	16093	1653	0.103
+46	Northwestern Polytech Univ	1407	16054	2378	0.148
+47	Penn State Univ	1307	15922	1773	0.111
+48	Beijing Inst Technol	3334	15553	2214	0.142
+49	Imperial Coll London	318	15419	2738	0.178
+50	Univ California - Los Angeles	1237	15397	2366	0.154
+51	Columbia Univ	1255	15326	2463	0.161
+52	Univ California - San Diego	1288	15194	2409	0.159
+53	Capital Med Univ	3329	15160	1425	0.094
+54	Yale Univ	1251	14940	2484	0.166
+55	Soochow Univ	3327	14834	1730	0.117
+56	Katholieke Univ Leuven	43	14812	1978	0.134
+57	Univ Queensland	1055	14579	1997	0.137
+58	Univ Pittsburgh	1275	14568	1763	0.121
+59	Beihang Univ	3336	14504	1965	0.135
+60	Dalian Univ Technol	1410	14469	1856	0.128
+61	Duke Univ	1208	14426	2016	0.14
+62	Univ Wisconsin - Madison	1241	14412	1746	0.121
+63	Univ New S Wales	1061	14180	2116	0.149
+64	King Saud Univ	1374	14159	1517	0.107
+65	Univ Alberta	1070	14064	1528	0.109
+66	Univ Hong Kong	1133	14057	2334	0.166
+67	Yonsei Univ	2347	13996	1489	0.106
+68	Case West Reserve Univ	1197	13983	1591	0.114
+69	Univ Minnesota - Twin Cities	1247	13949	1638	0.117
+70	McGill Univ	1076	13947	1804	0.129
+71	Sapienza Univ Rome	446	13937	1551	0.111
+72	Univ Electron Sci & Technol China	3328	13934	2008	0.144
+73	Northeastern Univ - China	3351	13651	1766	0.129
+74	Texas A&M Univ - Coll Station	1199	13545	1425	0.105
+75	NYU	1260	13497	2052	0.152
+76	Nanjing Univ	1136	13426	1859	0.138
+77	Kyoto Univ	1100	13032	957	0.073
+78	Jiangsu Univ	3352	12976	1700	0.131
+79	China Univ Min & Technol	3410	12955	1457	0.112
+80	Northwestern Univ	1192	12716	1985	0.156
+81	Ghent Univ	42	12466	1523	0.122
+82	Univ Sci & Technol Beijing	1538	12327	1711	0.139
+83	Univ Paris-Cité (EPE)	10551	12286	1632	0.133
+84	Univ N Carolina - Chapel Hill	1189	12256	1577	0.129
+85	Xiamen Univ	1413	12251	1546	0.126
+86	Univ Padova	436	12242	1452	0.119
+87	Univ Chicago	1193	12238	1878	0.153
+88	Nanjing Univ Aeronaut & Astronaut	3343	12140	1263	0.104
+89	Univ California - San Francisco	1289	12094	2047	0.169
+90	King's Coll London	846	11999	1841	0.153
+91	Univ California - Davis	1205	11926	1520	0.127
+92	Tech Univ Munich	260	11857	1345	0.113
+93	Univ Illinois - Urbana-Champaign	1308	11851	1412	0.119
+94	Tel Aviv Univ	921	11754	1154	0.098
+95	Univ Manchester	332	11746	1632	0.139
+96	Utrecht Univ	493	11562	1793	0.155
+97	Univ Bologna	409	11433	1268	0.111
+98	Hunan Univ	1537	11405	2068	0.181
+99	Univ Texas - Hlth Sci Ctr - Houston	1222	11376	1670	0.147
+100	Purdue Univ	1230	11354	1242	0.109
+101	Nanyang Technol Univ	1144	11328	2144	0.189
+102	Shenzhen Univ	9594	11236	1736	0.155
+103	Univ South California	1238	11230	1476	0.131
+104	Nanjing Med Univ	3335	11094	1238	0.112
+105	ETH Zürich	703	10983	2024	0.184
+106	Univ Edinburgh	296	10977	1614	0.147
+107	Univ Texas - Austin	1172	10920	1443	0.132
+108	Univ Naples Federico II	435	10891	1411	0.13
+109	Univ Zurich	704	10862	1585	0.146
+110	Univ Groningen	485	10821	1558	0.144
+111	Hong Kong Polytech Univ	1131	10819	2037	0.188
+112	Natl Taiwan Univ	2420	10800	887	0.082
+113	Tohoku Univ	1108	10723	713	0.067
+114	Sungkyunkwan Univ	2361	10702	1025	0.096
+115	Osaka Univ	1106	10696	775	0.072
+116	Vellore Inst Technol	2440	10640	1017	0.096
+117	Univ Milan	429	10640	1249	0.117
+118	Beijing Normal Univ	1414	10630	1439	0.135
+119	Jiangnan Univ	9592	10616	1454	0.137
+120	Rutgers - State Univ New Jersey	9826	10581	1202	0.114
+121	Univ Paris-Saclay (EPE)	10553	10562	1137	0.108
+122	Nanchang Univ	3367	10559	1322	0.125
+123	Emory Univ	1168	10518	1264	0.12
+124	Vanderbilt Univ	1249	10434	1421	0.136
+125	Univ Calgary	1069	10433	1210	0.116
+126	Natl Autonomous Univ Mexico	1121	10421	555	0.053
+127	Univ Nottingham	337	10404	1280	0.123
+128	Nankai Univ	1139	10389	1644	0.158
+129	Univ Lisboa	32912	10373	972	0.094
+130	Univ California - Berkeley	1176	10329	1989	0.193
+131	Lanzhou Univ	1135	10310	1277	0.124
+132	Univ Porto	561	10302	1005	0.098
+133	Wuhan Univ Technol	3359	10286	1280	0.124
+134	MIT	1188	10278	2378	0.231
+135	Korea Univ	2335	10231	1007	0.098
+136	Michigan State Univ	1231	10220	1213	0.119
+137	Qingdao Univ	3395	10171	1488	0.146
+138	Washington Univ St Louis	1294	10158	1662	0.164
+139	Aarhus Univ	102	10138	1192	0.118
+140	Shanghai Univ	1417	10124	1139	0.113
+141	Nanjing Univ Sci & Technol	3346	10123	1123	0.111
+142	China Agr Univ	1415	10069	1698	0.169
+143	Southwest Jiaotong Univ	3375	10040	1427	0.142
+144	Heidelberg Univ	246	9994	1302	0.13
+145	Chin Univ Hong Kong	1129	9983	1626	0.163
+146	Lund Univ	679	9978	1150	0.115
+147	Univ Oslo	499	9871	1197	0.121
+148	Univ Utah	1286	9868	1053	0.107
+149	King Abdulaziz Univ	1373	9741	1092	0.112
+150	Karolinska Inst	684	9737	1455	0.149
+151	Beijing Univ Technol	3358	9694	1137	0.117
+152	Univ Helsinki	123	9670	1145	0.118
+153	RWTH Aachen Univ	210	9655	933	0.097
+154	Ludwig-Maximilians-Univ München	259	9539	1268	0.133
+155	Univ Ottawa	1079	9535	1049	0.11
+156	Tehran Univ Med Sci	1515	9486	707	0.075
+157	Univ Montréal	1077	9467	953	0.101
+158	Univ Colorado - Denver	1206	9435	1078	0.114
+159	Cairo Univ	1529	9365	689	0.074
+160	Sorbonne Univ	18682	9362	1123	0.12
+161	Univ Tehran	1516	9349	1038	0.111
+162	Univ Estadual Paulista	1461	9232	464	0.05
+163	Politec Milano	426	9106	931	0.102
+164	Delft Univ Technol	482	9089	1284	0.141
+165	Northwest Agr & Forestry Univ	3356	9081	1416	0.156
+166	Norwegian Univ Sci & Technol	502	9071	1048	0.116
+167	West Univ - Canada	1075	9059	952	0.105
+168	Xidian Univ	3341	9002	1211	0.135
+169	McMaster Univ	1073	8950	1157	0.129
+170	Arizona State Univ	1303	8915	1066	0.12
+171	Univ Arizona	1305	8914	993	0.111
+172	Erasmus Univ Rotterdam	490	8838	1344	0.152
+173	Univ Campinas	1064	8781	676	0.077
+174	Yangzhou Univ	3374	8707	972	0.112
+175	N Carolina State Univ	1281	8689	884	0.102
+176	Univ California - Irvine	1225	8684	1134	0.131
+177	Uppsala Univ	689	8595	1001	0.117
+178	Natl Univ Defense Technol	3348	8578	822	0.096
+179	Univ Birmingham	277	8567	1272	0.148
+180	Southwest Univ	3353	8542	1002	0.117
+181	Hohai Univ	3413	8539	1024	0.12
+182	Radboud Univ	489	8516	1257	0.148
+183	Univ Hamburg	243	8512	1015	0.119
+184	Univ Florence	419	8452	937	0.111
+185	Leiden Univ	487	8449	1298	0.154
+186	Univ Cincinnati	1195	8433	846	0.1
+187	Kyushu Univ	1092	8411	577	0.069
+188	Jinan Univ	3362	8406	1099	0.131
+189	SRM Inst Sci & Technol	19138	8402	525	0.062
+190	Lomonosov Moscow State Univ	1142	8386	241	0.029
+191	E China Univ Sci & Technol	1418	8382	922	0.11
+192	Banaras Hindu Univ	2448	8238	549	0.067
+193	Hokkaido Univ	1107	8199	507	0.062
+194	Univ Waterloo	1086	8183	980	0.12
+195	Univ Auckland	1122	8146	932	0.114
+196	Boston Univ	1180	8126	1138	0.14
+197	South Med Univ	3370	8126	1107	0.136
+198	Univ Liverpool	315	8112	1027	0.127
+199	Beijing Jiaotong Univ	3364	8110	939	0.116
+200	Univ Amsterdam	479	8063	1279	0.159
+201	Karlsruhe Inst Technol	1399	8058	728	0.09
+202	Guangxi Univ	3401	8024	870	0.108
+203	China Med Univ	3338	8015	1007	0.126
+204	Univ Leeds	309	8010	1121	0.14
+205	Georgia Inst Technol	1169	8002	1035	0.129
+206	Ocean Univ China	3350	7987	929	0.116
+207	Virginia Tech	1178	7940	851	0.107
+208	Nagoya Univ	1102	7932	511	0.064
+209	Zhejiang Univ Technol	3357	7929	965	0.122
+210	Univ Barcelona	626	7908	870	0.11
+211	All India Inst Med Sci - New Dehli	2443	7881	376	0.048
+212	Univ Maryland - College Park	1198	7816	1114	0.142
+213	Natl & Kapodistrian Univ Athens	362	7766	854	0.11
+214	Univ Bristol	280	7749	1099	0.142
+215	Univ Sheffield	348	7730	1022	0.132
+216	Univ Miami	1245	7710	866	0.112
+217	China Univ Geosci	3380	7709	1235	0.16
+218	Friedrich-Alexander-Univ Erlangen-Nürnberg	232	7686	816	0.106
+219	Univ Sains Malaysia	1363	7663	779	0.102
+220	Hefei Univ Technol	3394	7646	819	0.107
+221	E China Normal Univ	1535	7645	984	0.129
+222	Wenzhou Med Univ	3397	7635	868	0.114
+223	Univ Bern	693	7634	1031	0.135
+224	Chongqing Med Univ	3363	7615	769	0.101
+225	Icahn Sch Med - Mt Sinai	1258	7594	1147	0.151
+226	Univ Delhi	2452	7590	503	0.066
+227	Univ Belgrade	1475	7585	463	0.061
+228	N China Elect Power Univ	3421	7582	920	0.121
+229	Aristotle Univ Thessaloniki	371	7548	695	0.092
+230	Univ Turin	454	7542	931	0.123
+231	Nanjing Tech Univ	3347	7506	832	0.111
+232	Univ Gothenburg	673	7499	923	0.123
+233	Nanjing Agr Univ	3339	7491	990	0.132
+234	Charles Univ	95	7488	632	0.084
+235	Complutense Univ Madrid	649	7481	651	0.087
+236	Univ Virginia	1191	7450	869	0.117
+237	Natl Yang Ming Chiao Tung Univ	34030	7437	597	0.08
+238	Ningbo Univ	3391	7432	755	0.102
+239	Univ Pisa	441	7432	858	0.115
+240	City Univ Hong Kong	1130	7387	1348	0.183
+241	Beijing Univ Chem Technol	3332	7383	995	0.135
+242	Guangdong Univ Technol	9604	7335	995	0.136
+243	Fuzhou Univ	3361	7331	942	0.128
+244	Univ Glasgow	301	7294	1086	0.149
+245	China Univ Petrol E China	9678	7285	997	0.137
+246	South Univ Sci & Technol China	18700	7258	1240	0.171
+247	Univ Iowa	1224	7236	755	0.104
+248	Kunming Univ Sci & Technol	3419	7236	691	0.096
+249	Tech Univ Dresden	228	7226	717	0.099
+250	Hebrew Univ Jerusalem	916	7186	715	0.099
+251	Indian Inst Technol Kharagpur	2441	7182	615	0.086
+252	Univ Illinois - Chicago	1194	7146	787	0.11
+253	Fed Univ Rio Grande do Sul	1065	7130	435	0.061
+254	Univ Adelaide	1054	7120	940	0.132
+255	Indian Inst Technol Delhi	2446	7108	594	0.084
+256	Univ Alabama - Birmingham	1177	7106	791	0.111
+257	Baylor Coll Med	1219	7102	893	0.126
+258	Univ Fed Rio de Janeiro	1066	7099	442	0.062
+259	Univ Seville	665	7069	654	0.093
+260	Univ West Australia	1060	7019	816	0.116
+261	Nanjing Forestry Univ	9662	7011	1124	0.16
+262	Univ Connecticut	1299	7006	799	0.114
+263	Univ Fed Minas Gerais	1063	7003	403	0.058
+264	Univ Southampton	349	6999	909	0.13
+265	Korea Adv Inst Sci & Technol	2406	6989	869	0.124
+266	Univ Georgia - Athens	1167	6954	708	0.102
+267	Univ Granada	638	6938	701	0.101
+268	Tech Univ Denmark	111	6934	863	0.124
+269	Hanyang Univ	2383	6885	749	0.109
+270	Shandong Univ Sci & Technol	10338	6884	745	0.108
+271	Kyung Hee Univ	2373	6870	622	0.09
+272	Huazhong Agr Univ	3337	6862	1008	0.147
+273	Deakin Univ	3688	6829	1013	0.148
+274	Harbin Engn Univ	3388	6802	754	0.111
+275	Univ Zagreb	78	6782	488	0.072
+276	Univ Kentucky	1233	6695	618	0.092
+277	Univ Malaya	1452	6686	656	0.098
+278	Australian Natl Univ	1056	6672	848	0.127
+279	Univ Kebangsaan Malaysia	167	6645	745	0.112
+280	Indian Inst Technol Madras	2445	6616	417	0.063
+281	Guizhou Univ	9654	6595	687	0.104
+282	Univ Valencia	668	6587	687	0.104
+283	Mahidol Univ	2525	6570	454	0.069
+284	Maastricht Univ	488	6559	872	0.133
+285	Univ Putra Malaysia	3728	6548	706	0.108
+286	Ecole Polytech Féd Lausanne	697	6529	1126	0.172
+287	Freie Univ Berlin	215	6527	852	0.13
+288	Wageningen Univ & Res	494	6527	931	0.143
+289	Univ Aut Barcelona	625	6516	685	0.105
+290	Univ Tennessee - Knoxville	1228	6505	723	0.111
+291	Brown Univ	1278	6468	805	0.124
+292	Univ Geneva	696	6451	893	0.138
+293	Univ Technol - Sydney	1338	6443	1063	0.165
+294	AGH Univ Sci & Technol	514	6426	415	0.065
+295	Kyungpook Natl Univ	2354	6411	488	0.076
+296	Indian Inst Technol Bombay	2436	6403	460	0.072
+297	Univ Coll Dublin	400	6370	805	0.126
+298	Pusan Natl Univ	2408	6341	458	0.072
+299	Beijing Univ Posts & Telecom	3371	6299	685	0.109
+300	Univ Colorado - Boulder	1184	6296	903	0.143
+301	Fujian Med Univ	9600	6278	534	0.085
+302	Griffith Univ	1335	6249	762	0.122
+303	Newcastle Univ	335	6244	831	0.133
+304	Univ S Florida - Tampa	1302	6222	581	0.093
+305	Princeton Univ	1277	6201	1366	0.22
+306	Jagiellonian Univ	516	6199	483	0.078
+307	Univ Indonesia	9000	6187	198	0.032
+308	Iowa State Univ	1164	6183	605	0.098
+309	Univ Freiburg	236	6176	774	0.125
+310	S China Agr Univ	3373	6167	827	0.134
+311	Chulalongkorn Univ	2531	6167	457	0.074
+312	Natl Cheng Kung Univ	2418	6139	458	0.075
+313	Technion - Israel Inst Technol	1046	6093	572	0.094
+314	Univ Coimbra	549	6066	592	0.098
+315	Univ Texas - Southwestern Med Ctr - Dallas	1553	6046	892	0.147
+316	Politec Torino	453	6037	633	0.105
+317	Cardiff Univ	849	6006	753	0.125
+318	Univ Tsukuba	1118	6005	300	0.05
+319	Shahid Beheshti Univ Med Sci	1525	6000	467	0.078
+320	Univ Basel	690	5994	868	0.145
+321	Univ Ljubljana	619	5977	521	0.087
+322	Aalborg Univ	101	5970	672	0.113
+323	Univ Kansas	1232	5956	521	0.088
+324	Humboldt Univ Berlin	216	5947	780	0.131
+325	Nanjing Univ Info Sci & Technol	9610	5945	729	0.123
+326	Anhui Med Univ	3386	5921	641	0.108
+327	Taiyuan Univ Technol	3420	5905	492	0.083
+328	Ben-Gurion Univ Negev	922	5892	445	0.075
+329	Univ South Denmark	112	5884	654	0.111
+330	Univ Hlth Sci - Turkey	33166	5881	201	0.034
+331	Univ Warwick	289	5862	783	0.134
+332	Indian Inst Technol Roorkee	2466	5852	538	0.092
+333	Univ Genoa	421	5843	591	0.101
+334	Univ Shanghai Sci & Technol	18001	5838	668	0.114
+335	Vrije Univ Amsterdam	480	5831	932	0.16
+336	Manipal Acad High Educ	2438	5815	483	0.083
+337	Queensland Univ Technol	1435	5798	778	0.134
+338	Univ Aut Madrid	648	5787	638	0.11
+339	Univ Johannesburg	1506	5778	534	0.092
+340	Univ Bonn	220	5754	678	0.118
+341	Univ Laval	1082	5753	551	0.096
+342	Donghua Univ	3349	5743	751	0.131
+343	Eberhard Karls Univ Tübingen	270	5723	651	0.114
+344	Univ Missouri - Columbia	1200	5702	558	0.098
+345	Caltech	1269	5701	1110	0.195
+346	RMIT Univ	1336	5696	882	0.155
+347	Univ Rochester	1285	5684	651	0.115
+348	Indian Inst Sci	2435	5681	409	0.072
+349	Nantong Univ	3409	5648	524	0.093
+350	Ain Shams Univ	1528	5646	383	0.068
+351	Hebei Univ Technol	9624	5633	586	0.104
+352	Hiroshima Univ	1095	5629	301	0.053
+353	Univ KwaZulu-Natal	1502	5622	470	0.084
+354	Goethe Univ Frankfurt	235	5605	658	0.117
+355	Univ Cologne	252	5604	661	0.118
+356	Univ Maryland - Baltimore	1174	5602	559	0.1
+357	Univ Vienna	24	5534	700	0.126
+358	Univ Politec València	667	5521	473	0.086
+359	Univ Münster	883	5518	663	0.12
+360	Postgrad Inst Med Educ & Res	2455	5516	255	0.046
+361	Chang'an Univ	18004	5507	767	0.139
+362	S China Normal Univ	3344	5496	654	0.119
+363	Tokyo Inst Technol	1112	5475	319	0.058
+364	Univ Lausanne	698	5475	760	0.139
+365	Aix-Marseille Univ	2641	5472	566	0.104
+366	Keio Univ	1111	5471	373	0.068
+367	Med Univ Vienna	1317	5440	670	0.123
+368	Univ Buffalo - SUNY	1185	5440	545	0.1
+369	Univ Grenoble Alpes	10561	5421	500	0.092
+370	Univ Basque Country	644	5417	515	0.095
+371	Nanjing Normal Univ	3366	5407	609	0.113
+372	Colorado State Univ	1213	5366	555	0.103
+373	Univ Exeter	299	5365	854	0.159
+374	Univ Teknol Malaysia	9550	5364	574	0.107
+375	Georg-August-Univ Göttingen	238	5340	704	0.132
+376	China Univ Petrol Beijing	3416	5328	622	0.117
+377	Univ Manitoba	1087	5325	482	0.091
+378	Queen's Univ	1074	5323	544	0.102
+379	Curtin Univ	3687	5316	728	0.137
+380	Dalhousie Univ	1072	5307	531	0.1
+381	Virginia Commonwealth Univ	1283	5286	522	0.099
+382	Univ Otago	1123	5257	500	0.095
+383	Sichuan Agr Univ	9589	5246	649	0.124
+384	Indian Inst Technol Guwahati	2499	5243	368	0.07
+385	Macquarie Univ	1437	5230	722	0.138
+386	KTH Royal Inst Technol	685	5230	614	0.117
+387	Univ Witwatersrand	1147	5217	386	0.074
+388	Univ Politec Catalunya - BarcelonaTech	627	5205	496	0.095
+389	Trinity Coll Dublin, Univ Dublin	399	5196	669	0.129
+390	Univ S Carolina - Columbia	1201	5190	544	0.105
+391	Univ Montpellier (EPE)	70011	5186	558	0.108
+392	Claude Bernard Lyon 1 Univ	2662	5156	533	0.103
+393	Univ Aveiro	547	5154	473	0.092
+394	Natl Polytech Inst - Mexico	3729	5135	261	0.051
+395	Qingdao Univ Sci & Technol	3379	5127	533	0.104
+396	Hacettepe Univ	711	5124	319	0.062
+397	GuangZhou Univ	10326	5080	710	0.14
+398	Univ Palermo	437	5078	559	0.11
+399	Univ Bari Aldo Moro	407	5074	669	0.132
+400	Queen Mary Univ London	1034	5071	811	0.16
+401	Guangzhou Med Univ	9642	5071	528	0.104
+402	Univ Cattolica Sacro Cuore	427	5070	647	0.128
+403	Cath Univ Korea	2397	5070	364	0.072
+404	Harbin Med Univ	3360	5060	488	0.096
+405	Univ Cent Florida	1462	5051	555	0.11
+406	Univ Saskatchewan	1081	5038	461	0.092
+407	Univ Rome Tor Vergata	447	5037	524	0.104
+408	Chung-Ang Univ	2856	5019	448	0.089
+409	Univ Duisburg-Essen	233	5010	502	0.1
+410	Henan Univ	3383	5004	655	0.131
+411	Univ Pretoria	1431	5000	353	0.071
+412	Univ Antwerp	35	4997	599	0.12
+413	Tarbiat Modares Univ	1519	4989	469	0.094
+414	Univ Bordeaux	7268	4983	548	0.11
+415	Texas Tech Univ	1240	4970	414	0.083
+416	Iran Univ Sci & Technol	1523	4964	630	0.127
+417	Univ Oklahoma	1265	4945	497	0.101
+418	Yanshan Univ	3396	4944	518	0.105
+419	Oregon Hlth & Sci Univ	1276	4921	595	0.121
+420	Univ Fed Santa Catarina	1460	4918	351	0.071
+421	Ruhr-Univ Bochum	219	4905	534	0.109
+422	Univ Bergen	497	4886	549	0.112
+423	Birla Inst Technol & Sci	18558	4882	445	0.091
+424	Mansoura Univ	3709	4874	451	0.092
+425	Nanjing Univ Posts & Telecom	9636	4873	469	0.096
+426	Anhui Univ	3406	4870	565	0.116
+427	Univ Guelph	1071	4869	499	0.102
+428	Univ Catania	416	4865	600	0.123
+429	Eindhoven Univ Technol	483	4865	613	0.126
+430	Tabriz Univ Med Sci	3721	4857	546	0.112
+431	Johannes Gutenberg Univ Mainz	257	4850	610	0.126
+432	Stockholm Univ	687	4820	590	0.122
+433	Wayne State Univ	1207	4786	429	0.09
+434	Southwest Petrol Univ	18000	4776	497	0.104
+435	Univ Minho	548	4765	434	0.091
+436	Chonnam Natl Univ	2357	4761	354	0.074
+437	Florida State Univ	1301	4755	533	0.112
+438	Univ California - Santa Barbara	1290	4742	771	0.163
+439	China Univ Geosci Beijing	54644	4727	574	0.121
+440	St Petersburg State Univ	1143	4723	144	0.031
+441	Hainan Univ	18037	4719	550	0.117
+442	Univ PSL	10554	4717	617	0.131
+443	Univ Cape Town	1146	4687	418	0.089
+444	Alexandria Univ	1349	4675	394	0.084
+445	Washington State Univ	1280	4672	487	0.104
+446	Shaanxi Normal Univ	3368	4670	516	0.11
+447	Stellenbosch Univ	1432	4668	342	0.073
+448	George Washington Univ	1309	4657	501	0.108
+449	Tech Univ Madrid	651	4655	367	0.079
+450	Univ Ulsan	2389	4651	371	0.08
+451	Shiraz Univ Med Sci	1521	4645	330	0.071
+452	Yunnan Univ	3382	4615	448	0.097
+453	Chiang Mai Univ	2529	4605	357	0.078
+454	Stony Brook Univ - SUNY	1298	4603	538	0.117
+455	Beijing Forestry Univ	3418	4593	577	0.126
+456	Northwest Univ	3392	4570	466	0.102
+457	Linköping Univ	677	4554	512	0.112
+458	Amirkabir Univ Technol	1520	4530	495	0.109
+459	Chang Gung Univ	2425	4516	370	0.082
+460	Dalian Maritime Univ	10332	4512	521	0.115
+461	Univ Wollongong	1433	4502	560	0.124
+462	Xi'an Univ Arch & Technol	18012	4497	594	0.132
+463	Carnegie Mellon Univ	1274	4479	628	0.14
+464	Northeast Agr Univ	9541	4477	814	0.182
+465	Amrita Univ	9928	4477	210	0.047
+466	Tampere Univ	34448	4474	437	0.098
+467	Leipzig Univ	254	4449	492	0.111
+468	Oregon State Univ	1203	4448	409	0.092
+469	Univ Houston	1221	4431	479	0.108
+470	Indian Inst Technol Kanpur	2451	4420	307	0.069
+471	Iran Univ Med Sci	9950	4416	351	0.079
+472	Julius-Maximilians-Univ Würzburg	273	4411	570	0.129
+473	Univ Newcastle	1059	4399	526	0.119
+474	Indiana Univ - Bloomington	1179	4396	510	0.116
+475	COMSATS Inst Info Technol	10261	4382	580	0.132
+476	Auburn Univ	1170	4382	340	0.078
+477	Aalto Univ	1400	4379	566	0.129
+478	King Khalid Univ	9695	4377	482	0.11
+479	Univ Fed São Paulo	1459	4370	256	0.058
+480	Univ Stuttgart	269	4360	332	0.076
+481	King Abdullah Univ Sci & Technol	9696	4357	805	0.185
+482	Univ Zaragoza	671	4356	401	0.092
+483	Xinjiang Univ	9620	4356	408	0.094
+484	W Virginia Univ	1248	4356	351	0.081
+485	Univ Massachusetts Amherst	1165	4355	522	0.12
+486	Univ Salerno	813	4351	488	0.112
+487	Heinrich Heine Univ Düsseldorf	229	4347	472	0.109
+488	Kobe Univ	1098	4342	263	0.061
+489	Tech Univ Berlin	217	4342	435	0.1
+490	Hangzhou Dianzi Univ	9676	4336	408	0.094
+491	Univ Milano-Bicocca	430	4335	491	0.113
+492	Hebei Med Univ	3408	4322	302	0.07
+493	Univ York	357	4318	574	0.133
+494	Queen's Univ Belfast	781	4313	603	0.14
+495	Univ Campania Luigi Vanvitelli	433	4307	579	0.134
+496	King Fahd Univ Petrol & Minerals	1375	4295	624	0.145
+497	Xi'An Univ Technol	10330	4292	447	0.104
+498	Zhejiang Sci-Tech Univ	3417	4289	418	0.097
+499	Northeast Forestry Univ	3399	4286	435	0.101
+500	Univ Twente	484	4273	496	0.116
+501	Tufts Univ	1183	4268	535	0.125
+502	Univ Catholique Louvain	45	4261	467	0.11
+503	Univ Warsaw	538	4260	343	0.081
+504	Chungnam Natl Univ	2371	4252	275	0.065
+505	Univ California - Riverside	1284	4245	512	0.121
+506	Univ Turku	133	4221	461	0.109
+507	Wuhan Univ Sci & Technol	10325	4217	462	0.109
+508	Tech Univ Darmstadt	226	4214	347	0.082
+509	Univ Nebraska - Lincoln	1234	4180	424	0.101
+510	Chalmers Univ Technol	672	4178	517	0.124
+511	İstanbul Tech Univ	730	4178	331	0.079
+512	York Univ	1440	4154	404	0.097
+513	Univ Gadjah Mada	9020	4147	160	0.039
+514	Shandong First Med Univ	52672	4145	397	0.096
+515	Qatar Univ	10000	4123	677	0.164
+516	Univ Fed Paraná	1479	4116	233	0.057
+517	La Trobe Univ	1436	4106	521	0.127
+518	Vienna Univ Technol	19	4097	390	0.095
+519	Durham Univ	293	4090	586	0.143
+520	Univ Lorraine	2701	4089	352	0.086
+521	Clemson Univ	1196	4083	376	0.092
+522	Univ Delaware	1263	4067	454	0.112
+523	Univ Brasília	1483	4065	234	0.058
+524	Jeonbuk Natl Univ	2395	4044	320	0.079
+525	Univ Tasmania	1434	4025	465	0.116
+526	Univ Strasbourg	2634	4020	403	0.1
+527	Tianjin Med Univ	3376	4017	416	0.104
+528	Zagazig Univ	3711	4001	442	0.11
+529	Univ Patras	369	3991	381	0.095
+530	Univ Libre Bruxelles	40	3987	418	0.105
+531	Univ Macau	156	3983	678	0.17
+532	Univ Perugia	812	3969	421	0.106
+533	Mohammed V Univ	10445	3955	220	0.056
+534	Georgetown Univ	1310	3955	417	0.105
+535	Univ New Mexico	1163	3938	399	0.101
+536	Air Force Med Univ	3330	3935	522	0.133
+537	Hunan Normal Univ	3389	3905	430	0.11
+538	Shandong Normal Univ	3407	3898	446	0.114
+539	Jadavpur Univ	2454	3888	266	0.068
+540	Henan Polytech Univ	9682	3884	396	0.102
+541	Univ Tabriz	1524	3883	418	0.108
+542	Umeå Univ	688	3873	379	0.098
+543	Ferdowsi Univ Mashhad	3715	3855	326	0.084
+544	Anna Univ	2462	3851	238	0.062
+545	Louisiana State Univ	1175	3848	362	0.094
+546	Univ Pavia	439	3842	434	0.113
+547	Wake Forest Univ	1311	3842	366	0.095
+548	Army Med Univ	3342	3837	486	0.127
+549	Univ Strathclyde	302	3832	446	0.116
+550	Saveetha Univ	54815	3827	313	0.082
+551	Univ Oulu	128	3825	433	0.113
+552	Chiba Univ	1091	3825	205	0.054
+553	Friedrich Schiller Univ Jena	247	3820	387	0.101
+554	Vrije Univ Brussel	36	3810	412	0.108
+555	China Pharmaceut Univ	3354	3799	492	0.13
+556	Isfahan Univ Med Sci	9463	3794	231	0.061
+557	Lanzhou Univ Technol	9674	3792	271	0.072
+558	Univ Verona	461	3784	431	0.114
+559	Fed Univ Pernambuco	1481	3779	183	0.048
+560	Univ Teknol MARA Syst	55355	3777	186	0.049
+561	Aligarh Muslim Univ	2460	3766	391	0.104
+562	Univ Messina	424	3756	464	0.124
+563	Univ Liège	44	3753	382	0.102
+564	Kiel Univ	251	3751	361	0.096
+565	Warsaw Univ Technol	539	3746	196	0.052
+566	Univ Innsbruck	10	3712	409	0.11
+567	Shanghai Univ Tradit Chin Med	9632	3711	460	0.124
+568	Renmin Univ China	9596	3709	458	0.123
+569	West Sydney Univ	2945	3709	450	0.121
+570	Fujian Agr & Forestry Univ	18002	3708	449	0.121
+571	Waseda Univ	1115	3700	223	0.06
+572	Temple Univ	1270	3696	445	0.121
+573	Vietnam Natl Univ - Ho Chi Minh City	1377	3691	221	0.06
+574	Natl Tech Univ Athens	363	3688	371	0.101
+575	Masaryk Univ	84	3688	308	0.084
+576	Mashhad Univ Med Sci	9444	3681	325	0.088
+577	Med Coll Wisconsin	1246	3681	323	0.088
+578	Sharif Univ Technol	1517	3679	374	0.102
+579	Kansas State Univ	1242	3669	292	0.08
+580	Pohang Univ Sci & Technol	2407	3667	451	0.123
+581	Indian Inst Technol (Indian Sch Mines)	16445	3663	409	0.112
+582	Concordia Univ	1439	3663	410	0.112
+583	Shiraz Univ	1518	3644	277	0.076
+584	Univ Jinan	3402	3642	368	0.101
+585	Northeastern Univ - USA	1182	3639	491	0.135
+586	Yeungnam Univ	9700	3635	440	0.121
+587	Univ Sfax	1379	3635	222	0.061
+588	Northeast Normal Univ	3345	3633	406	0.112
+589	Univ Lille (EPE)	70010	3631	323	0.089
+590	Gottfried Wilhelm Leibniz Univ Hannover	245	3629	307	0.085
+591	Florida Intl Univ	1540	3628	335	0.092
+592	Univ Parma	438	3618	362	0.1
+593	Konkuk Univ	2404	3616	302	0.084
+594	Guangxi Med Univ	9597	3614	273	0.076
+595	Flinders Univ	1339	3613	402	0.111
+596	Homi Bhabha Natl Inst	19131	3612	175	0.048
+597	Simon Fraser Univ	1068	3611	389	0.108
+598	Bar-Ilan Univ	920	3586	284	0.079
+599	Univ Louisville	1239	3577	320	0.089
+600	Acad Sci & Innovat Res	19132	3575	313	0.088
+601	Univ Bath	276	3573	493	0.138
+602	Univ Modena & Reggio Emilia	431	3561	371	0.104
+603	Okayama Univ	1104	3559	192	0.054
+604	Univ Chile	1088	3558	311	0.087
+605	Shandong Univ Technol	9652	3551	303	0.085
+606	Univ Coll Cork	395	3532	423	0.12
+607	Shahid Beheshti Univ	3717	3527	304	0.086
+608	N Univ China	9680	3526	346	0.098
+609	Changzhou Univ	9658	3525	351	0.1
+610	Ankara Univ	707	3520	195	0.055
+611	Natl Inst Technol Rourkela	9440	3515	319	0.091
+612	Med Univ S Carolina	1190	3512	381	0.108
+613	Univ Notre Dame	1266	3509	392	0.112
+614	Univ Alabama - Tuscaloosa	1306	3506	332	0.095
+615	Univ Toulouse (EPE)	70034	3501	371	0.106
+616	Shaanxi Univ Sci & Technol	9668	3493	398	0.114
+617	Shanxi Univ	3384	3488	325	0.093
+618	Xiangtan Univ	3369	3488	346	0.099
+619	Chengdu Univ Technol	18021	3488	361	0.103
+620	Al-Azhar Univ	18555	3484	331	0.095
+621	Osaka Metropolitan Univ	70017	3475	154	0.044
+622	Jiangsu Univ Sci & Technol	54733	3468	341	0.098
+623	Univ Castilla-La Mancha	634	3460	356	0.103
+624	Swinburne Univ Technol	2943	3446	531	0.154
+625	Natl Tsing Hua Univ	2417	3445	276	0.08
+626	Fed Univ São Carlos	1485	3439	210	0.061
+627	Tianjin Polytech Univ	3423	3432	287	0.084
+628	Univ Santiago Compostela	664	3420	338	0.099
+629	Silesian Univ Technol	509	3415	285	0.083
+630	Zhejiang Normal Univ	3372	3411	546	0.16
+631	Taif Univ	18971	3407	387	0.114
+632	Univ S China	18043	3399	382	0.112
+633	Univ Regensburg	266	3398	365	0.107
+634	Carleton Univ	1078	3378	321	0.095
+635	Univ Murcia	656	3377	307	0.091
+636	Cent China Normal Univ	3381	3374	523	0.155
+637	Univ Nova Lisboa	559	3373	358	0.106
+638	Pontificia Univ Católica Chile	1458	3365	269	0.08
+639	Mem Univ Newfoundland	1441	3353	351	0.105
+640	Univ Airlangga	9024	3348	138	0.041
+641	Gachon Univ	18069	3345	356	0.106
+642	Gazi Univ	710	3344	270	0.081
+643	George Mason Univ	1474	3343	319	0.096
+644	Rush Univ	1469	3337	363	0.109
+645	Lovely Professional Univ	52998	3336	329	0.099
+646	Shandong Agr Univ	3390	3336	437	0.131
+647	Univ Malaga	654	3335	295	0.088
+648	Tulane Univ	1253	3329	378	0.113
+649	Guangzhou Univ Chin Med	18546	3325	398	0.12
+650	Taipei Med Univ	3756	3324	368	0.111
+651	Univ S Australia	1337	3316	390	0.118
+652	Univ Thessaly	373	3305	288	0.087
+653	Univ Politec Marche	405	3303	400	0.121
+654	Univ Trento	455	3301	378	0.115
+655	Lancaster Univ	794	3294	434	0.132
+656	Loughborough Univ	330	3293	393	0.119
+657	Ulm Univ	885	3293	356	0.108
+658	Ege Univ	737	3292	189	0.057
+659	Northwest Normal Univ	3403	3287	270	0.082
+660	Czech Tech Univ Prague	97	3286	174	0.053
+661	Univ Salamanca	662	3285	273	0.083
+662	Univ Leicester	311	3277	434	0.133
+663	Khon Kaen Univ	2533	3261	196	0.06
+664	Delhi Technol Univ	19135	3258	283	0.087
+665	Univ N Texas	3472	3254	308	0.095
+666	Second Mil Med Univ	3333	3248	345	0.106
+667	Drexel Univ	1463	3239	316	0.097
+668	Ural Fed Univ	10084	3238	127	0.039
+669	Univ S Africa	1505	3226	236	0.073
+670	Shanghai Univ Engn Sci	18042	3226	285	0.088
+671	Prince Sattam bin Abdulaziz Univ	10726	3211	393	0.123
+672	Univ Surrey	303	3209	471	0.147
+673	Inha Univ	2369	3204	272	0.085
+674	Xuzhou Med Coll	10327	3197	336	0.105
+675	Univ Haifa	924	3196	249	0.078
+676	Imam Abdulrahman Bin Faisal Univ	53028	3192	355	0.111
+677	Massey Univ	1451	3187	286	0.09
+678	Anhui Univ Sci & Technol	18701	3186	215	0.068
+679	Umm Al Qura Univ	18970	3185	372	0.117
+680	Univ Punjab	9580	3169	291	0.092
+681	Nanjing Univ Chin Med	10333	3162	378	0.12
+682	Fed Univ Santa Maria	1482	3159	160	0.051
+683	Univ Galway	402	3151	412	0.131
+684	Shantou Univ	3411	3151	373	0.118
+685	Isfahan Univ Technol	1522	3148	266	0.085
+686	Univ East Finland	1477	3147	341	0.108
+687	Thomas Jefferson Univ	1271	3144	333	0.106
+688	China Med Univ - Taiwan	3753	3131	343	0.109
+689	Univ Nebraska Med Ctr	3471	3116	343	0.11
+690	Dalian Med Univ	9612	3111	337	0.108
+691	İstanbul Univ	731	3104	136	0.044
+692	Univ Cagliari	411	3094	295	0.095
+693	Saarland Univ	267	3092	294	0.095
+694	Hannover Med Sch	244	3090	321	0.104
+695	Univ Oviedo	657	3082	248	0.08
+696	Kangwon Natl Univ	3740	3081	214	0.07
+697	Dongguk Univ	9723	3078	280	0.091
+698	Tanta Univ	9430	3074	270	0.088
+699	Xi'an Univ Sci & Technol	19158	3071	320	0.104
+700	Univ Victoria	1085	3070	365	0.119
+701	Prince Songkla Univ	2535	3068	173	0.057
+702	Toronto Metropolitan Univ	3573	3067	304	0.099
+703	Amity Univ Noida	19136	3064	202	0.066
+704	Univ Baghdad	18962	3064	124	0.041
+705	Justus Liebig Univ Giessen	237	3058	308	0.101
+706	Islamic Azad Univ - Sci & Res - Tehran	9491	3053	248	0.081
+707	Yangtze Univ	18711	3053	262	0.086
+708	Univ Novi Sad	55	3050	198	0.065
+709	Gyeongsang Natl Univ	3737	3048	241	0.079
+710	Rice Univ	1220	3046	498	0.163
+711	Henan Univ Sci & Technol	9650	3042	274	0.09
+712	Chongqing Univ Posts & Telecom	18542	3041	326	0.107
+713	Tecnol Monterrey	9568	3024	340	0.112
+714	Univ Fed Viçosa	1480	3021	151	0.05
+715	Univ Fed Ceará	1484	3019	150	0.05
+716	Qassim Univ	53030	3014	290	0.096
+717	Univ Fed Fluminense	1489	3013	160	0.053
+718	Univ Buenos Aires	1052	3013	158	0.053
+719	HSE Univ	1371	3005	192	0.064
+720	Ewha Womans Univ	2380	3001	269	0.09
+721	Addis Ababa Univ	16446	3001	269	0.09
+722	Brigham Young Univ	1279	2997	270	0.09
+723	North-West Univ	1507	2987	255	0.086
+724	Univ Rennes (EPE)	70014	2987	272	0.091
+725	Dartmouth Coll	1216	2983	367	0.123
+726	Swed Univ Agr Sci	854	2982	355	0.119
+727	Univ Nigeria	18801	2982	149	0.05
+728	Bandung Inst Technol	9012	2981	127	0.042
+729	Fed Univ Rio Grande Norte	1498	2970	176	0.059
+730	Adam Mickiewicz Univ Poznań	522	2968	233	0.079
+731	Natl Univ Sci & Technol - Islamabad	18066	2963	391	0.132
+732	Yıldız Tech Univ	735	2959	264	0.089
+733	Shanxi Med Univ	18023	2956	253	0.086
+734	United Arab Emirates Univ	9812	2956	421	0.142
+735	Guilin Univ Technol	18017	2955	247	0.084
+736	Kanazawa Univ	1097	2951	160	0.054
+737	Univ Alicante	622	2948	242	0.082
+738	Southwest Univ Sci & Technol	18010	2946	266	0.09
+739	Univ Ghana	9301	2943	194	0.066
+740	Univ Natl Colombia	3708	2939	125	0.043
+741	Natl Inst Technol - Trichy	2505	2936	208	0.071
+742	Univ Hawaii - Manoa	1218	2930	298	0.102
+743	Georgia State Univ	1465	2925	337	0.115
+744	Ajou Univ	2393	2922	272	0.093
+745	Natl Taiwan Univ Sci & Technol	2434	2913	263	0.09
+746	Changsha Univ Sci & Technol	10329	2899	384	0.133
+747	Univ Sussex	785	2892	429	0.148
+748	Siksha ‘O’ Anusandhan	19148	2891	170	0.059
+749	Zhejiang Chin Med Univ	18535	2887	328	0.114
+750	Med Univ Warsaw	536	2887	275	0.095
+751	Sejong Univ	3748	2883	423	0.147
+752	Hong Kong Univ Sci & Technol	1132	2882	510	0.177
+753	Brescia Univ	410	2880	346	0.12
+754	Beijing Univ Chin Med	10339	2877	336	0.117
+755	Mississippi State Univ	1473	2876	249	0.087
+756	Guilin Univ Electron Technol	18027	2876	229	0.08
+757	TU Dortmund Univ	227	2872	235	0.082
+758	Hebei Univ	3400	2869	297	0.104
+759	Swansea Univ	354	2867	377	0.131
+760	Chengdu Univ Tradit Chin Med	19210	2866	567	0.198
+761	Univ Ibadan	9570	2864	142	0.05
+762	London Sch Econ & Polit Sci	1037	2862	471	0.165
+763	Inst Polytech Paris (EPE)	10552	2852	286	0.1
+764	Univ Vigo	670	2851	328	0.115
+765	Northumbria Univ	796	2842	364	0.128
+766	Shanghai Ocean Univ	9670	2837	285	0.1
+767	Univ Hassan II Casablanca	53944	2835	157	0.055
+768	UiT Artic Univ Norway	501	2823	283	0.1
+769	Univ Mississippi	1470	2818	250	0.089
+770	Univ Calabria	10109	2814	330	0.117
+771	Oklahoma State Univ - Stillwater	1297	2812	226	0.08
+772	Sidi Mohamed Ben Abdellah Univ	53925	2811	235	0.083
+773	Univ Arkansas - Fayetteville	1212	2808	235	0.084
+774	Atatürk Univ	723	2805	203	0.072
+775	Univ Aberdeen	275	2804	316	0.113
+776	Weizmann Inst Sci	1047	2800	550	0.196
+777	Univ Jyväskylä	125	2800	295	0.105
+778	London Sch Hyg & Trop Med	320	2799	450	0.161
+779	Assiut Univ	3712	2795	189	0.068
+780	Univ Ferrara	418	2793	311	0.111
+781	Budapest Univ Technol & Econ	378	2792	206	0.074
+782	Jordan Univ Sci & Technol	3723	2790	243	0.087
+783	Khalifa Univ Sci & Technol	18988	2780	462	0.166
+784	Gdańsk Univ Technol	506	2776	310	0.112
+785	Panjab Univ	2458	2772	224	0.081
+786	Nicolaus Copernicus Univ Toruń	531	2771	228	0.082
+787	Fujian Normal Univ	9626	2771	323	0.117
+788	Princess Nourah Bint Abdulrahman Univ	53033	2769	304	0.11
+789	Tianjin Univ Technol	10337	2769	279	0.101
+790	Univ Padjadjaran	9036	2768	189	0.068
+791	Tokyo Med & Dent Univ	1113	2766	175	0.063
+792	Huaqiao Univ	18006	2764	330	0.12
+793	Nantes Univ (EPE)	70012	2763	258	0.093
+794	Peter Great St Petersburg Polytech Univ	2875	2761	118	0.043
+795	Beijing Technol & Business Univ	18707	2760	430	0.156
+796	Ulsan Natl Inst Sci & Technol	16188	2753	367	0.133
+797	Univ Sharjah	18985	2749	388	0.141
+798	Henan Normal Univ	3393	2746	261	0.095
+799	Minzu Univ China	33823	2736	229	0.084
+800	Univ Nevada - Reno	1282	2732	250	0.092
+801	Univ Bremen	223	2722	239	0.088
+802	Tech Univ Braunschweig	222	2720	221	0.081
+803	Chungbuk Natl Univ	3744	2711	182	0.067
+804	Univ Sherbrooke	1438	2703	241	0.089
+805	Jamia Millia Islamia	2490	2700	308	0.114
+806	Shanghai Maritime Univ	18540	2695	323	0.12
+807	Univ Jordan	3724	2695	236	0.088
+808	Harbin Univ Sci & Technol	18008	2694	216	0.08
+809	Univ Reading	800	2689	361	0.134
+810	Comenius Univ Bratislava	608	2687	226	0.084
+811	Kasetsart Univ	2537	2679	138	0.052
+812	Univ Trieste	456	2677	271	0.101
+813	Kwame Nkrumah Univ Sci & Technol	9924	2672	185	0.069
+814	Tokyo Univ Sci	3638	2670	120	0.045
+815	Kaohsiung Med Univ	2431	2670	196	0.073
+816	Vilnius Univ	472	2663	170	0.064
+817	Amer Univ Beirut	3727	2661	257	0.097
+818	Univ Debrecen	385	2659	197	0.074
+819	Qufu Normal Univ	10331	2645	202	0.076
+820	Kalinga Inst Indust Technol	2442	2639	159	0.06
+821	Univ Potsdam	265	2636	333	0.126
+822	İstanbul Univ Cerrahpaşa	33893	2636	130	0.049
+823	Univ Texas - Dallas	1204	2624	297	0.113
+824	Univ Tartu	117	2617	247	0.095
+825	Philipps-Univ Marburg	880	2615	257	0.098
+826	City St George's - Univ London	55403	2615	380	0.145
+827	Victoria Univ Wellington	3730	2613	255	0.097
+828	Univ Teknol Petronas	18065	2609	342	0.131
+829	James Cook Univ	1577	2609	306	0.117
+830	Eötvös Loránd Univ	382	2606	181	0.07
+831	Otto von Guericke Univ Magdeburg	256	2603	221	0.085
+832	Univ Extremadura	623	2599	195	0.075
+833	Graz Univ Technol	8	2598	215	0.083
+834	Changchun Univ Sci & Technol	54734	2597	125	0.048
+835	Hangzhou Normal Univ	3414	2596	372	0.143
+836	Henan Agr Univ	10335	2593	308	0.119
+837	Tianjin Univ Sci & Technol	9614	2589	342	0.132
+838	Univ Szeged	391	2583	208	0.081
+839	King Faisal Univ	53032	2581	323	0.125
+840	China Three Gorges Univ	18030	2578	242	0.094
+841	Chandigarh Univ	54796	2578	207	0.08
+842	Kunming Med Univ	18028	2575	196	0.076
+843	Univ California - Santa Cruz	1291	2562	341	0.133
+844	Quaid-i-Azam Univ	3735	2561	292	0.114
+845	Univ Siena	451	2558	254	0.099
+846	Middle E Tech Univ	712	2556	193	0.076
+847	Univ Rostock	884	2551	185	0.073
+848	Indian Inst Technol Hyderabad	52995	2549	161	0.063
+849	Marmara Univ	732	2541	136	0.054
+850	Wenzhou Univ	3422	2540	351	0.138
+851	Univ Calcutta	2461	2538	136	0.053
+852	Wrocław Med Univ	543	2533	303	0.12
+853	Univ St Andrews	802	2524	313	0.124
+854	Poznań Univ Med Sci	525	2520	268	0.107
+855	Anhui Agr Univ	18005	2519	323	0.128
+856	Hallym Univ	9713	2515	213	0.085
+857	Nihon Univ	1443	2515	81	0.032
+858	Hubei Univ	9618	2510	301	0.12
+859	Univ Texas - Arlington	1555	2506	219	0.087
+860	Univ l'Aquila	422	2500	262	0.105
+861	Univ Massachusetts Med Sch	1312	2500	365	0.146
+862	Albert Einstein Coll Med	34728	2498	335	0.134
+863	Natl Inst Technol Silchar	53002	2497	234	0.094
+864	Utah State Univ	1466	2490	210	0.084
+865	Natl Chung Hsing Univ	2430	2487	148	0.059
+866	Bielefeld Univ	218	2485	244	0.098
+867	Brno Univ Technol	82	2480	173	0.07
+868	Univ Diponegoro	9030	2480	67	0.027
+869	Koneru Lakshmaiah Educ Fnd	54802	2477	116	0.047
+870	Thapar Inst Engn & Technol	9438	2474	254	0.103
+871	Rey Juan Carlos Univ	655	2465	221	0.089
+872	Gabriele d'Annunzio Univ	417	2461	297	0.121
+873	Univ Fed Bahia	1488	2451	135	0.055
+874	Natl Inst Technol Karnataka - Surathkal	53001	2444	159	0.065
+875	Martin Luther Univ Halle-Wittenberg	876	2437	221	0.091
+876	China Jiliang Univ	9606	2435	204	0.084
+877	Anhui Univ Technol	9666	2430	275	0.113
+878	Kumamoto Univ	1099	2426	147	0.061
+879	Juntendo Univ	1444	2423	140	0.058
+880	Univ Fed Goiás	1492	2422	130	0.054
+881	Univ Nevada - Las Vegas	3482	2422	219	0.09
+882	Dokuz Eylül Univ	736	2420	138	0.057
+883	Natl Inst Technol Warangal	19134	2417	206	0.085
+884	Univ Tunis El Manar	18076	2415	100	0.041
+885	Fed Univ Para	1497	2408	138	0.057
+886	Univ Cordoba	635	2407	207	0.086
+887	Sebelas Maret Univ	55390	2404	73	0.03
+888	Univ Valladolid	669	2401	199	0.083
+889	Jiangxi Univ Sci & Technol	19157	2400	256	0.107
+890	Univ Clermont-Auvergne (EPE)	70001	2397	224	0.094
+891	Univ Vermont	1186	2396	230	0.096
+892	Sardar Vallabhbhai Natl Inst Technol - Surat	53003	2392	118	0.049
+893	Hubei Univ Technol	18702	2392	209	0.087
+894	Yantai Univ	9656	2388	252	0.106
+895	Fed Univ Paraíba	1493	2385	131	0.055
+896	Łódź Univ Technol	517	2383	162	0.068
+897	Univ Arkansas Med Sci - Little Rock	1235	2377	184	0.077
+898	Univ Limerick	403	2376	285	0.12
+899	Warsaw Univ Life Sci	540	2374	196	0.083
+900	Qilu Univ Technol	18692	2371	229	0.096
+901	Savitribai Phule Pune Univ	2491	2369	121	0.051
+902	Univ Gondar	52989	2362	336	0.142
+903	Univ Warmia & Mazury Olsztyn	521	2356	182	0.077
+904	Makerere Univ	9308	2354	155	0.066
+905	Natl Taipei Univ Technol	3755	2352	179	0.076
+906	Univ Côte d’Azur	10560	2350	240	0.102
+907	Menoufia Univ	52987	2348	173	0.074
+908	Shihezi Univ	18020	2345	204	0.087
+909	Univ E Anglia	797	2341	308	0.132
+910	Nagasaki Univ	1101	2339	112	0.048
+911	Med Univ Silesia	511	2339	181	0.077
+912	Erciyes Univ	740	2336	194	0.083
+913	Univ Navarra	659	2329	251	0.108
+914	Univ Texas - Med Branch - Galveston	1215	2329	235	0.101
+915	Univ Malaysia Pahang Al-Sultan Abdullah	53221	2325	165	0.071
+916	Wuhan Inst Technol	18036	2324	226	0.097
+917	Tribhuvan Univ	53238	2324	124	0.053
+918	Univ Oregon	1209	2322	299	0.129
+919	Henan Univ Technol	18016	2322	211	0.091
+920	Shenyang Pharmaceut Univ	3387	2317	242	0.104
+921	Univ Canterbury	1532	2315	222	0.096
+922	Poznań Univ Technol	526	2311	175	0.076
+923	Lanzhou Jiaotong Univ	18024	2311	218	0.094
+924	Hunan Agr Univ	18026	2310	318	0.138
+925	Jawaharlal Nehru Univ	2472	2304	178	0.077
+926	Hong Kong Baptist Univ	3415	2297	309	0.135
+927	Augusta Univ	10113	2278	224	0.098
+928	Kazan Fed Univ - Volga	10060	2273	94	0.042
+929	Syracuse Univ	1300	2261	240	0.106
+930	Univ Texas - San Antonio	1287	2258	258	0.114
+931	Med Univ Łódź	959	2256	259	0.115
+932	Natl Cent Univ	2415	2256	154	0.068
+933	Univ Free State	1501	2245	144	0.064
+934	Med Univ Lublin	958	2242	279	0.125
+935	Univ Rovira & Virgili	666	2242	230	0.102
+936	Pukyong Natl Univ	3742	2229	150	0.067
+937	Qingdao Agr Univ	18015	2219	286	0.129
+938	Univ N Carolina - Charlotte	3483	2218	204	0.092
+939	Univ Québec Montréal	1526	2217	214	0.097
+940	Univ Bayreuth	214	2216	255	0.115
+941	Shinsu Univ	1545	2214	99	0.045
+942	Univ Ioannina	365	2213	196	0.089
+943	Carlos III Univ Madrid	989	2210	227	0.103
+944	Univ La Laguna	642	2206	171	0.077
+945	Tomsk State Univ	10080	2202	76	0.035
+946	Rio de Janeiro State Univ	1486	2200	111	0.051
+947	Univ Ulster	287	2199	248	0.113
+948	Akdeniz Univ	715	2199	170	0.077
+949	San Diego State Univ	1467	2197	198	0.09
+950	Guangxi Normal Univ	9640	2194	210	0.096
+951	Christ Deemed Univ	55364	2190	130	0.059
+952	Univ Monastir	18077	2189	137	0.062
+953	Univ Isfahan	3718	2185	185	0.085
+954	Fed Univ Uberlândia	1491	2184	110	0.05
+955	Shenyang Agr Univ	18537	2182	270	0.124
+956	Liaocheng Univ	3405	2180	229	0.105
+957	KN Toosi Univ Technol	3716	2166	247	0.114
+958	ITMO Univ	10058	2166	91	0.042
+959	Zhejiang Gongshang Univ	9630	2160	337	0.156
+960	Univ Alcalá	621	2160	231	0.107
+961	ShanghaiTech Univ	19156	2159	304	0.141
+962	Wrocław Univ Sci & Technol	545	2158	136	0.063
+963	Urmia Univ	9486	2150	193	0.09
+964	Univ Malaysia Perlis	53217	2148	63	0.03
+965	Jazan Univ	53031	2148	251	0.117
+966	Univ República	3765	2145	111	0.052
+967	Ningxia Univ	19188	2145	162	0.076
+968	Univ Luxembourg	473	2143	285	0.133
+969	Shanghai Normal Univ	3385	2141	243	0.114
+970	Sultan Qaboos Univ	9575	2138	184	0.086
+971	Dalian Polytech Univ	18705	2131	246	0.115
+972	Indian Inst Technol Indore	19130	2129	200	0.094
+973	Univ Udine	457	2127	204	0.096
+974	Univ Guadalajara	1364	2115	116	0.055
+975	Univ Brawijaya	9040	2114	64	0.03
+976	Sathyabama Inst Sci & Technol	34007	2112	112	0.053
+977	Univ Tennessee Hlth Sci Ctr	3552	2105	210	0.1
+978	State Univ Maringá	1487	2105	109	0.052
+979	Univ Antioquia	9424	2104	118	0.056
+980	Med Univ Graz	1315	2102	271	0.129
+981	Univ Nat Resources & Life Sci - Vienna	21	2101	242	0.115
+982	Jiangxi Normal Univ	9616	2100	201	0.096
+983	Univ Cádiz	631	2099	148	0.071
+984	Shenyang Univ Technol	19169	2093	207	0.099
+985	E Carolina Univ	1539	2092	145	0.069
+986	Univ Guilan	3722	2091	180	0.086
+987	Qingdao Univ Technol	33790	2089	289	0.138
+988	Manchester Metropolitan Univ	331	2089	280	0.134
+989	Malaviya Natl Inst Technol Jaipur	19143	2086	214	0.103
+990	Guizhou Med Univ	19176	2083	159	0.077
+991	Chengdu Univ	52645	2083	295	0.142
+992	Inner Mongolia Univ	10324	2080	168	0.081
+993	Univ Toledo	1468	2080	202	0.097
+994	Auckland Univ Technol	18072	2078	205	0.099
+995	Zhejiang A & F Univ	52652	2070	275	0.133
+996	Dankook Univ	9711	2069	147	0.071
+997	Palacký Univ Olomouc	89	2065	144	0.07
+998	Zunyi Med Univ	52633	2065	204	0.099
+999	Univ Cantabria	663	2064	200	0.097
+1000	Hunan Univ Sci & Technol	18032	2056	230	0.112
+1001	Univ Łódź	518	2056	169	0.082
+1002	Natl Sun Yat-sen Univ	2428	2054	141	0.069
+1003	Univ Kent	283	2052	248	0.121
+1004	Univ Maribor	620	2051	197	0.096
+1005	Niigata Univ	1103	2050	100	0.049
+1006	Kindai Univ	1543	2050	117	0.057
+1007	Univ Cadi Ayyad	1366	2050	114	0.056
+1008	St Louis Univ	1293	2048	192	0.094
+1009	Zhengzhou Univ Light Industry	18035	2039	208	0.102
+1010	Inst Teknol Sepuluh Nopember	9044	2028	69	0.034
+1011	Autonomous Univ Nuevo Leon	168	2026	103	0.051
+1012	JiLin Agr Univ	18040	2026	193	0.095
+1013	Univ Tecnol Fed Paraná	6105	2026	105	0.052
+1014	Polytech Univ Bucharest	571	2025	161	0.079
+1015	Univ Fed Espírito Santo	6080	2022	130	0.064
+1016	Symbiosis Int (Deemed Univ)	55366	2021	169	0.084
+1017	Benha Univ	18783	2011	201	0.1
+1018	Fed Univ Pelotas	1495	2011	111	0.055
+1019	Univ Almería	1002	2009	190	0.095
+1020	Capital Normal Univ	3398	2009	188	0.094
+1021	Jawaharlal Inst Postgrad Med Educ & Res	54803	2007	53	0.026
+1022	Univ Texas - Hlth Sci Ctr - San Antonio	1552	2003	216	0.108
+1023	Fırat Univ	722	2000	191	0.096
+1024	Florida Atlantic Univ	3514	1993	201	0.101
+1025	Yokohama City Univ	1442	1992	111	0.056
+1026	Univ Kashmir	18785	1992	186	0.093
+1027	Cranfield Univ	290	1991	249	0.125
+1028	Chongqing Jiaotong Univ	19197	1991	180	0.09
+1029	Roma Tre Univ	448	1988	179	0.09
+1030	Çukurova Univ	705	1988	105	0.053
+1031	Univ Dundee	291	1985	276	0.139
+1032	Brunel Univ London	355	1985	282	0.142
+1033	Univ Technol Iraq	53015	1984	132	0.067
+1034	Univ Agr Faisalabad	9582	1983	227	0.114
+1035	South Fed Univ	2882	1979	67	0.034
+1036	N China Univ Sci & Technol	18041	1973	149	0.075
+1037	Thammasat Univ	2541	1973	122	0.062
+1038	Air Force Engn Univ	18691	1973	136	0.069
+1039	Pompeu Fabra Univ	628	1967	235	0.119
+1040	Heilongjiang Univ	9628	1965	197	0.1
+1041	Univ Portsmouth	344	1964	262	0.133
+1042	Govt Coll Univ Faisalabad	18991	1960	280	0.143
+1043	Guangdong Ocean Univ	19198	1958	181	0.093
+1044	Edith Cowan Univ	10267	1958	318	0.163
+1045	Babeș-Bolyai Univ	572	1954	179	0.092
+1046	Liverpool John Moores Univ	314	1953	254	0.13
+1047	Suzhou Univ Sci & Technol	19159	1952	187	0.096
+1048	Johannes Kepler Univ Linz	14	1948	182	0.094
+1049	Gansu Agr Univ	19184	1942	180	0.093
+1050	Semmelweis Univ	384	1939	212	0.109
+1051	Xinjiang Med Univ	18003	1936	140	0.072
+1052	Ariel Univ	18565	1932	109	0.056
+1053	GLA Univ	53121	1932	156	0.081
+1054	Tokushima Univ	1110	1930	99	0.051
+1055	Koç Univ	1015	1930	186	0.097
+1056	Macau Univ Sci & Technol	155	1927	259	0.135
+1057	Univ Hyderabad	2463	1926	132	0.069
+1058	Rheinland-Pfälzische Tech Univ Kaiserslautern-Landau	70018	1916	151	0.079
+1059	Univ Windsor	375	1913	184	0.096
+1060	Democritus Univ Thrace	367	1907	165	0.086
+1061	Southwestern Univ Finance & Econ	18708	1902	309	0.162
+1062	Selçuk Univ	739	1901	140	0.074
+1063	Natl Inst Technol Raipur	34003	1899	152	0.08
+1064	Baylor Univ	3517	1898	159	0.084
+1065	Taibah Univ	53914	1898	165	0.087
+1066	N Dakota State Univ	3470	1897	174	0.092
+1067	Fed Univ Lavras	1494	1892	104	0.055
+1068	Vita-Salute San Raffaele Univ	818	1889	279	0.147
+1069	Soonchunhyang Univ	101154	1889	146	0.077
+1070	State Univ Malang	55392	1887	49	0.026
+1071	Nottingham Trent Univ	336	1886	244	0.129
+1072	Inje Univ	9726	1880	111	0.059
+1073	Natl Kaohsiung Univ Sci & Technol	53041	1879	175	0.093
+1074	Poznań Univ Life Sci	964	1877	170	0.091
+1075	Shanmugha Arts Sci Technol & Res Acad	18091	1874	133	0.071
+1076	Gandhi Inst Technol & Mngmt	55368	1871	87	0.046
+1077	Univ Texas - El Paso	1557	1870	120	0.064
+1078	Med Univ Gdańsk	960	1868	177	0.095
+1079	Natl Inst Technol Patna	34002	1866	184	0.098
+1080	Miguel Hernández Univ	998	1864	155	0.083
+1081	Tata Inst Fund Res	2457	1860	122	0.066
+1082	Dr B R Ambedkar Natl Inst Technol Jalandhar	52993	1859	162	0.087
+1083	Uniformed Services Univ Hlth Sci	3498	1859	149	0.08
+1084	Zhejiang Ocean Univ	18709	1858	216	0.116
+1085	Anhui Normal Univ	3404	1858	135	0.072
+1086	Natl Inst Mental Hlth & Neurosci	2485	1857	78	0.042
+1087	Tun Hussein Onn Univ Malaysia	54825	1854	109	0.059
+1088	Gifu Univ	1093	1853	89	0.048
+1089	Jouf Univ	53880	1851	254	0.137
+1090	Natl Inst Technol Calicut	34001	1851	96	0.052
+1091	Shanghai Inst Technol	18029	1850	138	0.075
+1092	Carl von Ossietzky Univ Oldenburg	261	1848	147	0.08
+1093	Univ Wyoming	3456	1844	160	0.087
+1094	Univ Graz	6	1843	212	0.115
+1095	Univ Petrol & Energy Stud	53887	1842	184	0.1
+1096	Luleå Univ Technol	678	1839	212	0.115
+1097	Univ Luebeck	878	1837	190	0.103
+1098	Univ Greifswald	239	1836	178	0.097
+1099	Univ Yaoundé I	9752	1835	72	0.039
+1100	Bahir Dar Univ	52991	1835	190	0.103
+1101	Univ Konstanz	253	1833	229	0.125
+1102	Tilburg Univ	491	1828	233	0.128
+1103	Samsun Ondokuz Mayıs Univ	747	1827	119	0.065
+1104	Jiangxi Agr Univ	18704	1823	200	0.11
+1105	Univ A Coruña	641	1822	126	0.069
+1106	Kerman Univ Med Sci	18792	1821	164	0.09
+1107	Kermanshah Univ Med Sci	18793	1819	194	0.107
+1108	Beni-Suef Univ	18115	1819	175	0.096
+1109	Univ Med & Pharma Carol Davila Bucharest	976	1819	210	0.116
+1110	Sakarya Univ	706	1818	150	0.083
+1111	Jiangsu Normal Univ	10336	1816	196	0.108
+1112	Missouri Univ Sci & Technol	3495	1815	179	0.099
+1113	Univ Jaén	640	1808	200	0.11
+1114	Univ Dhaka	18690	1807	189	0.105
+1115	Czech Univ Life Sci Prague	99	1805	186	0.103
+1116	Don State Tech Univ	16361	1805	54	0.03
+1117	Army Engn Univ PLA	52638	1805	138	0.076
+1118	Univ Silesia Katowice	512	1804	106	0.059
+1119	Kent State Univ	3484	1804	179	0.099
+1120	Hanoi Univ Sci & Technol	1383	1801	85	0.047
+1121	Novosibirsk State Univ	9692	1801	55	0.031
+1122	Univ Natl Plata	1053	1801	74	0.041
+1123	Dublin City Univ	401	1795	231	0.129
+1124	Univ Jaume I	1003	1795	166	0.093
+1125	Univ Essex	286	1790	230	0.128
+1126	Bursa Uludağ Univ	718	1789	96	0.053
+1127	Hebei Agr Univ	18548	1782	221	0.124
+1128	Jimma Univ	52990	1778	152	0.085
+1129	Loyola Univ Chicago	1243	1777	136	0.077
+1130	Minia Univ	18969	1776	197	0.111
+1131	Coventry Univ	288	1772	194	0.11
+1132	Annamalai Univ	2470	1771	83	0.047
+1133	Indian Inst Technol Patna	52997	1770	150	0.085
+1134	Hasanuddin Univ	53860	1770	70	0.039
+1135	Univ Missouri - Kansas City	3488	1769	159	0.09
+1136	Univ Žilina	616	1765	98	0.055
+1137	Hamedan Univ Med Sci	19120	1764	123	0.07
+1138	Univ Concepción	3707	1758	99	0.056
+1139	Northeast Petrol Univ	18716	1755	188	0.107
+1140	Educ Univ Hong Kong	52635	1755	290	0.165
+1141	Univ Sumatera Utara	55391	1752	42	0.024
+1142	Nazarbayev Univ	18960	1752	178	0.102
+1143	Univ Wisconsin - Milwaukee	1471	1747	151	0.086
+1144	Jeju Natl Univ	16435	1746	140	0.08
+1145	Univ Aut Metropolitana	9560	1746	79	0.045
+1146	Southwest Med Univ	19152	1743	239	0.137
+1147	Chitkara Univ	54795	1740	190	0.109
+1148	N China Univ Water Resources & Elect Power	19166	1738	169	0.097
+1149	E China Jiaotong Univ	18775	1738	189	0.109
+1150	Indian Inst Engn Sci & Technol - Shibpur	19133	1736	116	0.067
+1151	Tokyo Univ Agr & Technol	1547	1735	69	0.04
+1152	Inst Pertanian Bogor	9026	1731	58	0.033
+1153	Univ Wrocław	542	1726	121	0.07
+1154	Xi'an Technol Univ	54735	1726	115	0.066
+1155	Ahvaz Jundishapur Univ Med Sci	18790	1725	115	0.067
+1156	Univ Stavanger	500	1723	192	0.111
+1157	Mohammed First Univ	55356	1721	64	0.037
+1158	Karadeniz Tech Univ	749	1720	137	0.08
+1159	Chongqing Univ Technol	18773	1719	172	0.1
+1160	Boston Coll	3485	1719	272	0.158
+1161	Motilal Nehru Natl Inst Technol	53133	1719	120	0.07
+1162	Ritsumeikan Univ	9530	1718	73	0.043
+1163	Heriot-Watt Univ	295	1715	202	0.118
+1164	Kagoshima Univ	1096	1715	62	0.036
+1165	RUDN Univ	10068	1714	94	0.055
+1166	Bharathidasan Univ	2484	1713	86	0.05
+1167	Kocaeli Univ	741	1713	98	0.057
+1168	Univ Hohenheim	877	1710	172	0.1
+1169	Univ Pécs	389	1710	158	0.093
+1170	Semnan Univ	9490	1710	180	0.105
+1171	Univ Memphis	3491	1707	117	0.069
+1172	Univ Salento	423	1705	186	0.109
+1173	Univ Toyama	3634	1705	70	0.041
+1174	Univ Hail	53865	1705	171	0.101
+1175	Tokyo Metropolitan Univ	3656	1704	56	0.033
+1176	Humanitas Univ	18676	1703	281	0.165
+1177	Chosun Univ	3746	1701	121	0.071
+1178	Birla Inst Technol Mesra	19142	1701	120	0.071
+1179	Old Dominion Univ	3496	1701	155	0.091
+1180	Murdoch Univ	3690	1700	205	0.121
+1181	Gwangju Inst Sci & Technol	3743	1698	154	0.091
+1182	Guru Nanak Dev Univ	2478	1696	151	0.089
+1183	Mustansiriyah Univ	33438	1693	47	0.027
+1184	Tech Univ Košice	614	1690	96	0.057
+1185	Shanghai Univ Elect Power	18712	1690	152	0.09
+1186	Fed Univ Technol Akure	53021	1688	82	0.049
+1187	Univ Iceland	394	1686	141	0.084
+1188	Seoul Natl Univ Sci & Technol	9732	1677	123	0.074
+1189	Texas State Univ	18085	1671	146	0.087
+1190	Colorado Sch Mines	3497	1669	167	0.1
+1191	Univ Split	75	1668	139	0.084
+1192	Univ South Queensland	9414	1668	238	0.143
+1193	Jichi Med Univ	3645	1668	97	0.058
+1194	Datta Meghe Inst High Educ & Res	55381	1665	124	0.075
+1195	Univ Gdańsk	507	1664	117	0.07
+1196	Int Islamic Univ Malaysia	53218	1662	93	0.056
+1197	Kitasato Univ	1544	1661	65	0.039
+1198	Gunma Univ	1530	1658	66	0.04
+1199	Univ Plymouth	341	1658	213	0.128
+1200	Binghamton Univ - SUNY	3492	1656	137	0.082
+1201	Wuhan Textile Univ	18545	1652	143	0.087
+1202	Politec Bari	807	1648	212	0.129
+1203	Incheon Natl Univ	18584	1647	121	0.073
+1204	Örebro Univ	682	1643	159	0.097
+1205	Univ Beira Interior	550	1642	167	0.102
+1206	Pondicherry Univ	2515	1642	87	0.053
+1207	VŠB - Tech Univ Ostrava	92	1636	100	0.061
+1208	Hangzhou Med Coll	10523	1634	183	0.112
+1209	Charles Sturt Univ	18090	1633	148	0.091
+1210	Ohio Univ	3476	1633	127	0.078
+1211	Univ W Indies	55358	1629	78	0.048
+1212	Slovak Univ Technol Bratislava	611	1627	61	0.037
+1213	Univ Catanzaro	809	1627	222	0.137
+1214	Nanchang Hangkong Univ	18013	1626	222	0.136
+1215	All India Inst Med Sci Rishikesh	54856	1626	56	0.034
+1216	Graphic Era (Deemed to be Univ)	55384	1625	117	0.072
+1217	Univ Sassari	450	1622	163	0.1
+1218	Univ Idaho	3490	1621	127	0.078
+1219	Shahid Bahonar Univ Kerman	9485	1619	144	0.089
+1220	Open Univ	334	1618	180	0.111
+1221	Liaoning Tech Univ	55394	1617	111	0.069
+1222	Punjab Agr Univ	2481	1616	111	0.069
+1223	Univ Fed Juiz de Fora	6071	1611	77	0.048
+1224	First Moscow State Med Univ	53829	1609	156	0.097
+1225	Tallinn Univ Technol	115	1603	113	0.07
+1226	Univ Balearic Islands	658	1601	161	0.101
+1227	New Mexico State Univ	3486	1601	121	0.076
+1228	Kuwait Univ	3726	1600	106	0.066
+1229	Shanxi Agr Univ	19196	1597	115	0.072
+1230	Inner Mongolia Agr Univ	18778	1596	130	0.081
+1231	Loma Linda Univ	3487	1593	142	0.089
+1232	Naval Univ Engn	19199	1592	95	0.06
+1233	Abdelmalek Essaâdi Univ	1365	1591	78	0.049
+1234	Ton Duc Thang Univ	18894	1588	243	0.153
+1235	Univ Rhode Island	3503	1588	145	0.091
+1236	Rensselaer Polytech Inst	1304	1587	147	0.093
+1237	Univ Bucharest	570	1587	137	0.086
+1238	Visvesvaraya Natl Inst Technol - Nagpur	18786	1586	105	0.066
+1239	Zhejiang Univ Sci & Technol	55395	1583	157	0.099
+1240	Univ W England - Bristol	281	1581	162	0.102
+1241	Cochin Univ Sci & Technol	2486	1577	79	0.05
+1242	Univ Malaysia Sabah	9971	1576	119	0.075
+1243	Helwan Univ	18556	1574	125	0.079
+1244	Natl Taiwan Normal Univ	3761	1574	135	0.086
+1245	Beijing Univ Civil Engn & Arch	19228	1574	152	0.097
+1246	Jimei Univ	19175	1572	130	0.082
+1247	Univ Jeddah	53029	1570	152	0.097
+1248	Binus Univ	55527	1569	88	0.056
+1249	Natl Def Med Ctr	9794	1568	85	0.054
+1250	Univ Fribourg	695	1567	197	0.126
+1251	Moscow Engn Phys Inst	9694	1567	52	0.033
+1252	Univ East Piedmont Amedeo Avogadro	810	1562	171	0.11
+1253	Univ Paris-Est Créteil Val de Marne	2546	1561	168	0.107
+1254	Mie Univ	1117	1561	72	0.046
+1255	Natl Inst Technol Kurukshetra	53000	1559	133	0.085
+1256	Ibn Tofail Univ	53193	1558	86	0.055
+1257	Univ New Brunswick	3574	1556	146	0.094
+1258	Univ Kassel	250	1556	116	0.074
+1259	Kaunas Univ Technol	466	1554	129	0.083
+1260	Sichuan Normal Univ	18544	1553	150	0.097
+1261	Maulana Azad Natl Inst Technol	53132	1552	136	0.088
+1262	Natl Inst Technol Durgapur	52616	1551	76	0.049
+1263	Xihua Univ	19181	1550	159	0.103
+1264	W Pomeranian Univ Technol - Szczecin	975	1545	83	0.054
+1265	Shandong Jianzhu Univ	52641	1545	121	0.078
+1266	Foshan Univ	52639	1545	171	0.111
+1267	Univ Canberra	2944	1543	184	0.119
+1268	Upstate Med Univ - SUNY	3523	1541	113	0.073
+1269	Tianjin Univ Tradit Chin Med	18541	1540	213	0.138
+1270	Univ Malta	475	1539	110	0.071
+1271	Med Univ Białystok	947	1538	194	0.126
+1272	Christian Med Coll Vellore	2465	1538	60	0.039
+1273	Univ Girona	637	1536	156	0.102
+1274	Indonesia Univ Educ	55393	1536	48	0.031
+1275	Univ Life Sci Lublin	963	1536	99	0.065
+1276	Univ Waikato	2812	1535	151	0.099
+1277	Inst Chem Technol	9439	1535	158	0.103
+1278	Univ Huddersfield	793	1534	185	0.121
+1279	Oakland Univ	3532	1533	113	0.074
+1280	Univ Tours	2594	1532	139	0.091
+1281	Univ Crete	366	1530	158	0.103
+1282	Univ Cape Coast	53117	1529	124	0.081
+1283	Eskişehir Osmangazi Univ	1033	1526	88	0.057
+1284	Univ Cyprus	81	1525	146	0.096
+1285	Near E Univ	53047	1521	127	0.084
+1286	Cracow Univ Technol	936	1520	114	0.075
+1287	Univ Chem & Technol - Prague	98	1519	114	0.075
+1288	Univ Fed ABC	6003	1518	95	0.063
+1289	Bu-Ali Sina Univ	3719	1516	158	0.104
+1290	Univ Albany - SUNY	1464	1516	163	0.107
+1291	Univ Bourgogne Europe (EPE)	70023	1515	148	0.098
+1292	Univ Nis	3736	1515	87	0.057
+1293	Univ Insubria	811	1515	190	0.126
+1294	Yamaguchi Univ	1550	1514	54	0.036
+1295	Babol Noshirvani Univ Technol	18053	1514	198	0.131
+1296	Qinghai Univ	19189	1513	75	0.05
+1297	Indian Agr Res Inst	2474	1512	119	0.078
+1298	Islamia Univ Bahawalpur	18990	1511	178	0.118
+1299	Univ West Cape	1504	1510	113	0.075
+1300	Rowan Univ	53048	1508	123	0.081
+1301	Northeast Elect Power Univ	52634	1505	187	0.124
+1302	Univ Malaysia Terengganu	53910	1504	131	0.087
+1303	Suez Canal Univ	9434	1502	116	0.077
+1304	Xi'an Univ Posts & Telecom	52642	1501	134	0.089
+1305	Lehigh Univ	3475	1501	152	0.101
+1306	Univ Babylon	55363	1500	83	0.055
+1307	Londrina State Univ	1490	1500	64	0.043
+1308	Univ Lagos	10256	1500	80	0.054
+1309	Univ Los Andes Colombia	9428	1499	107	0.071
+1310	Brock Univ	3581	1495	117	0.078
+1311	Univ N Carolina - Greensboro	3515	1494	149	0.1
+1312	Dongguan Univ Technol	19192	1492	152	0.102
+1313	Univ Las Palmas Gran Canaria	643	1487	113	0.076
+1314	Jikei Univ Sch Med	3646	1487	72	0.048
+1315	North Arizona Univ	9846	1486	162	0.109
+1316	Univ Sunshine Coast	18685	1483	136	0.091
+1317	Razi Univ	3720	1483	125	0.084
+1318	Bauman Moscow State Tech Univ	53256	1482	43	0.029
+1319	Cent Queensland Univ	33362	1482	205	0.138
+1320	Ludong Univ	9672	1481	118	0.079
+1321	Moscow Inst Phys & Technol	2881	1479	67	0.045
+1322	Norwegian Univ Life Sci	495	1478	152	0.103
+1323	Ulsan Coll	34696	1476	125	0.084
+1324	Manipal Univ Jaipur	55369	1472	108	0.073
+1325	King George's Med Univ	53131	1471	49	0.034
+1326	Yeshiva Univ	1262	1468	147	0.1
+1327	Montana State Univ	3477	1464	128	0.087
+1328	Royal Coll Surgeons Ireland	1045	1462	189	0.129
+1329	Indian Inst Technol Ropar	19144	1461	118	0.081
+1330	Bangladesh Univ Engn & Technol	52627	1459	149	0.102
+1331	Bharathiar Univ	2489	1459	97	0.067
+1332	Univ W Attica	25056	1457	141	0.097
+1333	Ehime Univ	1542	1456	57	0.039
+1334	Obafemi Awolowo Univ	18046	1455	47	0.032
+1335	Univ Nairobi	9303	1453	70	0.048
+1336	İnönü Univ	743	1451	74	0.051
+1337	Univ New England - Australia	3689	1451	137	0.094
+1338	Iuliu Hațieganu Univ Med & Pharma - Cluj-Napoca	576	1451	182	0.125
+1339	Payame Noor Univ	101177	1448	105	0.072
+1340	Guangdong Med Univ	52651	1441	167	0.116
+1341	Univ Hull	305	1439	158	0.11
+1342	Paderborn Univ	263	1438	121	0.084
+1343	Aston Univ	790	1437	228	0.158
+1344	Pamukkale Univ	719	1436	84	0.059
+1345	Univ Agr Kraków	962	1429	87	0.061
+1346	W Bengal Univ Hlth Sci	55371	1426	45	0.031
+1347	Pontif Cath Univ Rio de Janeiro	1496	1424	81	0.057
+1348	Miami Univ	3499	1423	121	0.085
+1349	Sri Ramachandra Inst High Educ & Res	55379	1423	62	0.043
+1350	Natl Inst Technol Srinagar	54798	1422	92	0.064
+1351	Anhui Polytech Univ	52670	1421	128	0.09
+1352	Bahauddin Zakariya Univ	18804	1417	143	0.101
+1353	Huzhou Univ	52650	1415	161	0.114
+1354	Wrocław Univ Environ & Life Sci	541	1414	111	0.078
+1355	Polytech Porto	31215	1412	101	0.072
+1356	Changchun Univ Technol	18895	1412	120	0.085
+1357	Univ New Hampshire	1472	1411	160	0.113
+1358	Univ Shahrood	9488	1409	121	0.086
+1359	Yunnan Normal Univ	18539	1406	121	0.086
+1360	Ningxia Med Univ	19200	1406	118	0.084
+1361	Portland State Univ	3502	1405	138	0.098
+1362	Chemnitz Univ Technol	224	1404	95	0.068
+1363	South Illinois Univ - Carbondale	3479	1403	96	0.068
+1364	Univ Regina	3582	1403	131	0.093
+1365	King Mongkut's Univ Technol - Thonburi	2538	1397	132	0.095
+1366	Tottori Univ	1548	1397	48	0.035
+1367	Liaoning Univ	18045	1396	123	0.088
+1368	Univ Bretagne Occidentale (EPE)	70024	1395	104	0.074
+1369	Shandong Univ Tradit Chin Med	52643	1392	201	0.144
+1370	Syiah Kuala Univ	1355	1389	55	0.039
+1371	Univ Massachusetts Lowell	9818	1389	148	0.106
+1372	Aga Khan Univ	9583	1388	107	0.077
+1373	New Jersey Inst Technol	3508	1387	159	0.114
+1374	Gustave Eiffel Univ	10548	1387	112	0.08
+1375	Soongsil Univ	9708	1385	88	0.064
+1376	Oslo Metropolitan Univ	10713	1382	163	0.118
+1377	Chinese Acad Trop Agr Sci	52679	1382	125	0.09
+1378	E China Univ Technol	52637	1380	102	0.074
+1379	Mazandaran Univ Med Sci	19116	1379	106	0.077
+1380	Shahid Chamran Univ Ahwaz	18560	1378	109	0.079
+1381	Guangdong Pharmaceut Univ	18034	1378	135	0.098
+1382	Xi'an Shiyou Univ	19214	1376	83	0.06
+1383	All India Inst Med Sci Bhubaneswar	55382	1376	53	0.038
+1384	King Mongkut's Univ Technol N Bangkok	9060	1375	117	0.085
+1385	Civil Aviat Univ China	18720	1373	108	0.079
+1386	Keimyung Univ	9709	1370	95	0.069
+1387	Univ Lleida	646	1369	118	0.087
+1388	Univ Rijeka	74	1364	88	0.064
+1389	All India Inst Med Sci Jodhpur	55380	1363	44	0.033
+1390	Covenant Univ	53241	1363	97	0.071
+1391	Imam Mohammad Ibn Saud Islamic Univ	54840	1357	143	0.106
+1392	Necmettin Erbakan Univ	16448	1356	102	0.075
+1393	Univ Denver	3527	1356	139	0.103
+1394	Tokai Univ	1546	1355	72	0.053
+1395	Hofstra Univ	18423	1355	127	0.094
+1396	Michigan Technol Univ	3494	1353	138	0.102
+1397	Natl Univ Cordoba	3705	1352	63	0.047
+1398	Indian Inst Technol Mandi	52996	1352	114	0.084
+1399	Yazd Univ	9487	1351	118	0.087
+1400	Med Univ Innsbruck	1316	1351	172	0.127
+1401	Univ Carthage	53045	1350	78	0.058
+1402	Univ California - Merced	18430	1350	161	0.119
+1403	Univ Foggia	420	1350	182	0.135
+1404	Kyoto Prefect Univ Med	3637	1350	72	0.054
+1405	Indian Inst Technol (BHU) Varanasi	55383	1349	132	0.098
+1406	ISCTE - Univ Inst Lisbon	9988	1349	123	0.091
+1407	Hebei Normal Univ	9622	1348	110	0.082
+1408	Vel Tech	54809	1348	65	0.048
+1409	LUT Univ	127	1347	185	0.137
+1410	Roy Holloway - Univ London	353	1344	159	0.118
+1411	Univ Fed Sergipe	6112	1341	54	0.04
+1412	Yamagata Univ	1549	1338	57	0.042
+1413	Chung Shan Med Univ	3762	1338	85	0.064
+1414	Rzeszów Univ Technol	528	1335	93	0.07
+1415	Taiyuan Univ Sci & Technol	18715	1333	116	0.087
+1416	Indian Stat Inst	2475	1332	89	0.067
+1417	Fukushima Med Univ	9506	1331	56	0.042
+1418	Yüzüncü Yıl Univ	750	1329	81	0.061
+1419	Moscow State Univ Civil Engn	55550	1328	24	0.018
+1420	Tezpur Univ	16437	1326	85	0.064
+1421	Univ Tabuk	53035	1325	140	0.105
+1422	Univ Madras	2464	1324	71	0.054
+1423	Beijing Info Sci & Technol Univ	33795	1323	110	0.083
+1424	Cent Univ Finance & Econ	19174	1320	144	0.109
+1425	Zhongnan Univ Econ & Law	52647	1318	180	0.136
+1426	SSN Coll Engn	34009	1316	94	0.072
+1427	Univ Sultan Moulay Slimane	53194	1314	53	0.041
+1428	Hasselt Univ	41	1313	155	0.118
+1429	Bharati Vidyapeeth Deemed Univ	18822	1309	61	0.047
+1430	Vilnius Gediminas Tech Univ	471	1308	69	0.053
+1431	Ibn Zohr Univ	53918	1308	107	0.082
+1432	Univ Engn & Technol - Lahore	53024	1308	132	0.101
+1433	Singapore Univ Technol & Design	18891	1307	219	0.168
+1434	Tianjin Normal Univ	9664	1305	97	0.074
+1435	Univ Fed Rural Pernambuco	6109	1305	48	0.037
+1436	Toho Univ	9515	1305	48	0.037
+1437	Pomeranian Med Univ Szczecin	529	1304	159	0.122
+1438	Cumhuriyet Univ	1025	1304	93	0.072
+1439	King Mongkut's Inst Technol - Ladkrabang	2539	1304	79	0.061
+1440	Sheffield Hallam Univ	347	1304	130	0.1
+1441	Univ Sci & Technol Liaoning	52640	1302	96	0.073
+1442	Kafrelsheikh Univ	10542	1301	163	0.125
+1443	Keele Univ	306	1301	135	0.104
+1444	Osmania Univ	2480	1300	56	0.043
+1445	Sanjay Gandhi Postgrad Inst Med Sci	2471	1299	48	0.037
+1446	Yokohama Natl Univ	594	1298	52	0.04
+1447	Univ Kashan	9462	1297	163	0.126
+1448	Hunan Univ Technol	19215	1296	187	0.144
+1449	Benemérita Univ Aut Puebla	18574	1294	53	0.041
+1450	Univ Dschang	52628	1293	75	0.058
+1451	Hirosaki Univ	3650	1293	54	0.042
+1452	Univ Ontario Inst Technol	18534	1288	131	0.102
+1453	Univ Texas Rio Grande Valley	10407	1287	95	0.074
+1454	Bournemouth Univ	343	1286	122	0.095
+1455	Taizhou Univ	52667	1286	175	0.136
+1456	Univ Mosul	54820	1285	30	0.024
+1457	Hungarian Univ Agr & Life Sci	386	1284	112	0.087
+1458	Victoria Univ - Melbourne	3691	1283	185	0.144
+1459	Karunya Inst Technol & Sci	53130	1283	89	0.069
+1460	Univ Augsburg	211	1283	150	0.117
+1461	Univ Maine - Orono	3500	1282	109	0.085
+1462	Guizhou Normal Univ	52665	1280	92	0.072
+1463	Mersin Univ	745	1279	74	0.058
+1464	Maria Curie-Sklodowska Univ	519	1278	78	0.061
+1465	New York Med Coll	1527	1278	105	0.082
+1466	Inner Mongolia Univ Technol	18710	1277	87	0.068
+1467	Univ León	645	1277	133	0.104
+1468	Univ Salzburg	15	1273	125	0.098
+1469	Taras Shevchenko Natl Univ Kyiv	2847	1272	41	0.032
+1470	Shenyang Aerosp Univ	19186	1271	113	0.089
+1471	Guru Gobind Singh Indraprastha Univ	53948	1271	72	0.057
+1472	Univ Marie & Louis Pasteur (EPE)	70022	1270	118	0.093
+1473	Nagoya City Univ	3636	1270	58	0.046
+1474	Nova Southeastern Univ	53060	1270	100	0.079
+1475	Skolkovo Inst Sci & Technol	53027	1270	102	0.08
+1476	Josip Juraj Strossmayer Univ Osijek	73	1269	108	0.085
+1477	Chengdu Univ Info Technol	18717	1269	99	0.078
+1478	Indian Inst Technol Bhubaneswar	53125	1267	120	0.094
+1479	Nara Med Univ	18061	1267	62	0.049
+1480	Hebei Univ Sci & Technol	18547	1266	104	0.082
+1481	Univ Karachi	9581	1265	60	0.047
+1482	Alexandru Ioan Cuza Univ Iaşi	579	1263	94	0.074
+1483	N China Univ Technol	52668	1262	82	0.065
+1484	Univ Sarajevo	10248	1259	48	0.038
+1485	Lebanese Univ	53216	1257	79	0.063
+1486	Sichuan Univ Sci & Engn	18722	1256	84	0.067
+1487	Natl Distance Educ Univ	650	1255	85	0.068
+1488	Univ Caen Normandy	2604	1255	112	0.089
+1489	Univ Campus Bio-Medico Roma	815	1253	163	0.13
+1490	Xi'an Polytech Univ	52658	1252	95	0.075
+1491	Natl Yunlin Univ Sci & Technol	18892	1252	127	0.101
+1492	Univ Lahore	53026	1252	139	0.111
+1493	Süleyman Demirel Univ	726	1251	92	0.074
+1494	JSS Acad High Educ & Res	55493	1248	80	0.064
+1495	Univ Stirling	351	1247	158	0.127
+1496	Rochester Inst Technol	3537	1247	106	0.085
+1497	Linnaeus Univ	1478	1247	113	0.091
+1498	Univ Sousse	53046	1246	76	0.061
+1499	Duy Tan Univ	53062	1246	216	0.173
+1500	Fed Univ Mato Grosso Sul	53349	1245	64	0.051
+1501	Free Univ Bozen-Bolzano	806	1244	145	0.116
+1502	Univ Agder	1389	1243	170	0.137
+1503	Univ Rouen	2630	1243	95	0.076
+1504	Univ Lincoln	313	1242	140	0.113
+1505	Chongqing Normal Univ	18038	1242	120	0.097
+1506	Częstochowa Univ Technol	940	1241	67	0.054
+1507	Natl Taiwan Ocean Univ	9790	1241	81	0.065
+1508	Univ Rzeszów	957	1241	113	0.091
+1509	Wuhan Polytech Univ	19172	1240	102	0.082
+1510	Ca' Foscari Univ Venice	459	1240	108	0.087
+1511	Sogang Univ	3739	1238	116	0.094
+1512	Univ Ilorin	53022	1235	71	0.057
+1513	Çanakkale Onsekiz Mart Univ	1011	1234	62	0.051
+1514	Shanghai Univ Finance & Econ	18550	1234	147	0.119
+1515	Univ Tunku Abdul Rahman	53224	1234	115	0.093
+1516	Kharazmi Univ	18787	1233	106	0.086
+1517	Hainan Med Univ	52673	1232	101	0.082
+1518	Nagoya Inst Technol	592	1231	39	0.032
+1519	Tokyo Women's Med Univ	3635	1230	55	0.045
+1520	İstanbul Medipol Univ	18621	1227	76	0.062
+1521	Univ Latvia	464	1224	57	0.047
+1522	Univ Sci & Technol Houari Boumediene	9274	1222	40	0.033
+1523	West Michigan Univ	3535	1222	90	0.073
+1524	Kalasalingam Acad Res & Educ	53950	1221	67	0.055
+1525	Univ Kerala	53004	1220	76	0.062
+1526	Kookmin Univ	9706	1220	79	0.064
+1527	Indian Inst Sci Educ & Res Kolkata	52994	1219	78	0.064
+1528	Majmaah Univ	53911	1218	142	0.117
+1529	Shandong Second Med Univ	19178	1215	139	0.115
+1530	Univ Algarve	553	1214	123	0.101
+1531	Univ Mohaghegh Ardabili	18564	1213	132	0.108
+1532	Univ Siegen	268	1213	115	0.095
+1533	Univ Basrah	53185	1212	52	0.043
+1534	Univ Fed Rio Grande	6102	1211	66	0.054
+1535	Transilvania Univ Brasov	565	1209	101	0.084
+1536	Lublin Univ Technol	942	1208	120	0.1
+1537	Shizuoka Univ	9501	1205	34	0.029
+1538	Univ Maryland - Baltimore County	3506	1204	116	0.096
+1539	S Ural State Univ	10074	1203	107	0.089
+1540	Cha Univ	18585	1203	113	0.094
+1541	De Montfort Univ	310	1201	120	0.1
+1542	Ahmadu Bello Univ	53240	1199	52	0.043
+1543	Hamad Bin Khalifa Univ	18848	1196	192	0.161
+1544	Bilkent Univ	708	1194	85	0.071
+1545	Yunnan Agr Univ	52664	1193	109	0.091
+1546	Amer Univ Sharjah	18590	1190	160	0.134
+1547	Jaypee Inst Info Technol	53128	1189	81	0.068
+1548	Montanuniv Leoben	12	1189	103	0.086
+1549	Univ Kalyani	2504	1189	55	0.046
+1550	ÉTS	21014	1188	123	0.104
+1551	Moscow Aviat Inst	2873	1185	63	0.053
+1552	Univ Massachusetts Boston	9814	1185	111	0.093
+1553	Bohai Univ	10334	1184	190	0.161
+1554	Indian Inst Technol Gandhinagar	2803	1184	97	0.082
+1555	Lithuanian Univ Hlth Sci	2831	1183	76	0.065
+1556	Izmir Kâtip Çelebi Univ	18998	1182	62	0.052
+1557	Univ Mngmt & Technol - Lahore	53245	1182	173	0.146
+1558	Jamia Hamdard	18093	1182	146	0.124
+1559	Nanjing Univ Finance & Econ	52660	1181	185	0.157
+1560	Tech Univ Bergakad Freiberg	882	1178	77	0.065
+1561	Tamil Nadu Agr Univ	2521	1178	49	0.042
+1562	Univ Burdwan	2502	1178	99	0.084
+1563	Univ Trás-os-Montes & Alto Douro	562	1178	117	0.099
+1564	Univ Hertfordshire	304	1178	145	0.124
+1565	Southwest Forestry Univ	52649	1175	86	0.073
+1566	Shimane Univ	9508	1175	50	0.043
+1567	Univ Guanajuato	18575	1175	56	0.047
+1568	Agr Univ Athens	359	1174	121	0.103
+1569	Maharshi Dayanand Univ	19137	1174	128	0.109
+1570	Åbo Akademi Univ	118	1173	109	0.093
+1571	Boğaziçi Univ	727	1171	117	0.1
+1572	Charles Darwin Univ	2941	1169	142	0.121
+1573	Nelson Mandela Univ	1321	1167	75	0.064
+1574	Chongqing Technol & Business Univ	19204	1166	123	0.106
+1575	All India Inst Med Sci - Bhopal	55487	1165	42	0.036
+1576	Liaoning Normal Univ	9638	1163	83	0.071
+1577	Bucharest Univ Econ Stud	205	1162	83	0.071
+1578	Moulay Ismail Univ	55417	1162	74	0.064
+1579	Narsee Monjee Inst Mngmt Stud	54799	1160	99	0.085
+1580	Visvesvaraya Technol Univ	55388	1158	57	0.049
+1581	Tech Univ Cluj-Napoca	574	1158	93	0.08
+1582	Nippon Med Sch	3643	1157	66	0.057
+1583	Natl Univ Sci & Technol MISIS	16362	1157	78	0.067
+1584	Natl Univ Ireland - Maynooth	404	1155	131	0.114
+1585	Tokyo Med Univ	3648	1155	70	0.061
+1586	Univ Poitiers	2621	1152	86	0.075
+1587	Gaziantep Univ	725	1149	69	0.06
+1588	Univ Electro-Comm	9538	1149	65	0.057
+1589	Univ Fed Campina Grande	6104	1145	56	0.049
+1590	Rhodes Univ	1503	1138	67	0.059
+1591	Pontif Cath Univ Rio Grande do Sul	1499	1136	82	0.072
+1592	Univ Angers	2660	1136	109	0.096
+1593	Univ Kragujevac	18067	1136	104	0.092
+1594	Tunis Univ	53291	1136	62	0.055
+1595	Natl Inst Technol Hamirpur	34000	1133	102	0.09
+1596	Shijiazhuang Tiedao Univ	52662	1132	83	0.074
+1597	Univ Seoul	9704	1132	115	0.101
+1598	Bordeaux INP	2783	1130	94	0.083
+1599	Univ Kufa	55510	1130	36	0.032
+1600	Univ N Dakota	3516	1130	110	0.097
+1601	Univ Wuppertal	272	1128	102	0.091
+1602	Alagappa Univ	2522	1127	84	0.075
+1603	Info Engn Univ	54737	1126	74	0.066
+1604	Saga Univ	3639	1126	39	0.035
+1605	Pandit Deendayal Energy Univ	34005	1125	125	0.111
+1606	Chongqing Univ Sci & Technol	52683	1125	91	0.08
+1607	Sahand Univ Technol	18055	1125	95	0.084
+1608	Indian Inst Technol Jodhpur	53126	1122	116	0.104
+1609	Univ Kurdistan	18561	1120	138	0.123
+1610	Fukuoka Univ	3640	1120	39	0.035
+1611	LSU Hlth Sci Ctr - New Orleans	1252	1119	97	0.086
+1612	Tshwane Univ Technol	1508	1117	85	0.076
+1613	Univ Int Business & Econ	52656	1116	160	0.144
+1614	Hubei Univ Med	19160	1115	90	0.081
+1615	Univ Akron	3481	1115	105	0.094
+1616	Nara Inst Sci & Technol	9532	1114	52	0.047
+1617	Nnamdi Azikiwe Univ	54829	1114	60	0.054
+1618	Yancheng Inst Technol	18703	1111	91	0.082
+1619	Univ Camerino	412	1111	118	0.106
+1620	Dong-a Univ	3749	1110	80	0.072
+1621	Presidency Univ Kolkata	34006	1109	93	0.084
+1622	China W Normal Univ	18779	1108	65	0.059
+1623	Univ Zanjan	18058	1108	94	0.085
+1624	Yogyakarta State Univ	55497	1106	35	0.032
+1625	Kennesaw State Univ	18452	1106	83	0.075
+1626	East Mediterranean Univ	1013	1105	129	0.117
+1627	Punjabi Univ	18094	1105	94	0.085
+1628	Kwangwoon Univ	3751	1102	121	0.11
+1629	Durban Univ Technol	180	1102	78	0.07
+1630	Texas Tech Univ Hlth Sci Ctr	18413	1100	94	0.085
+1631	Australian Cath Univ	10345	1100	189	0.172
+1632	Xinxiang Med Univ	18031	1099	102	0.093
+1633	Haramaya Univ	54793	1097	119	0.109
+1634	Indian Assoc Cultivation Sci	2459	1096	59	0.054
+1635	Feng Chia Univ	3758	1095	64	0.058
+1636	Boise State Univ	9852	1093	98	0.09
+1637	Kyushu Inst Technol	18063	1093	45	0.041
+1638	St Anna Sch Adv Stud	15067	1093	152	0.139
+1639	Int Hellenic Univ	761	1092	115	0.106
+1640	Guangdong Univ Foreign Stud	53076	1091	107	0.098
+1641	Inner Mongolia Univ Sci & Technol	19187	1088	73	0.067
+1642	Worcester Polytech Inst	9834	1088	109	0.1
+1643	Wannan Med Coll	52644	1087	104	0.096
+1644	Grigore T. Popa Univ Med & Pharma Iași	977	1086	119	0.109
+1645	Stevens Inst Technol	3540	1086	144	0.133
+1646	South Methodist Univ	3524	1085	119	0.109
+1647	Nirma Univ	34004	1085	112	0.103
+1648	All India Inst Med Sci - Raipur	55511	1084	30	0.027
+1649	Fujian Univ Technol	52686	1083	100	0.092
+1650	Linyi Univ	18551	1083	96	0.088
+1651	Kongju Natl Univ	53266	1082	59	0.055
+1652	Galgotias Univ	55515	1082	50	0.046
+1653	Univ Santiago Chile	9420	1081	80	0.074
+1654	Natl Inst Technol Agartala	55436	1080	85	0.079
+1655	MS Ramaiah Univ Appl Sci	55496	1079	49	0.045
+1656	Univ Greenwich	326	1079	154	0.143
+1657	Hindustan Inst Technol & Sci	55508	1078	49	0.045
+1658	Gebze Tech Univ	18167	1078	66	0.062
+1659	IISER Bhopal	19145	1078	84	0.078
+1660	Howard Univ	3525	1078	70	0.065
+1661	Wilfrid Laurier Univ	3591	1076	97	0.09
+1662	Westlake Univ	53894	1076	211	0.196
+1663	Univ Aegean	368	1076	81	0.075
+1664	Yazd Shahid Sadoughi Univ Med Sci	53007	1075	66	0.062
+1665	Inst natl recherche sci	16482	1074	109	0.101
+1666	Hashemite Univ	161	1074	88	0.082
+1667	Univ Montana	3507	1074	129	0.12
+1668	Univ Reims Champagne-Ardenne	2623	1074	61	0.057
+1669	Natl Inst Technol Jamshedpur	55452	1072	73	0.068
+1670	Ankara Yıldırım Beyazıt Univ	33090	1071	62	0.058
+1671	Showa Univ	3652	1070	52	0.049
+1672	Chung Yuan Christian Univ	3759	1068	66	0.062
+1673	Abdul Wali Khan Univ Mardan	53243	1066	139	0.13
+1674	Daegu Gyeongbuk Inst Sci & Technol	18980	1065	110	0.103
+1675	Başkent Univ	1016	1065	39	0.037
+1676	Univ Abomey-Calavi	53864	1064	30	0.029
+1677	Veer Surendra Sai Univ Technol	54814	1063	78	0.073
+1678	San Jose State Univ	18525	1061	82	0.077
+1679	Univ Coll Southeast Norway	18679	1060	103	0.097
+1680	Siberian Fed Univ	10050	1060	35	0.033
+1681	Jain Univ	53928	1059	87	0.082
+1682	Univ Fed Alagoas	6111	1058	57	0.054
+1683	Riga Tech Univ	929	1054	44	0.042
+1684	Univ Sci & Technol - S Korea	9734	1053	88	0.083
+1685	Univ Yamanashi	16441	1052	31	0.029
+1686	Publ Univ Navarra	660	1050	107	0.102
+1687	Birkbeck - Univ London	1035	1050	141	0.134
+1688	Andhra Univ	2492	1050	38	0.036
+1689	Georgia South Univ	9874	1049	56	0.053
+1690	Dr Hari Singh Gour Univ	55509	1049	69	0.066
+1691	Pontificia Univ Católica Valparaíso	152	1049	63	0.061
+1692	Cent Michigan Univ	9858	1046	87	0.083
+1693	Hebei Univ Engn	19170	1045	85	0.081
+1694	Dow Univ Hlth Sci	53859	1044	68	0.065
+1695	Copenhagen Bus Sch	107	1044	168	0.161
+1696	Muhammadiyah Univ Yogyakarta	55575	1043	32	0.03
+1697	Univ Évora	551	1042	66	0.064
+1698	Univ Mazandaran	9489	1042	98	0.094
+1699	Parthenope Univ Naples	434	1040	159	0.153
+1700	Shenyang Jianzhu Univ	52685	1040	56	0.053
+1701	Saitama Univ	3653	1038	35	0.033
+1702	Univ Huelva	639	1038	75	0.072
+1703	Univ Szczecin	530	1037	81	0.078
+1704	Univ Brighton	279	1036	105	0.101
+1705	Univ Cent Lancashire	345	1035	112	0.108
+1706	Harbin Normal Univ	10340	1033	68	0.066
+1707	Lobachevsky State Univ Nizhni Novgorod	2883	1033	42	0.041
+1708	Imam Khomeini Int Univ	18791	1032	95	0.092
+1709	Xinyang Normal Univ	18718	1030	84	0.081
+1710	Univ Fed Ouro Preto	6073	1030	49	0.048
+1711	Sharda Univ	54804	1030	76	0.074
+1712	Mediterranea Univ Reggio Calabria	442	1029	105	0.102
+1713	Univ Brunei Darussalam	53068	1027	123	0.119
+1714	North Univ Malaysia	55516	1027	89	0.086
+1715	Creighton Univ	3511	1026	58	0.057
+1716	Sapporo Med Univ	3647	1025	46	0.045
+1717	Univ Pablo Olavide	999	1025	98	0.096
+1718	Shandong Univ Finance & Econ	52677	1022	152	0.149
+1719	Marquette Univ	3512	1021	88	0.087
+1720	Univ Ryukyus	9522	1020	52	0.051
+1721	Univ Allahabad	2482	1018	60	0.059
+1722	Lakehead Univ	9418	1018	90	0.088
+1723	Bangor Univ	848	1018	131	0.129
+1724	Illinois Inst Technol	3509	1018	98	0.096
+1725	Sofia Univ  - Bulgaria	62	1016	44	0.044
+1726	Al-Farabi Kazakh Natl Univ	165	1016	51	0.05
+1727	Mil Univ Technol - Warsaw	534	1014	94	0.093
+1728	Mendel Univ	85	1014	71	0.07
+1729	Univ Miyazaki	3654	1011	44	0.043
+1730	Muğla Sıtkı Koçman Univ	1023	1009	48	0.048
+1731	Pontificia Univ Javeriana	52975	1005	64	0.064
+1732	Osnabrück Univ	262	1003	94	0.094
+1733	Tech Univ Malaysia Malacca	55519	1002	65	0.065
+1734	Indian Inst Sci Educ & Res - Pune	18559	1001	64	0.064
+1735	Hawassa Univ	53115	1001	88	0.088
+1736	N Minzu Univ	33824	1000	65	0.065
+1737	Jahangirnagar Univ	53066	1000	111	0.111
+1738	Anhui Univ Chin Med	52689	999	98	0.098
+1739	Victor Babeş Univ Med & Pharma - Timisoara	586	998	94	0.095
+1740	Univ Valle	18965	996	43	0.043
+1741	Univ Rajshahi	53067	995	95	0.095
+1742	Malmö Univ	868	995	99	0.099
+1743	Univ Salford	346	993	103	0.104
+1744	Düzce Univ	19100	992	129	0.13
+1745	S Valley Univ	52988	992	108	0.109
+1746	Can Tho Univ	9062	991	40	0.04
+1747	Int Islamic Univ Islamabad	52615	990	111	0.112
+1748	Sohag Univ	18781	990	84	0.085
+1749	Saitama Med Univ	53168	990	45	0.045
+1750	Univ S Alabama	3529	989	68	0.068
+1751	Univ Peradeniya	18961	989	68	0.069
+1752	Wonkwang Univ	9719	987	62	0.063
+1753	Univ Peshawar	18803	987	96	0.098
+1754	Lebanese Amer Univ	10287	985	171	0.174
+1755	Univ Picardie Jules Verne	2649	984	89	0.09
+1756	Univ Vet Med Vienna	22	983	105	0.107
+1757	Cent S Univ Forestry & Technol	19168	983	121	0.123
+1758	Białystok Univ Technol	504	982	56	0.057
+1759	Univ Fukui	3655	982	37	0.038
+1760	North Illinois Univ	3504	981	73	0.074
+1761	Univ Tuscia	462	981	98	0.099
+1762	Riphah Int Univ	53246	980	123	0.126
+1763	Sriwijaya Univ	55518	978	28	0.029
+1764	Politehnica Univ Timişoara	584	978	56	0.058
+1765	Tech Univ Ilmenau	888	977	72	0.074
+1766	Wright State Univ	3501	977	72	0.074
+1767	Huaiyin Inst Technol	19229	976	101	0.103
+1768	Univ Occupat & Environ Hlth	3659	976	56	0.058
+1769	State Univ Padang	55546	976	38	0.039
+1770	Univ Basilicata	808	975	95	0.098
+1771	Univ Aut San Luis Potosí	101160	975	34	0.035
+1772	Illinois State Univ	3521	975	54	0.055
+1773	Univ Politec Cartagena	632	975	75	0.077
+1774	Netaji Subhas Univ Technol	55414	974	75	0.077
+1775	Fujita Hlth Univ	18062	974	63	0.064
+1776	Osaka Med & Pharmaceut Univ	18572	973	55	0.056
+1777	South Cross Univ	2942	973	98	0.101
+1778	Univ Michoacan	18577	972	36	0.037
+1779	Univ Costa Rica	18554	972	59	0.06
+1780	Grad Ctr - CUNY	3466	972	107	0.11
+1781	Univ Bradford	783	972	113	0.116
+1782	Oxford Brookes Univ	338	970	102	0.106
+1783	Celal Bayar Univ	1010	969	53	0.054
+1784	West Norway Univ Appl Sci	31910	968	91	0.094
+1785	Univ Bergamo	408	968	85	0.088
+1786	Univ Philippines Diliman	9094	968	42	0.044
+1787	Univ Burgos	1004	965	87	0.09
+1788	Zhejiang Univ Finance & Econ	19202	965	148	0.154
+1789	Univ Estado Santa Catarina	6192	965	45	0.047
+1790	Karabük Univ	19102	964	96	0.099
+1791	Hongik Univ	9725	962	67	0.069
+1792	Univ Development Stud	54794	961	73	0.076
+1793	Univ Mons	1386	961	103	0.107
+1794	De La Salle University	9110	960	50	0.052
+1795	Taylors Univ	53223	959	115	0.12
+1796	Anglia Ruskin Univ	285	959	109	0.113
+1797	Univ Port Harcourt	55539	959	30	0.031
+1798	Univ Fed Maranhão	6122	958	42	0.044
+1799	Univ Hradec Králové	30337	958	123	0.128
+1800	Univ Fed Piauí	6114	958	42	0.044
+1801	Indian Inst Info Technol Allahabad	2437	957	89	0.093
+1802	Kagawa Univ	9539	956	55	0.058
+1803	Visva Bharati Univ	2514	955	74	0.078
+1804	Suranaree Univ Technol	2540	954	49	0.051
+1805	Maharaja Sayajirao Univ Baroda	2511	953	43	0.045
+1806	American Univ	9842	952	93	0.098
+1807	Gauhati Univ	19151	949	54	0.057
+1808	Villanova Univ	9824	949	78	0.083
+1809	Sunway Univ	53225	948	141	0.149
+1810	Teikyo Univ	9510	946	56	0.059
+1811	Leeds Beckett Univ	308	946	108	0.115
+1812	Al-Balqa Appl Univ	53188	944	95	0.1
+1813	S Dakota State Univ	3528	944	78	0.083
+1814	Bowling Green State Univ	3513	943	77	0.082
+1815	Arab Acad Sci Technol & Mrtm Trans	9768	943	93	0.099
+1816	Udayana Univ	55538	942	22	0.023
+1817	Baqiyatallah Univ Med Sci	19113	942	69	0.073
+1818	Govt Coll Univ Lahore	53023	942	104	0.11
+1819	Univ Sargodha	18992	940	104	0.11
+1820	Shanxi Normal Univ	18693	939	58	0.062
+1821	Yarmouk Univ	53213	937	93	0.099
+1822	An-Najah Natl Univ	177	937	83	0.089
+1823	Abant İzzet Baysal Univ	1008	936	84	0.09
+1824	Univ Tenaga Nasional	53219	935	128	0.137
+1825	Inst Natl Polytech Toulouse	2779	935	78	0.084
+1826	State Univ Semarang	55513	934	19	0.02
+1827	Shahrekord Univ	18789	931	106	0.114
+1828	Univ La Frontera	16374	930	67	0.072
+1829	Sabancı Univ	734	930	125	0.135
+1830	Univ Malaysia Sarawak	53222	929	57	0.061
+1831	Fordham Univ	18081	929	106	0.114
+1832	Islamic Azad Univ S Tehran Branch	9460	928	80	0.086
+1833	Univ Mumbai	2501	928	39	0.042
+1834	Univ Alaska - Fairbanks	3518	928	81	0.087
+1835	Brandeis Univ	1318	926	120	0.13
+1836	Maharishi Markandeshwar Univ - Mullana	55523	925	66	0.071
+1837	Univ Mannheim	879	925	129	0.139
+1838	Univ Calabar	54826	924	74	0.08
+1839	Walailak Univ	18159	922	55	0.059
+1840	Mahatma Gandhi Univ	2518	921	66	0.072
+1841	Multimedia Univ	55433	921	111	0.12
+1842	Univ Veracruzana	18994	920	36	0.039
+1843	Adnan Menderes Univ	1032	920	50	0.054
+1844	Univ Vet Med Hannover	874	919	68	0.074
+1845	Jinzhou Med Univ	18553	919	88	0.096
+1846	Arak Univ	18056	918	49	0.053
+1847	Jiangxi Univ Finance & Econ	19185	918	110	0.12
+1848	Recep Tayyip Erdoğan Univ	18893	918	73	0.079
+1849	Trakya Univ	721	916	48	0.053
+1850	Jiangxi Univ Tradit Chin Med	52646	916	81	0.088
+1851	Harran Univ	1024	916	93	0.101
+1852	Andalas Univ	55541	915	26	0.028
+1853	Cal State Univ Fullerton	9836	915	56	0.061
+1854	Chouaib Doukkali Univ	53939	915	49	0.053
+1855	Cath Univ Portugal	556	915	105	0.115
+1856	Univ Bundeswehr Munich	1043	913	59	0.065
+1857	Ss Cyril & Methodius Univ Skopje	759	913	44	0.048
+1858	Indian Inst Sci Educ & Res Mohali	70057	911	48	0.053
+1859	Univ Svizzera italiana	699	910	121	0.133
+1860	Anhui Jianzhu Univ	52966	910	66	0.072
+1861	Natl Chung Cheng Univ	3760	910	65	0.071
+1862	Downstate Hlth Sci Univ -SUNY	3531	909	73	0.08
+1863	Seattle Univ	55514	909	83	0.091
+1864	Univ Austral Chile	9422	909	59	0.065
+1865	Univ Kuala Lumpur	55520	907	50	0.055
+1866	Federat Univ Australia	33357	902	103	0.114
+1867	Jiangxi Sci & Technol Normal Univ	18552	901	67	0.075
+1868	Fayoum Univ	53112	900	92	0.102
+1869	Univ St Gallen	702	899	117	0.131
+1870	Hamamatsu Univ Sch Med	9499	899	53	0.059
+1871	Yanbian Univ	18039	897	68	0.076
+1872	Univ S Bohemia České Budějovice	87	896	90	0.101
+1873	Cheikh Anta Diop Univ	1376	895	31	0.035
+1874	Akita Univ	9504	894	30	0.034
+1875	Liaoning Shihua Univ	19167	891	66	0.074
+1876	Fed Univ Mato Grosso	1476	891	29	0.033
+1877	Lviv Polytech Natl Univ	18901	891	46	0.052
+1878	UCSI Univ	53899	889	95	0.106
+1879	Univ Quebec Trois-Rivieres	18050	889	78	0.087
+1880	Andrés Bello Natl Univ	18051	889	74	0.083
+1881	Damascus Univ	55446	887	59	0.067
+1882	Univ Tec Frederico Santa María	153	887	54	0.061
+1883	Zhongyuan Univ Technol	52680	887	49	0.055
+1884	Ferhat Abbas Sétif Univ I	9276	885	53	0.06
+1885	Banasthali Univ	55695	883	64	0.073
+1886	Jember Univ	55565	883	13	0.015
+1887	Alzahra Univ	16370	883	60	0.068
+1888	Islamic Azad Univ Cent Tehran Branch	9951	883	58	0.065
+1889	KLE Acad High Educ & Res - Belagavi	55528	882	27	0.03
+1890	Shivaji Univ	2488	882	67	0.076
+1891	Vidyasagar Univ	34011	880	96	0.109
+1892	Cape Peninsula Univ Technol	10090	878	55	0.063
+1893	Bangladesh Agr Univ	53854	878	94	0.107
+1894	Doshisha Univ	18568	877	24	0.027
+1895	Roskilde Univ	113	877	91	0.103
+1896	Southwest Minzu Univ	53108	876	54	0.061
+1897	Japan Adv Inst Sci & Technol	591	876	27	0.031
+1898	Govind Ballabh Pant Univ Agr & Technol	2506	875	88	0.101
+1899	École Normale Sup - Lyon	2802	873	106	0.121
+1900	Univ Derby	788	872	104	0.12
+1901	Univ Orléans	2703	871	93	0.107
+1902	Univ W Bohemia	94	869	44	0.051
+1903	Heilongjiang Bayi Agr Univ	52669	868	72	0.083
+1904	Henan Inst Sci & Technol	19217	868	66	0.076
+1905	Fu Jen Cath Univ	18586	868	65	0.075
+1906	Univ Alabama - Huntsville	3534	866	68	0.078
+1907	Eskisehir Tech Univ	53293	865	55	0.064
+1908	Edinburgh Napier Univ	297	864	116	0.134
+1909	Witten/Herdecke Univ	887	864	97	0.112
+1910	Dicle Univ	720	863	56	0.064
+1911	Kurukshetra Univ	2498	862	53	0.062
+1912	Univ Econ Ho Chi Minh City	16379	862	143	0.166
+1913	Univ Nebraska - Omaha	1268	860	85	0.099
+1914	Fed Univ Agr - Abeokuta	175	859	38	0.044
+1915	İstanbul Medeniyet Univ	33074	859	53	0.062
+1916	Asia Univ	16443	859	102	0.119
+1917	Kurume Univ	9492	858	43	0.05
+1918	Guru Jambheshwar Univ Sci & Technol	53123	856	78	0.091
+1919	Univ Lethbridge	3583	856	65	0.076
+1920	Dalian Jiaotong Univ	52964	853	55	0.064
+1921	Pontif Univ Católica Paraná	6095	852	68	0.08
+1922	Cal State Univ Long Beach	9844	852	66	0.077
+1923	Guilan Univ Med Sci	33805	850	52	0.061
+1924	Univ Vet & Animal Sci	10262	849	53	0.062
+1925	Univ Louisiana - Lafayette	9855	849	63	0.074
+1926	Univ Badji Mokhtar	9234	847	41	0.049
+1927	Shiraz Univ Technol	18057	845	110	0.13
+1928	Mahasarakham Univ	33305	844	37	0.044
+1929	Acad Ctr Educ Culture & Res - Tehran	52611	844	77	0.091
+1930	Sri Venkateswara Univ	2483	839	40	0.047
+1931	Autonomous Univ Mexico State	53019	839	40	0.047
+1932	Vignan's Fnd Sci - Technol & Res	55517	838	49	0.059
+1933	Kahramanmaraş Sütçü İmam Univ	1022	836	43	0.052
+1934	City Univ Macau	33759	836	104	0.125
+1935	Zhongkai Univ Agr & Engn	52967	834	111	0.134
+1936	Univ Fed Amazonas	6115	834	32	0.039
+1937	Singapore Mngmt Univ	18579	834	107	0.129
+1938	Meiji Univ	18566	833	25	0.03
+1939	Kyoto Inst Technol	3657	832	28	0.033
+1940	Aswan Univ	53113	832	87	0.104
+1941	Technol Univ Dublin	33269	831	93	0.112
+1942	Texas Christian Univ	9878	830	61	0.074
+1943	Kyiv Polytech Inst	2848	830	15	0.018
+1944	Univ Miskolc	388	830	49	0.06
+1945	Bahçeşehir Univ	716	829	60	0.073
+1946	Chapman Univ	52618	829	83	0.1
+1947	Univ Ostrava	91	829	45	0.054
+1948	Aichi Med Univ	18570	828	38	0.046
+1949	Univ Benin	54827	827	34	0.041
+1950	Financial Univ	55524	827	55	0.067
+1951	Int Univ Hlth & Welfare - Japan	55526	825	44	0.054
+1952	Univ Gabes	53292	824	42	0.051
+1953	Bengbu Med Coll	18719	824	77	0.093
+1954	Univ Mohammed VI Polytech	55542	823	123	0.149
+1955	Univ Birjand	18794	822	56	0.068
+1956	SISSA	1360	822	106	0.129
+1957	N Carolina A & T State Univ	18424	818	76	0.093
+1958	Univ Douala	54729	818	25	0.031
+1959	Jawaharlal Nehru Technol Univ - Hyderabad	55540	816	33	0.04
+1960	Bond Univ	1334	816	127	0.155
+1961	Naresuan Univ	2543	816	47	0.057
+1962	Pavol Jozef Šafárik Univ Košice	613	816	61	0.075
+1963	Bülent Ecevit Univ	1007	814	66	0.081
+1964	Okinawa Inst Sci & Technol Grad Univ	54823	814	107	0.132
+1965	Cent Univ Punjab	53119	813	106	0.13
+1966	Univ Hyogo	18573	813	19	0.024
+1967	Ball State Univ	18082	812	58	0.071
+1968	Guangxi Univ Sci & Technol	53882	811	62	0.077
+1969	Univ Tlemcen	9222	811	42	0.052
+1970	Tzu Chi Univ	9808	810	59	0.073
+1971	Namık Kemal Univ	18165	808	41	0.05
+1972	Univ Molise	413	808	79	0.098
+1973	Polytech Inst Bragança	2868	807	68	0.085
+1974	Gheorghe Asachi Tech Univ Iaşi	580	806	46	0.057
+1975	E Tennessee State Univ	3539	805	59	0.073
+1976	Shiv Nadar Univ	70123	805	49	0.061
+1977	Tomas Bata Univ Zlín	100	804	45	0.056
+1978	Tokat Gaziosmanpaşa Univ	748	804	79	0.098
+1979	İzmir Inst Technol	738	804	51	0.064
+1980	St Joseph Univ	1362	803	57	0.072
+1981	Kyonggi Univ	18070	803	59	0.074
+1982	Wakayama Med Univ	3660	802	42	0.052
+1983	Vytautas Magnus Univ	467	800	63	0.079
+1984	Univ Urbino Carlo Bo	458	800	68	0.085
+1985	Univ Colombo	53040	799	54	0.068
+1986	Birmingham City Univ	787	799	76	0.095
+1987	I-Shou Univ	9792	798	57	0.072
+1988	Univ Jammu	2516	798	81	0.101
+1989	Univ Fed Rural Rio de Janeiro	6019	795	23	0.029
+1990	Bocconi Univ	428	794	141	0.177
+1991	Middlesex Univ	322	794	97	0.122
+1992	Paracelsus Med Univ	10343	793	87	0.109
+1993	Univ Anbar	53184	791	52	0.065
+1994	Guilin Med Univ	52661	791	62	0.078
+1995	Mekelle Univ	52992	790	75	0.094
+1996	Brandenburg Univ Technol Cottbus-Senftenberg	30572	789	53	0.067
+1997	Azarbaijan Shahid Madani Univ	18788	789	87	0.11
+1998	Amer Univ Cairo	53886	788	71	0.091
+1999	Appalachian State Univ	18524	787	64	0.081
+2000	Wollo Univ	53957	786	80	0.102
+2001	Univ Mysore	2477	784	51	0.066
+2002	Siddhartha Med Coll	55647	784	26	0.034
+2003	Univ Wolverhampton	356	784	79	0.1
+2004	Univ Natl Sur	3706	784	34	0.043
+2005	Teesside Univ	333	783	106	0.136
+2006	Univ Limpopo	105042	783	34	0.044
+2007	Univ Pardubice	93	780	45	0.058
+2008	Univ Gujrat	53025	778	94	0.121
+2009	Ramon Llull Univ	629	778	81	0.104
+2010	Univ Neuchâtel	701	777	98	0.126
+2011	Kansai Med Univ	33421	777	39	0.05
+2012	Arba Minch Univ	54790	776	68	0.087
+2013	Med Univ Sofia	898	776	45	0.057
+2014	Rockefeller Univ	1261	775	223	0.288
+2015	Vels Univ	55714	775	20	0.026
+2016	Lorestan Univ	19117	774	79	0.101
+2017	Babasaheb Bhimrao Ambedkar Univ	53118	773	75	0.097
+2018	Cyprus Univ Technol	190	772	88	0.113
+2019	Afyon Kocatepe Univ	1027	772	50	0.065
+2020	Jawaharlal Nehru Med Coll	70035	772	58	0.076
+2021	Cal State Univ Northridge	9870	770	52	0.067
+2022	State Univ Jakarta	55525	769	24	0.031
+2023	Univ Piraeus	370	768	59	0.077
+2024	Tamkang Univ	18074	768	58	0.076
+2025	Montclair State Univ	18515	768	66	0.086
+2026	Univ Fort Hare	18048	765	75	0.099
+2027	Royal Vet Coll - Univ London	1038	764	101	0.132
+2028	Clausthal Univ Technol	225	764	42	0.056
+2029	Oita Univ	9527	764	29	0.038
+2030	Hainan Normal Univ	52659	763	31	0.04
+2031	Changwon Natl Univ	18581	763	51	0.067
+2032	Autonomous Univ Queretaro	53867	762	45	0.059
+2033	Tomsk Polytech Univ	2874	761	41	0.054
+2034	Aksaray Univ	33056	761	43	0.057
+2035	Univ Zielona Góra	546	761	76	0.1
+2036	Jönköping Univ	674	760	71	0.093
+2037	San Francisco State Univ	9850	760	61	0.08
+2038	Nord Univ	31908	760	81	0.107
+2039	Univ N Carolina Wilmington	9866	759	48	0.063
+2040	Univ Fed Itajubá	6077	758	55	0.073
+2041	Nahrain Univ	55551	758	30	0.039
+2042	Coll William & Mary	3510	758	62	0.082
+2043	Univ La Rioja	1000	757	49	0.065
+2044	Glasgow Caledonian Univ	300	756	77	0.101
+2045	Lincoln Univ - New Zealand	18958	755	78	0.103
+2046	Eulji Univ	53275	755	46	0.061
+2047	Kumoh Natl Inst Technol	53038	755	75	0.099
+2048	MIT World Peace Univ	70162	755	29	0.039
+2049	Yanan Univ	52666	754	68	0.09
+2050	Univ Galati	966	754	62	0.082
+2051	Indust Univ Santander	52985	753	36	0.048
+2052	Manonmaniam Sundaranar Univ	54806	753	41	0.055
+2053	Tech Univ Liberec	88	752	50	0.066
+2054	Univ Craiova	578	752	56	0.075
+2055	Karlstad Univ	676	751	81	0.108
+2056	Capital Univ Econ & Bus	52983	750	104	0.138
+2057	DePaul Univ	9860	750	64	0.085
+2058	Univ Lucknow	2495	750	40	0.054
+2059	Kansai Univ	10249	750	19	0.025
+2060	Beijing Inst Petrochemical Technol	52973	749	53	0.071
+2061	Niğde Ömer Halisdemir Univ	746	749	47	0.063
+2062	Towson Univ	19104	747	55	0.073
+2063	KLE Technol Univ	70105	746	52	0.07
+2064	Shenzhen Polytech	52982	745	71	0.095
+2065	Univ Sulaimani	18137	742	88	0.119
+2066	Univ Talca	18967	741	68	0.091
+2067	Comm Univ China	53843	739	55	0.075
+2068	Natl Dairy Res Inst	2507	738	41	0.055
+2069	Islamic Azad Univ Najafabad	9948	738	115	0.155
+2070	Babol Univ Med Sci	34012	736	51	0.069
+2071	Iranshahr Univ	55595	736	57	0.078
+2072	Balıkesir Univ	1006	735	39	0.053
+2073	Univ Sistan & Baluchestan	18059	735	53	0.072
+2074	Charotar Univ Sci & Technol	70198	734	50	0.068
+2075	Ajman Univ	54848	732	105	0.143
+2076	Univ Oradea	967	731	115	0.157
+2077	Univ Sorbonne Paris Nord	2578	731	62	0.085
+2078	Islamic Azad Univ N Tehran Branch	9461	731	62	0.085
+2079	City Coll New York	3458	731	72	0.099
+2080	Univ Dayton	9848	729	49	0.068
+2081	REVA Univ	55697	729	28	0.038
+2082	Toyohashi Univ Technol	9535	728	35	0.048
+2083	Univ Montenegro	33492	727	32	0.044
+2084	Shoolini Univ	53900	726	157	0.216
+2085	Univ Trier	886	725	68	0.094
+2086	Univ Pannonia	392	725	51	0.071
+2087	PES Univ	9936	723	16	0.022
+2088	Indian Vet Res Inst	2479	723	48	0.066
+2089	Future Univ Egypt	55422	723	111	0.153
+2090	Politec Lisboa	2864	722	49	0.068
+2091	Univ Zimbabwe	105177	722	35	0.049
+2092	Univ Med & Pharma Sci & Technol - Târgu Mureş	587	721	82	0.113
+2093	Periyar Univ	19150	721	43	0.059
+2094	Dokkyo Med Univ	53016	719	34	0.047
+2095	Pontif Cath Univ Peru	178	719	45	0.063
+2096	Pasteur Inst Iran	19112	718	41	0.058
+2097	Univ Nicosia	192	717	86	0.12
+2098	Shenzhen Technol Univ	53932	716	70	0.098
+2099	Mizoram Univ	54800	716	52	0.073
+2100	Univ Sri Jayewardenepura	10295	716	53	0.075
+2101	Chaoyang Univ Technol	53282	716	54	0.075
+2102	Kırıkkale Univ	1030	715	53	0.075
+2103	Univ Dar es Salaam	9307	714	41	0.058
+2104	Opole Univ Technol	943	713	77	0.109
+2105	Univ Al-Qadisiyah	55544	713	41	0.057
+2106	Univ Deusto	2903	711	81	0.114
+2107	Bezmiâlem Fnd Univ	18078	711	24	0.033
+2108	Univ Moratuwa	18157	710	59	0.083
+2109	Univ Oberta Catalunya	624	710	75	0.106
+2110	Natl Pingtung Univ Sci & Technol	18589	710	39	0.055
+2111	Univ Westminster	329	709	80	0.113
+2112	Polytech Inst Leiria	1369	709	57	0.081
+2113	Arts & Métiers ParisTech	2668	709	62	0.087
+2114	Giresun Univ	33070	705	55	0.078
+2115	London S Bank Univ	321	703	70	0.1
+2116	Iwate Med Univ	9533	700	25	0.035
+2117	Shanghai Univ Sport	33792	698	97	0.138
+2118	Vienna Univ Econ & Bus	23	698	107	0.153
+2119	Indust Univ Ho Chi Minh City	54853	698	35	0.05
+2120	S Cent Minzu Univ	18033	697	76	0.109
+2121	Khulna Univ Engn & Technol	55440	696	84	0.121
+2122	Univ Botswana	9300	696	27	0.038
+2123	Univ Vale Rio dos Sinos	6178	696	50	0.072
+2124	Shibaura Inst Technol	53140	696	31	0.044
+2125	German Sport Univ Cologne	1042	696	66	0.096
+2126	Univ Zambia	53320	695	39	0.056
+2127	Univ Aut Estado Hidalgo	55543	695	38	0.055
+2128	Scuola Normale Superiore	440	695	95	0.137
+2129	Kastamonu Univ	33077	695	63	0.09
+2130	Burdur Mehmet Akif Ersoy Univ	33163	695	47	0.067
+2131	Assam Univ	19146	694	48	0.069
+2132	Univ Chittagong	54726	694	59	0.084
+2133	Univ Malakand	54835	694	107	0.153
+2134	Univ Malaysia Kelantan	55537	694	48	0.069
+2135	Adıyaman Univ	33080	693	37	0.054
+2136	Daegu Cath Univ	34591	691	33	0.048
+2137	Slovak Univ Agr Nitra	981	691	33	0.048
+2138	Univ Rwanda	18047	690	51	0.074
+2139	Erzincan Binali Yıldırım Univ	33068	689	49	0.072
+2140	Kochi Univ	9525	686	21	0.031
+2141	Jomo Kenyatta Univ Agr & Technol	55547	686	37	0.054
+2142	Univ Kerbala	10315	686	29	0.042
+2143	Leuphana Univ Lüneburg	255	685	97	0.142
+2144	Tech Univ Crete	364	684	64	0.094
+2145	Chuo Univ	18064	684	24	0.035
+2146	Damietta Univ	54788	683	87	0.128
+2147	Univ S Dakota	18398	682	52	0.076
+2148	Natl Chengchi Univ	9798	681	43	0.064
+2149	Univ Natl Litoral	100446	681	40	0.058
+2150	Korea Maritime & Ocean Univ	53039	681	37	0.055
+2151	Univ Ribeirão Preto	6183	681	34	0.05
+2152	Kazan State Technol Univ	55443	680	20	0.029
+2153	Univ Savoie Mont Blanc	2714	680	72	0.106
+2154	Mangalore Univ	2500	679	40	0.058
+2155	Devi Ahilya Vishwavidyalaya	55705	679	29	0.042
+2156	Cent Univ Rajasthan	53951	679	63	0.092
+2157	Inst Natl Sci Appl Lyon	2773	678	51	0.076
+2158	Konya Tech Univ	53769	677	56	0.083
+2159	Univ Bejaia	9242	677	38	0.057
+2160	James Madison Univ	142	676	31	0.045
+2161	Florida Inst Technol	18420	675	56	0.084
+2162	Rajiv Gandhi Univ Hlth Sci	55562	675	19	0.028
+2163	Univ Colorado Colorado Springs	18519	674	35	0.051
+2164	Riau Univ	55556	674	16	0.024
+2165	W Univ Timişoara	585	674	67	0.1
+2166	Univ Aut Baja California	70044	673	48	0.071
+2167	Mid Sweden Univ	853	673	52	0.077
+2168	Belarusian State Univ	182	672	21	0.031
+2169	Goldsmiths - Univ London	1036	672	95	0.142
+2170	Tech Univ Sofia	63	672	15	0.023
+2171	British Univ Egypt	70050	672	64	0.095
+2173	Shahed Univ	19119	671	43	0.063
+2174	Jawaharlal Nehru Technol Univ Anantapur	70169	671	24	0.035
+2175	Univ Khartoum	53828	670	32	0.047
+2176	Yeditepe Univ	1017	669	37	0.056
+2177	Cleveland State Univ	16438	668	63	0.095
+2178	Trent Univ	3585	668	49	0.074
+2179	Univ Sannio	814	667	73	0.11
+2180	Xinjiang Agr Univ	53098	666	53	0.079
+2181	Hankuk Univ Foreign Stud	53264	665	47	0.071
+2182	Clarkson Univ	3522	664	48	0.072
+2183	Univ Mentouri - Constantine	1342	663	29	0.043
+2184	Shiga Univ Med Sci	9520	662	37	0.055
+2185	Univ Quebec Chicoutimi	18334	660	64	0.097
+2186	Inst Tecnol Aeronáutica	6107	660	36	0.055
+2187	St Marianna Univ Sch Med	18567	659	36	0.055
+2188	Natl Chin-Yi Univ Technol	53042	658	38	0.058
+2189	Corvinus Univ Budapest	381	657	47	0.072
+2190	Univ Fed São João del Rei	6078	656	41	0.063
+2191	Khulna Univ	53917	656	69	0.105
+2192	Adama Sci & Technol Univ	54791	656	78	0.118
+2193	Islamic Univ Indonesia	55559	655	23	0.035
+2194	Uşak Univ	33088	654	29	0.044
+2195	Tunghai Univ	9800	654	56	0.086
+2196	Univ Engn & Technol Taxila	21119	653	111	0.17
+2197	Djillali Liabes Univ	9250	652	39	0.06
+2198	St John's Univ	18099	652	67	0.102
+2199	Univ West Macedonia	208	651	59	0.091
+2200	Kingston Univ	307	651	63	0.097
+2201	Edge Hill Univ	18272	649	68	0.105
+2202	Univ Namur	48	649	61	0.094
+2203	Bharath Univ	55554	648	29	0.044
+2204	Guangdong Univ Petrochem Technol	53090	648	67	0.104
+2205	Univ Bamberg	212	647	56	0.087
+2206	Ilam Univ	19126	647	90	0.139
+2207	Yozgat Bozok Univ	33065	645	55	0.086
+2208	Kashan Univ Med Sci	53006	645	66	0.102
+2209	Embry-Riddle Aeronautical Univ	53309	644	61	0.094
+2210	Univ Pendidikan Sultan Idris	10277	643	45	0.069
+2211	Birjand Univ Med Sci	34021	643	58	0.09
+2212	Bayero Univ Kano	55549	642	46	0.072
+2213	Univ Catolica Norte	53075	640	33	0.051
+2214	Hazara Univ	53244	640	60	0.093
+2215	Univ Sonora	18993	639	23	0.036
+2216	Yuan Ze Univ	9804	639	72	0.113
+2217	Univ Pernambuco	6168	637	39	0.061
+2218	Sunchon Natl Univ	18583	636	41	0.064
+2219	Univ Jean Monnet (EPE)	70031	636	59	0.093
+2220	Lampung Univ	55568	636	19	0.029
+2221	Debre Markos Univ	54792	635	77	0.121
+2222	State Univ Medan	55552	634	21	0.033
+2223	Nagaoka Univ Technol	593	632	19	0.03
+2224	Kwansei Gakuin Univ	16383	631	26	0.041
+2225	Aberystwyth Univ	847	631	77	0.123
+2226	Mustafa Kemal Univ	714	631	25	0.039
+2227	Univ Aut Estado Morelos	18576	630	24	0.037
+2228	Univ Buea	54730	629	31	0.049
+2229	Univ Venda	1378	629	38	0.061
+2230	Plekhanov Russian Univ Econ	55599	628	32	0.051
+2231	Hosei Univ	70060	628	31	0.049
+2232	Univ Hassan 1er	70191	627	35	0.057
+2233	Univ W Scotland	340	627	80	0.127
+2234	Saratov State Univ	18148	626	30	0.048
+2235	Bartın Univ	33060	626	96	0.153
+2236	Univ Klagenfurt	11	625	66	0.106
+2237	Damanhour Univ	53888	625	62	0.099
+2238	Midwestern Univ	53868	625	37	0.06
+2239	Université Mohamed Khider Biskra	9216	624	36	0.058
+2240	Nanchang Inst Technol	52977	624	34	0.055
+2241	Univ Cassino & South Lazio	414	623	71	0.114
+2242	Tashkent Inst Irrigation & Agr Mechanization Engineers	55692	623	51	0.082
+2243	California State Univ - Fresno	18456	621	36	0.058
+2244	Cyprus Int Univ	34481	621	98	0.157
+2245	Port Said Univ	53114	621	66	0.106
+2246	West Univ Hlth Sci	53305	620	64	0.103
+2247	Hamburg Univ Technol	242	620	52	0.084
+2248	Srinakharinwirot Univ	18858	619	42	0.068
+2249	Amer Univ Middle E	70062	619	80	0.128
+2250	Inst Cancer Res	15200	617	132	0.214
+2251	VN Karazin Kharkiv Natl Univ	2852	617	15	0.025
+2252	Univ Limoges	2658	616	52	0.085
+2253	Manouba Univ	70076	616	42	0.068
+2254	Islamic Azad Univ - Mashhad Branch	19122	616	46	0.075
+2255	Univ Engn & Technol - Peshawar	53247	615	75	0.122
+2256	Lucian Blaga Univ Sibiu	582	615	44	0.072
+2257	Bahria Univ	9587	615	70	0.113
+2258	Muhimbili Univ Hlth & Allied Sci	53288	613	42	0.068
+2259	Univ Estadual Ponta Grossa	6120	613	25	0.041
+2260	Bangalore Univ	2496	612	24	0.039
+2261	CY Cergy Paris Univ	10547	611	52	0.085
+2262	Univ Rosario	52976	609	65	0.106
+2263	Jan Kochanowski Univ Kielce	954	609	44	0.073
+2264	Islamic Azad Univ Med Branch Tehran	9943	608	57	0.094
+2265	Telkom Univ	55580	608	30	0.049
+2266	Natl Univ Computer & Emerging Sci	70146	606	82	0.136
+2267	Yenepoya Univ	70130	606	21	0.035
+2268	Perm Natl Res Polytech Univ	16365	605	16	0.026
+2269	Manav Rachna Univ	70143	604	21	0.035
+2270	Univ N Florida	53059	603	45	0.075
+2271	Al Baha Univ	55664	603	49	0.082
+2272	Zahedan Univ Med Sci	34013	601	37	0.061
+2273	Univ Missouri - St Louis	3530	601	48	0.08
+2274	Sher-e-Kashmir Univ Agr Sci & Technol Kashmir	55707	600	53	0.088
+2275	Inst Ecología	53020	600	37	0.061
+2276	Gujarat Univ	53122	599	31	0.053
+2277	Bursa Technical Univ	33095	598	35	0.059
+2278	State Univ Surabaya	55563	598	22	0.037
+2279	Univ Da Nang	55698	598	41	0.068
+2280	Grad Univ Adv Stud - SOKENDAI	55548	597	41	0.068
+2281	Karamanoğlu Mehmetbey Univ	33076	596	55	0.092
+2282	Wichita State Univ	18086	596	37	0.062
+2283	Univ Agr Sci & Vet Med Cluj-Napoca	575	595	94	0.157
+2284	Fed Univ Technol Owerri	55691	593	23	0.039
+2285	Fundação Getulio Vargas	6271	593	45	0.076
+2286	Univ Estadual Norte Fluminense Darcy Ribeiro	6016	593	29	0.048
+2287	Univ Minnesota - Duluth	10201	592	51	0.086
+2288	Univ Lusófona	1050	591	50	0.085
+2289	Madurai Kamaraj Univ	2487	591	26	0.045
+2290	Univ Primorska	617	589	54	0.091
+2291	Guangdong Polytech Normal Univ	53890	588	61	0.103
+2292	Montpellier SupAgro	9777	586	56	0.095
+2293	Pir Mehr Ali Shah Arid Agr Univ	55459	584	63	0.107
+2294	Univ Batna	9238	584	29	0.049
+2295	Ordu Univ	33164	584	34	0.058
+2296	Univ Białystok	951	584	39	0.068
+2297	Thai Nguyen Univ	55701	584	34	0.058
+2298	Landmark Univ	54828	583	44	0.076
+2299	Univ Natl Rosario	9400	579	25	0.043
+2300	Islamic Azad Univ - Esfahan Branch	18562	579	41	0.071
+2301	East Virginia Med Sch	9840	576	54	0.093
+2302	Int Med Univ Malaysia	53220	575	62	0.108
+2303	Guizhou Minzu Univ	53920	574	37	0.064
+2304	Far East Fed Univ	18957	574	30	0.053
+2305	CMR Univ	70074	573	22	0.038
+2306	Hue Univ	9064	573	29	0.051
+2307	D Mendeleyev Univ Chem Technol Russia	55553	572	13	0.023
+2308	Escuela Superior Politec Litoral	70094	572	48	0.083
+2309	Univ Bus & Technol - Saudi Arabia	55626	572	70	0.122
+2310	Sultan Zainal Abidin Univ	55614	571	37	0.065
+2311	Poznań Univ Econ & Bus	524	570	38	0.066
+2312	Afe Babalola Univ	70063	569	26	0.045
+2313	Ibaraki Univ	53136	569	19	0.033
+2314	Volgograd State Tech Univ	55558	568	8	0.014
+2315	Air Univ Pakistan	53921	568	91	0.16
+2316	Kırşehir Ahi Evran Univ	33081	568	29	0.052
+2317	Univ Peloponnese	912	568	38	0.066
+2318	Abu Dhabi Univ	55449	566	75	0.132
+2319	Integral Univ - Lucknow	55461	565	48	0.084
+2320	Voronezh State Univ	600	565	9	0.016
+2321	Ming Chi Univ Technol	53053	562	49	0.088
+2322	Hyogo Med Univ	3658	561	26	0.047
+2323	Natl Dong Hwa Univ	9806	560	38	0.068
+2324	Rīga Stradiņš Univ	932	559	39	0.069
+2325	Warsaw Sch Econ	32057	558	31	0.055
+2326	Laurentian Univ	9419	557	48	0.086
+2327	Univ Bahrain	55678	556	46	0.082
+2328	L N Gumilyov Eurasian Natl Univ	55624	556	38	0.069
+2329	Kyorin Univ	53139	555	30	0.054
+2330	O P Jindal Global Univ	70178	555	53	0.095
+2331	Univ Fed Alfenas	6076	555	24	0.043
+2332	Kenyatta Univ	55621	555	16	0.029
+2333	Robert Gordon Univ	274	554	62	0.111
+2334	Univ Mataram	55564	553	14	0.025
+2335	Ardabil Univ Med Sci	54817	552	53	0.096
+2336	Univ Diyala	55674	552	27	0.049
+2337	Univ San Francisco Quito	55561	550	44	0.079
+2338	Autonomous Univ Yucatan	53237	550	29	0.053
+2339	Univ Félix Houphouët-Boigny	55652	549	11	0.019
+2340	Univ Vaasa	135	548	89	0.162
+2341	Univ Fed Vales Jequitinhonha & Mucuri	6079	548	29	0.053
+2342	Univ Valparaíso	52630	548	38	0.07
+2343	Univ Azad Jammu & Kashmir	53931	548	54	0.098
+2344	Univ Prishtina	32054	547	30	0.054
+2345	Florida A&M Univ	10233	547	56	0.102
+2346	Qazvin Univ Med Sci	53876	546	41	0.076
+2347	Univ Fed Ciências Saúde Porto Alegre	6174	545	35	0.064
+2348	Univ Paris I Panthéon-Sorbonne	2691	544	50	0.091
+2349	Hittite Univ	10026	544	31	0.058
+2350	Univ Estadual Oeste do Paraná	6180	543	16	0.029
+2351	Ufa State Petrol Technol Univ	55557	543	11	0.021
+2352	Gangneung–Wonju Natl Univ	53263	543	23	0.042
+2353	Univ Maragheh	19125	542	64	0.118
+2354	CCS Haryana Agr Univ	55475	542	58	0.107
+2355	Univ Norte Colombia	53111	542	44	0.081
+2356	Univ Natl Mayor San Marcos	54838	541	24	0.044
+2357	Univ Social Welfare & Rehab Sci	34016	541	28	0.053
+2358	Helmut-Schmidt-Univ/Univ Bundeswehr Hamburg	1329	539	40	0.074
+2359	Sci Po	2795	538	69	0.129
+2360	Univ Okara	55470	537	74	0.137
+2361	Johnson Univ	55560	534	53	0.1
+2362	Univ Joseph Ki-Zerbo	70075	532	12	0.022
+2363	Govt Med Coll & Hospital	70126	531	16	0.03
+2364	Samara Polytech	18850	529	17	0.032
+2365	Univ Intl Catalunya	996	529	58	0.109
+2366	Belgorod State Technol Univ	70131	528	4	0.008
+2367	Suez Univ	19239	527	79	0.15
+2368	Wrocław Univ Econ	544	526	33	0.063
+2369	Cardiff Metropolitan Univ	18271	526	57	0.108
+2370	AgroCampus Ouest	7427	525	49	0.093
+2371	École Centrale Lille	2778	525	45	0.086
+2372	Gorgan Univ	53008	525	71	0.135
+2373	Golestan Univ	55702	524	59	0.112
+2374	Liverpool Sch Trop Med	32508	523	83	0.158
+2375	Hellenic Mediterranean Univ	53655	521	60	0.115
+2376	Open Univ Netherlands	486	521	56	0.107
+2377	Sefako Makgatho Hlth Sci Univ	70067	520	41	0.079
+2378	Okayama Univ Sci	53167	519	20	0.038
+2379	Khwaja Fareed Univ Engn & Info Technol	55412	518	84	0.163
+2380	İstinye Univ	33150	517	65	0.125
+2381	Univ Nal Mar del Plata	100978	517	22	0.042
+2382	Comillas Pontif Univ	652	516	42	0.081
+2383	Pakistan Inst Engn & Applied Sci	70177	516	58	0.112
+2384	Cayetano Heredia Univ	53249	515	46	0.089
+2385	Salahaddin Univ-Erbil	55651	515	36	0.069
+2386	Univ Namibia	9978	514	20	0.039
+2387	İstanbul Aydın Univ	2838	514	37	0.072
+2388	Punjab Tech Univ	70156	513	46	0.089
+2389	Sumy State Univ	2853	513	39	0.077
+2390	Mutah Univ	70160	511	38	0.074
+2391	Lorestan Univ Med Sci	34018	511	43	0.085
+2392	Islamic Azad Univ - Tabriz Branch	19118	510	64	0.126
+2393	St Petersburg State Electrotech Univ	55672	509	16	0.031
+2394	Hubei Univ Arts & Sci	53097	509	41	0.081
+2395	Middle Tech Univ - Baghdad	55671	508	18	0.036
+2396	Mehran Univ Engn & Technol	53922	507	57	0.112
+2397	Univ Notre Dame Australia	33361	505	38	0.075
+2398	Shenzhen Inst Info Technol	55681	505	60	0.119
+2399	Guangdong Univ Finance	70049	505	54	0.107
+2400	Siirt Univ	33083	505	47	0.092
+2401	Beirut Arab Univ	10288	502	46	0.092
+2402	Univ Coast	55735	502	30	0.059
+2403	Thi Qar Univ	55631	501	30	0.059
+2404	Rajamangala Univ Technol Thanyaburi	18857	499	20	0.04
+2405	Paris W Univ Nanterre la Défense	2577	499	39	0.078
+2406	Univ Hagen	241	498	33	0.067
+2407	Univ Bio-Bio	53234	498	29	0.057
+2408	Peruvian Univ Applied Sci	70114	497	10	0.02
+2409	Marymount Univ	18436	496	21	0.043
+2410	DY Patil Univ	70098	496	19	0.038
+2411	Univ Toulon	2718	494	42	0.086
+2412	Yerevan State Univ	10266	494	19	0.037
+2413	Noakhali Sci & Technol Univ	70168	494	54	0.109
+2414	Ivan Franko Natl Univ Lviv	18617	493	8	0.017
+2415	Univ S Wales	328	492	41	0.084
+2416	Univ Pau & Pays de l'Adour	2704	492	30	0.06
+2417	Univ Philippines Manila	9098	491	37	0.075
+2418	Delta State Univ - Nigeria	55679	491	16	0.033
+2419	Univ Philippines Los Banos	9096	490	19	0.038
+2420	Univ las Fuerzas Armadas ESPE	70167	486	13	0.027
+2421	Kathmandu Univ	55686	485	34	0.07
+2422	Al Ain Univ	70051	485	62	0.127
+2423	Ekiti State Univ	55675	484	11	0.022
+2424	Univ Adolfo Ibañez	16373	484	38	0.078
+2425	Univ Kinshasa	10319	482	15	0.032
+2426	Centurion Univ Technol & Mngmt	70187	482	28	0.059
+2427	Belgorod State Univ	10056	482	21	0.043
+2428	Univ Estadual Santa Cruz	6117	481	19	0.04
+2429	Hellenic Open Univ	911	481	30	0.063
+2430	Univ Agr Peshawar	54837	479	41	0.086
+2431	Kafkas Univ	1031	479	35	0.072
+2432	Tibet Univ	55473	478	36	0.075
+2433	İstanbul Gelişim Univ	33105	476	38	0.079
+2434	Inst Natl Sci Appl Toulouse	2777	475	46	0.097
+2435	Nguyen Tat Thanh Univ	53874	474	54	0.114
+2436	Ivane Javakhishvili Tbilisi State Univ	10313	472	16	0.034
+2437	Univ Desarrollo	21017	469	38	0.082
+2438	Univ Aut Coahuila	70110	469	36	0.078
+2439	Van Lang Univ	55421	468	43	0.093
+2440	Univ Nove Julho	6272	467	22	0.047
+2441	Christian Med Coll - Ludhiana	55741	467	21	0.046
+2442	Bilecik Şeyh Edebali Univ	33063	466	29	0.063
+2443	Univ Católica San Antonio Murcia	2901	466	40	0.086
+2444	Univ Estadual Ceará	6130	466	16	0.034
+2445	Univ Tarapaca	53074	465	49	0.106
+2446	Artois Univ	2692	464	38	0.082
+2447	Bingöl Univ	33064	464	59	0.127
+2448	Univ Cartagena	55704	463	15	0.031
+2449	Univ Malawi	54268	463	32	0.07
+2450	BRAC Univ	70129	463	43	0.093
+2451	IMT Atlantique Bretagne Pays Loire	18684	462	44	0.095
+2452	Stefan cel Mare Univ Suceava	10002	461	56	0.12
+2453	Univ Fed Pampa	6237	461	14	0.03
+2454	Atılım Univ	1029	460	38	0.083
+2455	Kraków Univ Econ	515	459	35	0.077
+2456	Univ Opole	950	459	34	0.073
+2457	Amasya Univ	33057	458	51	0.112
+2458	Fed Ctr Technol Educ Minas Gerais	70045	457	24	0.052
+2459	Univ Zululand	105040	456	27	0.059
+2460	Univ Ngaoundéré	70109	456	17	0.037
+2461	Univ Koblenz	70019	453	48	0.105
+2462	Óbuda Univ	602	453	39	0.087
+2463	Natl Defence Univ Malaysia	70161	452	38	0.083
+2464	Univ Santo Tomas	9082	451	31	0.069
+2465	Univ Maroua	55429	449	16	0.036
+2466	Univ Fed Rural Semi-Árido	6176	449	16	0.036
+2467	Fed Univ Technol Minna	70103	449	36	0.081
+2468	Univ Fed Triângulo Mineiro	6074	448	13	0.03
+2469	Hanoi Med Univ	70116	446	16	0.035
+2470	Fundação Univ Fed Grande Dourados	6185	446	15	0.033
+2471	Çankaya Univ	709	446	48	0.108
+2472	Le Quy Don Tech Univ	54852	446	40	0.089
+2473	Higher Inst Engn - 6 October City	9770	445	54	0.121
+2474	Ho Chi Minh City Med & Pharma Univ	70157	445	20	0.044
+2475	Univ Passo Fundo	6172	442	37	0.084
+2476	Univ Sci & Technol Bydgoszcz	938	442	25	0.057
+2477	Autonomous Univ Chile	53877	442	48	0.108
+2478	Univ Uyo	55739	441	14	0.031
+2479	Hunter Coll - CUNY	3459	441	34	0.078
+2480	Muhammadiyah Univ Surakarta	55574	439	16	0.037
+2481	Immanuel Kant Baltic Fed Univ	16369	438	24	0.056
+2482	N-Caucasus Fed Univ	70122	437	17	0.039
+2483	Muş Alparslan Univ	2839	437	36	0.083
+2484	Univ Technol Compiègne	2685	435	31	0.072
+2485	Autonomous Univ Zacatecas	53873	435	26	0.06
+2486	Conservatoire natl arts & métiers	31124	432	40	0.093
+2487	Univ Aut Ciudad Juárez	70164	432	20	0.047
+2488	Univ Fed Estado Rio de Janeiro	6017	431	27	0.064
+2489	Autonomous Univ Sinaloa	9567	431	22	0.052
+2490	John Paul II Cath Univ Lublin	520	430	33	0.076
+2491	Natl Univ Uzbekistan	10725	428	23	0.054
+2492	Natl Taipei Univ	53287	427	25	0.058
+2493	Univ Hlth & Allied Sci	70197	427	41	0.096
+2494	Jenderal Soedirman Univ	55586	427	7	0.016
+2495	Anadolu Univ	1014	427	26	0.06
+2496	Ufa Univ Sci & Technol	55227	425	9	0.021
+2497	Univ Cent Punjab	54833	425	53	0.124
+2498	Parul Univ	70043	423	20	0.048
+2499	Reykjavík Univ	376	422	44	0.105
+2500	GS Sci Arts & Commerce Coll	55712	422	20	0.047
+2501	Çankırı Karatekin Univ	33067	419	37	0.089
+2502	Univ Sabana	70084	418	24	0.057
+2503	Col Postgrad Mexico	55646	418	17	0.041
+2504	Kharkiv Polytech Inst	10104	417	10	0.024
+2505	Lahore Coll Women Univ	54834	417	35	0.083
+2506	Univ Antofagasta	52631	416	28	0.068
+2507	Univ Polytech Hauts-de-France	10649	415	34	0.081
+2508	Kütahya Dumlupınar Univ	742	415	41	0.099
+2509	Univ Ahmad Dahlan	55573	415	20	0.049
+2510	Univ Soc Sci & Humanities	1319	415	32	0.077
+2511	Pedagogical Univ Kraków	949	413	31	0.074
+2512	Univ La Rochelle	2716	413	33	0.079
+2513	Michael Okpara Univ Agr	10252	413	17	0.041
+2514	Samsun Univ	33896	410	30	0.073
+2515	Voronezh State Tech Univ	18154	408	10	0.024
+2516	Irkutsk Natl Res Tech Univ	55696	408	14	0.034
+2517	United Nations Univ	9957	407	64	0.158
+2518	Univ Educ - Winneba	70180	407	18	0.043
+2519	Univ Upper Alsace	3041	405	39	0.097
+2520	Univ Distrital Francisco José Caldas	70059	405	15	0.037
+2521	Applied Sci Private Univ - Jordan	55736	401	51	0.127
+2522	Univ Rajasthan	2476	400	25	0.062
+2523	Univ Duhok	55610	400	34	0.085
+2524	Dr DY Patil Vidyapeeth - Pune	70192	400	13	0.032
+2525	Univ Indianapolis	70088	399	41	0.101
+2526	Cent Agr Univ	70069	399	25	0.063
+2527	Autonomous Univ Chihuahua	70153	399	19	0.048
+2528	Univ Presbiteriana Mackenzie	6090	399	13	0.032
+2529	Univ Sadat City	16386	399	42	0.104
+2530	Tadulako Univ	55605	398	9	0.022
+2531	Univ N Texas Hlth Sci Ctr	3473	398	39	0.097
+2532	Univ Faisalabad	55644	397	43	0.107
+2533	North (Arctic) Fed Univ	70155	396	10	0.024
+2534	Univ Caxias dol Sul	6165	396	21	0.054
+2535	Cardinal Stefan Wyszynski Univ Warsaw	535	396	23	0.058
+2536	Univ Cuenca	70052	395	23	0.057
+2537	Islamic Univ - Bangladesh	55630	395	30	0.075
+2538	Univ Sains Islam Malaysia	9970	394	31	0.078
+2539	Tyumen State Univ	53257	394	13	0.032
+2540	Batman Univ	33061	393	49	0.125
+2541	European Univ Cyprus	10296	392	47	0.119
+2542	Univ Quebec Rimouski	18333	392	30	0.075
+2543	Univ Pontificia Bolivariana	18818	390	21	0.054
+2544	Cath Univ Maule	53229	390	30	0.076
+2545	Sanya Univ	55682	389	33	0.086
+2546	Univ Toulouse Capitole (EPE)	70016	388	43	0.11
+2547	Fed Univ Oye Ekiti	70127	388	21	0.053
+2548	Abbottabad Univ Sci & Technol	55724	387	51	0.132
+2549	Lagos State Univ	70055	385	12	0.032
+2550	St George's Univ	70189	384	28	0.073
+2551	Altai State Univ	18663	383	8	0.021
+2552	Univ Bamenda	70086	380	15	0.039
+2553	Lambung Mangkurat Univ	55572	377	6	0.015
+2554	Univ Estadual Paraíba	6182	377	15	0.041
+2555	Inst Fed Goiano	55688	376	13	0.036
+2556	Univ Town Shenzhen	55668	376	47	0.125
+2557	State Univ Makassar	55571	376	14	0.036
+2558	Moi Univ	1361	372	25	0.066
+2559	Le Mans Univ	2717	372	26	0.071
+2560	Francisco Vitoria Univ	2890	371	33	0.089
+2561	Univ Educ Pakistan	54832	371	40	0.108
+2562	Univ Sindh	53242	370	24	0.064
+2563	Jilin Med Univ	70070	370	31	0.083
+2564	Allameh Tabataba'i Univ	9944	369	38	0.102
+2565	École centrale Marseille	30965	367	32	0.088
+2566	Natl Univ Cuyo	53064	367	23	0.062
+2567	Univ Pelita Harapan	9042	367	33	0.089
+2568	Osmaniye Korkut Ata Univ	33082	367	42	0.115
+2569	Odisha Univ Agr & Technol	70145	363	20	0.055
+2570	Sana'a Univ	70111	361	53	0.148
+2571	Univ Econ Katowice	2916	361	23	0.064
+2572	Fac Med ABC	6004	361	20	0.054
+2573	Univ Wasit	70093	360	27	0.076
+2574	VetAgro Sup	10149	360	35	0.097
+2575	Nevşehir Hacı Bektaş Veli Univ	18164	360	32	0.09
+2576	Natl Aviat Univ	18907	360	10	0.027
+2577	Natl Univ Tucumán	100804	359	15	0.042
+2578	Univ los Andes	16376	358	28	0.079
+2579	Ovidius Univ	979	356	22	0.062
+2580	Gümüşhane Univ	33071	355	22	0.062
+2581	Univ Havana	70082	355	14	0.04
+2582	Iraqi Univ	55640	354	34	0.097
+2583	Volgograd State Univ	16368	354	11	0.032
+2584	Pirogov Russian Natl Res Med Univ	55441	354	20	0.057
+2585	Inst Politec Coimbra	2863	353	24	0.067
+2586	Kemerovo State Univ	55683	352	14	0.04
+2587	Moscow State Inst Int Relations	55641	350	18	0.052
+2588	Univ Paris 8	2689	350	24	0.067
+2589	Bandırma Onyedi Eylül Univ	33146	349	43	0.123
+2590	Univ La Réunion	2628	348	31	0.09
+2591	Ebonyi State Univ	70107	348	16	0.045
+2592	Univ Diego Portales	54656	348	28	0.081
+2593	Sch Adv Stud Social Sci	31136	348	31	0.088
+2594	Univ Surabaya	55662	343	11	0.032
+2595	Univ Littoral Côte d’Opale	2698	342	19	0.054
+2596	Univ Juárez Aut Tabasco	70072	341	11	0.033
+2597	Univ Haripur	55426	341	32	0.095
+2598	Inst Natl Sci Appl Rouen	10311	340	25	0.072
+2599	Univ Estadual Feira de Santana	6131	340	12	0.034
+2600	Univ Halu Oleo	55581	338	9	0.028
+2601	Univ Fed Rural Amazônia	6092	337	9	0.026
+2602	Univ Vic - Cent Univ Catalonia	997	335	33	0.097
+2603	Hanoi Univ Sci, VNU	9063	335	16	0.048
+2604	Uttaranchal Univ	55703	334	43	0.129
+2605	Univ Pendidikan Ganesha	55582	334	10	0.03
+2606	Natl Univ General San Martín	55710	333	20	0.059
+2607	Babcock Univ	70087	332	11	0.033
+2608	Univ Paulista	53324	331	17	0.053
+2609	Sinop Univ	33084	331	24	0.072
+2610	Univ Fed Tocantins	55608	331	8	0.025
+2611	Pontif Univ Católica Minas Gerais	6075	330	16	0.049
+2612	Palo Alto Univ	18375	330	36	0.11
+2613	Sam Ratulangi Univ	55606	329	8	0.024
+2614	Chengdu Inst Biology	70185	328	38	0.117
+2615	Univ Antilles	10360	328	28	0.085
+2616	Islamia Coll Univ	70104	328	35	0.108
+2617	Univ Bengkulu	55576	327	10	0.031
+2618	École Centrale Lyon	2793	325	23	0.071
+2619	Olabisi Onabanjo Univ	70097	325	13	0.04
+2620	Russian Acad Natl Econ & Publ Admin	10072	325	8	0.025
+2621	Univ Lumière Lyon 2	2664	323	28	0.085
+2622	Natl Univ Life & Environ Sci Ukraine	18613	322	11	0.036
+2623	Univ Cauca	70200	321	18	0.055
+2624	Kırklareli Univ	33161	321	18	0.057
+2625	Mulawarman Univ	55583	320	10	0.031
+2626	Bangladesh Med Univ	55648	319	7	0.022
+2627	Univ Catolica Santisima Concepcion	53227	318	20	0.062
+2628	Atma Jaya Cath Univ Indonesia	55658	318	19	0.059
+2629	Moscow Polytech Univ	70171	318	7	0.021
+2630	Univ Toulouse-Jean Jaurès	2637	318	23	0.072
+2631	Univ Jos	70091	317	10	0.032
+2632	Pedagogical & Technol Univ Colombia	55737	314	15	0.048
+2633	Iğdır Univ	33073	309	28	0.09
+2634	Khyber Med Univ	70077	303	18	0.059
+2635	Kuban State Agrarian Univ	70183	300	7	0.023
+2636	Minin Univ	18150	299	9	0.03
+2637	Enugu State Univ Sci & Technol	70190	298	8	0.025
+2638	Univ Mayor	54655	298	24	0.079
+2639	Jambi Univ	55567	298	9	0.031
+2640	Golestan Univ Med Sci	34014	296	17	0.057
+2641	Univ Estadual Sudoeste da Bahia	6199	295	12	0.041
+2642	Sci Univ South Peru	53198	292	18	0.06
+2643	Osun State Univ	70119	291	15	0.05
+2644	Univ San Sebastian	16375	291	31	0.108
+2645	Univ Le Havre	2699	289	19	0.067
+2646	Philadelphia Univ	70079	286	32	0.111
+2647	Avignon Univ	2710	286	21	0.072
+2648	El Bosque Univ	1348	285	21	0.074
+2649	Med Univ Varna	70	284	18	0.064
+2650	Univ Fed Fronteira Sul	55663	284	17	0.059
+2651	Usmanu Danfodiyo Univ	70064	283	8	0.028
+2652	Nişantaşı Univ	33112	282	31	0.109
+2653	Üsküdar Univ	18162	282	11	0.04
+2654	Pontif Univ Católica São Paulo	6094	280	6	0.023
+2655	AgroSup Dijon	18118	278	32	0.116
+2656	Natl Univ Comahue	53065	277	17	0.063
+2657	Mil Univ Nueva Granada	70184	276	9	0.033
+2658	Univ Perpignan Via Domitia	2705	276	26	0.096
+2659	Mines St-Etienne	18120	276	23	0.085
+2660	Univ Maiduguri	70090	275	10	0.038
+2661	Autonomous Univ Tamaulipas	70152	273	18	0.066
+2662	Natl Res Mordovia State Univ	70056	271	13	0.048
+2663	Univ Fortaleza	6173	271	13	0.047
+2664	Alborz Univ Med Sci	54818	270	23	0.084
+2665	Trisakti Univ	55585	269	5	0.017
+2666	Sultan Agung Islamic Univ	55628	268	6	0.023
+2667	Sultan Ageng Tirtayasa Univ	55584	268	6	0.024
+2668	Cent Univ Venezuela	70174	268	15	0.056
+2669	Cath Univ America	9872	266	18	0.068
+2670	Univ Kirkuk	70202	264	13	0.049
+2671	Satbayev Kazakh Natl Tech Univ	10250	263	11	0.04
+2672	Univ Fed Amapá	70096	262	12	0.045
+2673	Univ Estadual Montes Claros	6110	261	7	0.026
+2674	Sulaimani Polytech Univ	70186	259	27	0.106
+2675	Univ Rennes 2	2627	258	26	0.101
+2676	Trunojoyo Univ	55623	257	7	0.027
+2677	Ilia State Univ	9902	256	17	0.067
+2678	Pokhara Univ	70204	252	16	0.064
+2679	Univ Montpellier Paul-Valéry (EPE)	70032	250	23	0.091
+2680	Univ Regional Cariri	6208	249	12	0.046
+2681	Manado State Univ	55639	247	8	0.033
+2682	Mercu Buana Univ	55579	247	14	0.056
+2683	Univ Sci & Technol - Yemen	55722	246	13	0.055
+2684	Univ Estad Centro-Oeste	6196	243	8	0.032
+2685	Univ Bretagne Sud	2715	243	18	0.075
+2686	Sunan Gunung Djati State Islamic Univ Bandung	55590	242	7	0.027
+2687	Univ Católica Brasília	6099	241	14	0.056
+2688	Univ San Ignacio Loyola	70205	236	24	0.1
+2689	Univ Fed Recôncavo da Bahia	6197	233	5	0.021
+2690	Jakarta State Polytech	55604	230	5	0.022
+2691	Univ Estado Pará	6101	229	8	0.034
+2692	Univ Pembangunan Nasional Veteran Yogyakarta	55629	228	9	0.039
+2693	Univ Brasil	55622	228	4	0.019
+2694	Univ Vale Itajaí	6169	228	13	0.057
+2695	Cent Univ Ecuador	55715	227	8	0.036
+2696	Univ Hlth Sci - Cambodia	55706	221	4	0.018
+2697	Herzen Univ	18655	220	3	0.014
+2698	Univ Natl Asunción	70073	220	11	0.049
+2699	Iberoamerican Univ - Mexico City	169	218	14	0.066
+2700	State Univ Gorontalo	55600	217	7	0.031
+2701	Univ Técnica Ambato	55676	217	4	0.018
+2702	Fundação Univ Fed Rondônia	6232	216	5	0.021
+2703	Dhaka Med Coll & Hosp	55634	215	10	0.046
+2704	Univ Estadual Amazonas	6206	214	11	0.051
+2705	Natl Univ Publ Service	18836	214	9	0.042
+2706	Univ Estadual Maranhão	6220	213	4	0.021
+2707	Chapingo Autonomous Univ	70165	210	12	0.057
+2708	Univ Pattimura	55598	207	5	0.023
+2709	Tarumanagara Univ	55570	206	7	0.032
+2710	Univ Estadual Goiás	6229	202	6	0.029
+2711	Tanjungpura Univ	55577	201	6	0.028
+2712	Univ Muhammadiyah Malang	55591	201	12	0.058
+2713	Univ Pembangunan Nasional Veteran Jawa Timur	55578	200	6	0.031
+2714	Uzhhorod Natl Univ	10284	199	7	0.035
+2715	Univ Fed Acre	6202	196	5	0.027
+2716	Syarif Hidayatullah State Islamic Univ Jakarta	55588	187	10	0.052
+2717	Univ César Vallejo	55592	186	7	0.036
+2718	École Sup Chimie Phys Electronique - Lyon	2785	184	17	0.092
+2719	Univ Estado Mato Grosso	55667	182	8	0.044
+2720	Univ Fed Oeste Pará	70170	182	10	0.052
+2721	Univ Tiradentes	6207	181	8	0.045
+2722	Univ Técnica Manabí	55669	181	8	0.044
+2723	Pontif Univ Católica Campinas	6007	180	6	0.034
+2724	St Petersburg Pavlov State Med Univ	18657	176	8	0.044
+2725	Christian Univ Indonesia	55661	175	5	0.03
+2726	Univ Islam Negeri Maulana Malik Ibrahim	55589	175	7	0.041
+2727	Univ Paris III Sorbonne Nouvelle	2686	174	17	0.095
+2728	Moscow State Pedagogical Univ	70137	172	2	0.012
+2729	Danylo Halytsky Lviv Natl Med Univ	70092	171	15	0.085
+2730	Suleyman Demirel Univ	55638	170	6	0.034
+2731	Univ Nusa Cendana	55619	170	12	0.073
+2732	Chernivtsi Univ	18616	170	8	0.048
+2733	Vasyl Stefanyk Precarpathian Natl Univ	18932	168	16	0.096
+2734	Medan Area Univ	70053	168	11	0.066
+2735	Bogomolets Natl Med Univ	2850	166	14	0.084
+2736	Univ Estado Bahia	6211	165	7	0.041
+2737	Sanata Dharma Univ	70065	161	4	0.025
+2738	Sunan Kalijaga State Islamic Univ Yogyakarta	55566	161	8	0.047
+2739	Univ Estadual Mato Grosso do Sul	6236	160	5	0.031
+2740	Zaporozhye Natl Tech Univ	18936	158	7	0.044
+2741	Al-Azhar Univ Indonesia	55653	156	4	0.025
+2742	Natl Univ Med Sci - Pakistan	55693	156	13	0.084
+2743	Univ Islam Negeri Raden Intan Lampung	55594	155	11	0.068
+2744	Siliwangi Univ	55625	154	7	0.046
+2745	Oles Honchar Dnipro Natl Univ	18618	154	2	0.015
+2746	Univ America	18520	151	12	0.081
+2747	Satya Wacana Christian Univ	55601	139	5	0.038
+2748	Univ Estadual Paraná	70139	135	6	0.043
+2749	Inst Fed Educ Ciência & Tecnol Pará	70134	134	7	0.053
+2750	Samara State Med Univ	70089	128	8	0.064
+2751	Volgograd State Med Univ	70173	128	2	0.016
+2752	Univ Estado Minas Gerais	53345	125	6	0.052
+2753	Escuela Superior Politec Chimborazo	70151	124	5	0.04
+2754	Univ Dian Nuswantoro	70112	124	9	0.075
+2755	Univ Islam Negeri Sumatera Utara	55569	123	3	0.022
+2756	Bashkir State Med Univ	70175	121	9	0.073
+2757	Muhammadiyah Univ Purwokerto	55643	118	2	0.014
+2758	Khairun Univ	55718	118	3	0.022
+2759	Kazan State Med Univ	18656	117	4	0.032
+2760	Kyiv Natl Univ Trade & Econ	18898	117	3	0.024
+2761	Univ Islam Negeri Sultan Syarif Kasim Riau	55609	116	4	0.032
+2762	Muria Kudus Univ	55708	111	5	0.043
+2763	Univ Mahasaraswati Denpasar	70121	109	7	0.064
+2764	Univ Zulia	70102	108	9	0.085
+2765	Univ Teuku Umar	70100	108	4	0.036
+2766	Bandung Islamic Univ	55593	108	4	0.035
+2767	Univ Mayor San Andrés	70071	108	5	0.046
+2768	Maranatha Christian Univ	70196	106	3	0.029
+2769	Indonesia Defense Univ	70133	106	2	0.019
+2770	Univ Estadual Piauí	70078	105	2	0.018
+2771	Univ Hlth Sci - Somalia	70047	102	2	0.024
+2772	Indonesia Open Univ	55611	102	4	0.042
+2773	Muhammadiyah Univ Makassar	55620	101	2	0.023

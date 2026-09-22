@@ -8,20 +8,21 @@ OUT = Path("/Users/waterfly/.qwenworkcn/workspace/mu73k71u6l26gpc6/outputs")
 OUT.mkdir(parents=True, exist_ok=True)
 
 d = json.load(open(BASE / "stage1.json", encoding="utf-8"))
-# 官方校徽映射: logo_map.json = {stage1_key: wikimedia_thumbURL}; 用 data 的 key<->en 挂到 final 行
+# 官方校徽映射: logo_map.json = {norm_key(en): wikimedia_thumbURL}, 主榜+子榜统一按 norm_key(en) 查
+import matchlib as _M
+_nk = _M.norm_key
 try:
     _lmap = json.load(open(BASE / "logo_map.json", encoding="utf-8"))
 except Exception:
     _lmap = {}
-_key2en = {r["key"]: r["en"] for r in d["data"]}
-_en2logo = {_key2en[k]: u for k, u in _lmap.items() if k in _key2en}
+def _logo(en): return _lmap.get(_nk(en))
 # 扁平化: ranks 嵌套合并到行对象顶层 (qs/the/usnews/arwu)
 final = []
 for row in d["final"]:
     flat = {k: v for k, v in row.items() if k != "ranks"}
     for k, v in row["ranks"].items():
         flat[k] = v
-    flat["logo"] = _en2logo.get(row["en"])
+    flat["logo"] = _logo(row["en"])
     final.append(flat)
 payload = {
     "meta": d["meta"],
@@ -29,8 +30,11 @@ payload = {
     "special": d["special"],
 }
 DATA_JS = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-SUBJECT_JS = json.dumps(json.load(open(BASE / "subject.json", encoding="utf-8")),
-                        ensure_ascii=False, separators=(",", ":"))
+_subject = json.load(open(BASE / "subject.json", encoding="utf-8"))
+for _b in _subject:
+    for _r in _subject[_b]["rows"]:
+        _r["logo"] = _logo(_r["en"])
+SUBJECT_JS = json.dumps(_subject, ensure_ascii=False, separators=(",", ":"))
 
 HTML = r"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -605,7 +609,7 @@ function sRender(){
   $("#stb").innerHTML=filt.map(r=>{
     const medal=r.r<=3?`<span class="medal m${r.r}">${r.r}</span>`:r.r;
     return `<tr><td class="rk">${medal}</td>
-      <td class="uni"><span class="zh">${r.zh}</span><span class="en">${r.en}</span></td>
+      <td class="uni"><span class="lgs">${r.logo?`<img class="lg" src="${r.logo}" loading="lazy" alt="" onerror="this.style.visibility='hidden'">`:""}</span><span class="utxt"><span class="zh">${r.zh}</span><span class="en">${r.en}</span></span></td>
       <td class="cty">${r.country}</td>
       <td><div class="score"><span class="n">${r.comp.toFixed(1)}</span><span class="bar-bg"><span class="bar" style="width:${Math.round(r.comp)}px"></span></span></div></td>
       ${srcs.map(s=>`<td>${sChip(s,r)}</td>`).join("")}

@@ -8,12 +8,20 @@ OUT = Path("/Users/waterfly/.qwenworkcn/workspace/mu73k71u6l26gpc6/outputs")
 OUT.mkdir(parents=True, exist_ok=True)
 
 d = json.load(open(BASE / "stage1.json", encoding="utf-8"))
+# 官方校徽映射: logo_map.json = {stage1_key: wikimedia_thumbURL}; 用 data 的 key<->en 挂到 final 行
+try:
+    _lmap = json.load(open(BASE / "logo_map.json", encoding="utf-8"))
+except Exception:
+    _lmap = {}
+_key2en = {r["key"]: r["en"] for r in d["data"]}
+_en2logo = {_key2en[k]: u for k, u in _lmap.items() if k in _key2en}
 # 扁平化: ranks 嵌套合并到行对象顶层 (qs/the/usnews/arwu)
 final = []
 for row in d["final"]:
     flat = {k: v for k, v in row.items() if k != "ranks"}
     for k, v in row["ranks"].items():
         flat[k] = v
+    flat["logo"] = _en2logo.get(row["en"])
     final.append(flat)
 payload = {
     "meta": d["meta"],
@@ -116,6 +124,9 @@ tr.top1 td:first-child{color:var(--gold)}
 .medal{display:inline-flex;width:24px;height:24px;border-radius:50%;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#0a0f1c}
 .m1{background:linear-gradient(135deg,#ffe08a,#f2b53c)}.m2{background:linear-gradient(135deg,#e6ecf5,#9fb0c6)}.m3{background:linear-gradient(135deg,#f0c08e,#c07840)}
 .uni .zh{font-weight:600}
+.uni{display:flex;align-items:center;gap:9px}
+.uni .utxt{min-width:0}
+.uni .lg{width:26px;height:26px;flex:0 0 26px;object-fit:contain;border-radius:6px;background:rgba(255,255,255,.9);padding:2px;box-sizing:border-box;border:1px solid var(--line)}
 .uni .en{display:block;font-size:11px;color:var(--faint);max-width:330px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cty{color:var(--sub);font-size:12px}
 .score{display:flex;align-items:center;gap:8px;min-width:130px}
@@ -379,7 +390,7 @@ function render(){
     const medal = r.r<=3 ? `<span class="medal m${r.r}">${r.r}</span>` : r.r;
     return `<tr data-r="${r.r}" class="${r.r<=3?'top1':''}">
       <td class="rk">${medal}</td>
-      <td class="uni"><span class="zh">${r.zh}</span><span class="en">${r.en}</span></td>
+      <td class="uni">${r.logo?`<img class="lg" src="${r.logo}" loading="lazy" alt="" onerror="this.style.visibility='hidden'">`:""}<span class="utxt"><span class="zh">${r.zh}</span><span class="en">${r.en}</span></span></td>
       <td class="cty">${r.country}</td>
       <td><div class="score"><span class="n">${r.comp.toFixed(1)}</span><span class="bar-bg"><span class="bar" style="width:${Math.round(r.comp)}px"></span></span></div></td>
       <td>${chip("qs",r)}</td><td>${chip("the",r)}</td><td>${chip("us",r)}</td><td>${chip("arw",r)}</td>

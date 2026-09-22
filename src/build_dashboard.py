@@ -143,6 +143,9 @@ tr.top1 td:first-child{color:var(--gold)}
 .wtab{width:100%;border-collapse:collapse;font-size:12.5px;min-width:0}
 .wtab th{color:var(--sub);text-align:left;padding:8px;border-bottom:1px solid var(--line);font-weight:600;position:static;background:none}
 .wtab td{padding:8px;border-bottom:1px solid var(--dashline);white-space:normal}
+#sHead th.sortable{cursor:pointer;user-select:none;transition:color .12s}
+#sHead th.sortable:hover{color:var(--txt)}
+#sHead th.sortable.on{color:var(--accent)}
 .dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:7px}
 /* special + modal + footer */
 .small-tbl{width:100%;border-collapse:collapse;font-size:12.5px;min-width:0}
@@ -263,7 +266,7 @@ footer a{color:var(--sub);text-decoration:none}
         <div class="spacer"></div>
         <span class="hint" id="scnt"></span>
       </div>
-      <div class="hint" id="subLegend" style="margin:2px 0 10px;font-size:12px">名次标注说明：<b style="color:#43e0b0">数字</b> = 该榜精确名次 ｜ <b style="color:#f4b878">如 101-150</b> = 该榜官方区间名次（百分位按区间中值折算）｜ <b style="color:var(--sub)">—</b> = 未入该榜 ｜ 来源数 <b>2/2</b> = 双榜均收录。</div>
+      <div class="hint" id="subLegend" style="margin:2px 0 10px;font-size:12px">名次标注说明：<b style="color:#43e0b0">数字</b> = 该榜精确名次 ｜ <b style="color:#f4b878">如 101-150</b> = 该榜官方区间名次（百分位按区间中值折算）｜ <b style="color:var(--sub)">—</b> = 未入该榜 ｜ 来源数 <b>2/2</b> = 双榜均收录。　<b style="color:var(--accent)">点击「综合分 / 各源名次 / 来源数 / σ」列头可按该列排序</b>，再点切换升降序（缺该源的院校自动排末尾）。</div>
       <div class="tbl-scroll">
         <table><thead><tr id="sHead"></tr></thead><tbody id="stb"></tbody></table>
       </div>
@@ -522,6 +525,7 @@ if(isLight())SC=SC_L;
 const SUBLBL = {csr:"CSRank",qs:"QS",the:"THE",usnews:"USNews",arwu:"ARWU",leiden:"Leiden",ni:"NatIdx",hici:"HCR"};
 const SUBED = {csr:"CSRankings 2026 · 顶会发表量",qs:"QS Subject CS 2026",the:"THE Subject CS 2026",usnews:"U.S. News Subject 26-27",arwu:"软科 GRAS 2026"};
 let CUR="main", SQ="", SFC="", SUBCUR="cs";
+let SSORT="comp", SORD=-1;   // 子榜排序列 + 方向(-1 降序/优者在前, 1 升序)
 function subSrcs(s){return Object.keys(SUBJECT[s].weights);}
 function subData(s){return SUBJECT[s];}
 function sChip(list,r){
@@ -529,11 +533,27 @@ function sChip(list,r){
   if(!v) return `<span class="lmiss">—</span>`;
   return `<span class="lchip" style="background:${SC[list]}1a;color:${SC[list]};border:1px solid ${SC[list]}55" title="${subData(SUBCUR).labels[list]} 名次 ${v.d} · 百分位 ${v.pct}">${v.d}</span>`;
 }
+function sArrow(col){ return SSORT===col ? (SORD<0?" ▼":" ▲") : ""; }
 function sHead(){
   const srcs=subSrcs(SUBCUR);
-  $("#sHead").innerHTML = `<th>综合<br>排名</th><th>大学 University</th><th>国家/地区</th><th>综合分<br>Score</th>`+
-    srcs.map(s=>`<th>${SUBLBL[s]||s}</th>`).join("")+
-    `<th>来源数</th><th>σ</th>`;
+  const th=(col,label,tip)=>`<th class="s sortable${SSORT===col?" on":""}" data-s="${col}" title="${tip}">${label}${sArrow(col)}</th>`;
+  $("#sHead").innerHTML = `<th>综合<br>排名</th><th>大学 University</th><th>国家/地区</th>`+
+    th("comp","综合分<br>Score","点击按综合分排序")+
+    srcs.map(s=>th(s,(SUBLBL[s]||s)+"<br>名次","点击按 "+subData(SUBCUR).labels[s]+" 名次排序")).join("")+
+    th("appear","来源数","点击按命中来源数排序")+
+    th("spread","σ","点击按评价一致性排序（σ 越小越稳）");
+}
+function sSortCmp(a,b){
+  if(SSORT==="comp") return SORD*(a.comp-b.comp) || (a.r-b.r);
+  if(SSORT==="appear") return SORD*(a.appear-b.appear) || SORD*(a.comp-b.comp);
+  if(SSORT==="spread") return SORD*(a.spread-b.spread);
+  // 按某源名次: 优先精确名次 d 升序(优者在前), 区间名次回退百分位; 缺该源者恒排末尾
+  const av=a.ranks[SSORT], bv=b.ranks[SSORT];
+  if(!av && !bv) return a.r-b.r;
+  if(!av) return 1; if(!bv) return -1;
+  const ka=(typeof av.d==="number")?av.d:(10000-av.pct);
+  const kb=(typeof bv.d==="number")?bv.d:(10000-bv.pct);
+  return (-SORD)*(ka-kb) || (a.r-b.r);
 }
 function sRender(){
   const rows=subData(SUBCUR).rows, srcs=subSrcs(SUBCUR), n=srcs.length;
@@ -541,7 +561,7 @@ function sRender(){
     if(SFC && r.country!==SFC) return false;
     if(SQ){const s=(r.zh+r.en).toLowerCase(); if(!s.includes(SQ)) return false;}
     return true;
-  });
+  }).slice().sort(sSortCmp);
   $("#scnt").textContent=`显示 ${filt.length} / ${rows.length}`;
   $("#stb").innerHTML=filt.map(r=>{
     const medal=r.r<=3?`<span class="medal m${r.r}">${r.r}</span>`:r.r;
@@ -599,8 +619,13 @@ function sCharts(){
   }
 }
 function showSub(sub){
-  SUBCUR=sub; SQ="";SFC=""; $("#sq").value="";
+  SUBCUR=sub; SQ="";SFC=""; $("#sq").value=""; SSORT="comp"; SORD=-1;
   const srcs=subSrcs(sub), rows=subData(sub).rows;
+  const _sp=new URLSearchParams(location.search), _sc=_sp.get("sort");
+  if(_sc && (_sc==="comp"||_sc==="appear"||_sc==="spread"||srcs.includes(_sc))){
+    SSORT=_sc; SORD=(_sp.get("order")==="asc")?1:-1;
+    if(_sc==="spread" && _sp.get("order")!=="desc") SORD=1;
+  }
   $("#subIntro").innerHTML = (sub==="cs"
     ? "计算机科学学科综合榜 · 五源交叉：CSRankings 顶会发表量 + QS/THE/U.S. News/软科 四大学科榜。与综合榜同一套方法（百分位归一 × 公信力加权 × ≥2 源共识门槛），各源统一取 Top 100 可比池；区间名次按中值折算。"
     : sub==="ai"
@@ -637,6 +662,12 @@ document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{
 if(["#cs","#ai","#comm","#grad"].includes(location.hash)){ setTimeout(()=>{ document.querySelector('.tab[data-v="'+location.hash.slice(1)+'"]').click(); },50); }
 $("#sq").addEventListener("input",e=>{SQ=e.target.value.trim().toLowerCase();sRender();});
 $("#sfc").addEventListener("change",e=>{SFC=e.target.value;sRender();});
+$("#sHead").addEventListener("click",e=>{
+  const th=e.target.closest("th.sortable"); if(!th) return;
+  const col=th.dataset.s;
+  if(SSORT===col){ SORD=-SORD; } else { SSORT=col; SORD=(col==="spread")?1:-1; }  // σ 默认升序(越稳越前), 其余默认优者在前
+  sHead(); sRender();
+});
 
 function disposeAll(){ ["cCountry","cBump","cCover","cScatter","cWeight","cSubBar","cSubBump","cCross"].forEach(id=>{const el=document.getElementById(id); if(el&&window.echarts)echarts.dispose(el);}); }
 function toggleTheme(){

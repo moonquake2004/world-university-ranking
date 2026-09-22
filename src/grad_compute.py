@@ -24,11 +24,14 @@ M.TOKMAP.update({"univ": "university", "inst": "institute", "natl": "national",
                  "acad": "academy", "nat": "national"})
 _extra_grad = {
     "cent s university": "central south university",
+    "central s university": "central south university",
     "huazhong university science technology": "huazhong science technology university",
     "beijing university science technology": "university science technology beijing china",
     "mit": "massachusetts institute technology",
     "eth": "institute technology federal zurich",
+    "swiss federal institute technology zurich": "eth zurich",
     "epfl": "institute technology federal lausanne",
+    "swiss federal institute technology lausanne": "epfl",
 }
 M.OVERRIDES.update({M._sortkey_tokens(k): M._sortkey_tokens(v) for k, v in _extra_grad.items()})
 
@@ -40,12 +43,24 @@ def _p(fname):
     return a if a.exists() else (BASE / "data" / fname)
 
 # ---- 各源加载: 返回 {key: {en, val, country?}} + 有序 val 列表用于百分位 ----
+_DIR = {"N":"North","S":"South","E":"East","W":"West","NE":"Northeast","NW":"Northwest",
+        "SE":"Southeast","SW":"Southwest"}
+def _expand_dir(name):
+    """Leiden 常用单字母方位缩写(Univ S Florida / Middle E Tech ...), 仅作用于 Leiden 名"""
+    out=[]
+    for tok in name.split():
+        core=tok.strip("().,")
+        if core.upper() in _DIR and len(core)<=2 and core.isalpha():
+            tok=tok.replace(core, _DIR[core.upper()])
+        out.append(tok)
+    return " ".join(out)
+
 def load_leiden():
     d = {}
     for ln in _p("raw_leiden.tsv").read_text(encoding="utf-8").splitlines():
         p = ln.split("\t")
         if len(p) < 5: continue
-        d[nk(p[1])] = {"en": p[1], "val": float(p[4])}   # col4 = P(top10%)
+        d[nk(_expand_dir(p[1]))] = {"en": p[1], "val": float(p[4])}   # col4 = P(top10%)
     return d
 
 def load_ni():

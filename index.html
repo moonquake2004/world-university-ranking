@@ -92,6 +92,7 @@ tr.top1 td:first-child{color:var(--gold)}
 .uni .zh{font-weight:600}
 .uni{display:flex;align-items:center;gap:9px}
 .uni .utxt{min-width:0}
+.uni .lgs{width:26px;flex:0 0 26px;display:inline-flex;align-items:center;justify-content:center}
 .uni .lg{width:26px;height:26px;flex:0 0 26px;object-fit:contain;border-radius:6px;background:rgba(255,255,255,.9);padding:2px;box-sizing:border-box;border:1px solid var(--line)}
 .uni .en{display:block;font-size:11px;color:var(--faint);max-width:330px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cty{color:var(--sub);font-size:12px}
@@ -356,7 +357,7 @@ function render(){
     const medal = r.r<=3 ? `<span class="medal m${r.r}">${r.r}</span>` : r.r;
     return `<tr data-r="${r.r}" class="${r.r<=3?'top1':''}">
       <td class="rk">${medal}</td>
-      <td class="uni">${r.logo?`<img class="lg" src="${r.logo}" loading="lazy" alt="" onerror="this.style.visibility='hidden'">`:""}<span class="utxt"><span class="zh">${r.zh}</span><span class="en">${r.en}</span></span></td>
+      <td class="uni"><span class="lgs">${r.logo?`<img class="lg" src="${r.logo}" loading="lazy" alt="" onerror="this.style.visibility='hidden'">`:""}</span><span class="utxt"><span class="zh">${r.zh}</span><span class="en">${r.en}</span></span></td>
       <td class="cty">${r.country}</td>
       <td><div class="score"><span class="n">${r.comp.toFixed(1)}</span><span class="bar-bg"><span class="bar" style="width:${Math.round(r.comp)}px"></span></span></div></td>
       <td>${chip("qs",r)}</td><td>${chip("the",r)}</td><td>${chip("us",r)}</td><td>${chip("arw",r)}</td>
@@ -413,7 +414,7 @@ buildWt();
 /* ---------- footer ---------- */
 $("#foot").innerHTML = `数据来源：QS 2027（2026-06 发布）· THE 2026（2025-10 发布）· U.S. News Best Global Universities 2026-27（2026-06 发布）· 软科 ARWU 2026（2026-08 发布）。名次与原始分均取自各榜官方公开发布（U.S. News 官方总分未公开可得，仅采用其名次）。101-500 区间：THE 取自官方页面内嵌数据库（201 名后为官方区间）；QS 取自官方数据双源交叉；U.S. News 官方存在同率并列跳号，按官方显示顺序连续编号；软科 101 名后为官方区间名单。<br>
 Data sources: topuniversities.com · timeshighereducation.com · usnews.com Best Global Universities · shanghairanking.com. 中文译名为通行译法。<br>
-<b style="color:var(--sub)">免责声明</b>：本看板为独立研究性综合评估，方法论与权重由评估机构设定，不代表任何官方立场；排名仅供比较参考，不构成升学/资助决策依据。生成时间 Generated: 2026-09-22 23:36<br>
+<b style="color:var(--sub)">免责声明</b>：本看板为独立研究性综合评估，方法论与权重由评估机构设定，不代表任何官方立场；排名仅供比较参考，不构成升学/资助决策依据。生成时间 Generated: 2026-09-23 07:09<br>
 <b style="color:var(--sub)">学科榜数据源</b>：CSRankings 2026（DBLP 顶会发表口径，2016-2026 窗口）· QS/THE/U.S. News/软科 2026 学科排名（CS 五源、AI 三源交叉；传播学仅 QS+软科两源——THE 无独立传播学学科榜、U.S. News 世界学科榜不覆盖该领域）。学科榜方法论与综合榜一致，详见各子榜页首说明。`;
 
 /* ---------- charts ---------- */

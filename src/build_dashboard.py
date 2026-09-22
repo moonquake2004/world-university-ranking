@@ -126,6 +126,7 @@ tr.top1 td:first-child{color:var(--gold)}
 .uni .zh{font-weight:600}
 .uni{display:flex;align-items:center;gap:9px}
 .uni .utxt{min-width:0}
+.uni .lgs{width:26px;flex:0 0 26px;display:inline-flex;align-items:center;justify-content:center}
 .uni .lg{width:26px;height:26px;flex:0 0 26px;object-fit:contain;border-radius:6px;background:rgba(255,255,255,.9);padding:2px;box-sizing:border-box;border:1px solid var(--line)}
 .uni .en{display:block;font-size:11px;color:var(--faint);max-width:330px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cty{color:var(--sub);font-size:12px}
@@ -390,7 +391,7 @@ function render(){
     const medal = r.r<=3 ? `<span class="medal m${r.r}">${r.r}</span>` : r.r;
     return `<tr data-r="${r.r}" class="${r.r<=3?'top1':''}">
       <td class="rk">${medal}</td>
-      <td class="uni">${r.logo?`<img class="lg" src="${r.logo}" loading="lazy" alt="" onerror="this.style.visibility='hidden'">`:""}<span class="utxt"><span class="zh">${r.zh}</span><span class="en">${r.en}</span></span></td>
+      <td class="uni"><span class="lgs">${r.logo?`<img class="lg" src="${r.logo}" loading="lazy" alt="" onerror="this.style.visibility='hidden'">`:""}</span><span class="utxt"><span class="zh">${r.zh}</span><span class="en">${r.en}</span></span></td>
       <td class="cty">${r.country}</td>
       <td><div class="score"><span class="n">${r.comp.toFixed(1)}</span><span class="bar-bg"><span class="bar" style="width:${Math.round(r.comp)}px"></span></span></div></td>
       <td>${chip("qs",r)}</td><td>${chip("the",r)}</td><td>${chip("us",r)}</td><td>${chip("arw",r)}</td>

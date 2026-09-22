@@ -143,9 +143,10 @@ tr.top1 td:first-child{color:var(--gold)}
 .wtab{width:100%;border-collapse:collapse;font-size:12.5px;min-width:0}
 .wtab th{color:var(--sub);text-align:left;padding:8px;border-bottom:1px solid var(--line);font-weight:600;position:static;background:none}
 .wtab td{padding:8px;border-bottom:1px solid var(--dashline);white-space:normal}
-#sHead th.sortable{cursor:pointer;user-select:none;transition:color .12s}
-#sHead th.sortable:hover{color:var(--txt)}
-#sHead th.sortable.on{color:var(--accent)}
+#sHead th.sortable,#tbl th.sortable{cursor:pointer;user-select:none;transition:color .12s}
+#sHead th.sortable:hover,#tbl th.sortable:hover{color:var(--txt)}
+#sHead th.sortable.on,#tbl th.sortable.on{color:var(--accent)}
+#tbl th.sortable .ar,#sHead th .ar{font-size:10px}
 .dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:7px}
 /* special + modal + footer */
 .small-tbl{width:100%;border-collapse:collapse;font-size:12.5px;min-width:0}
@@ -203,7 +204,7 @@ footer a{color:var(--sub);text-decoration:none}
     <div class="panel"><h3>四榜平均名次 vs 综合名次 <small>Mean sub-ranking position vs composite position</small></h3><div id="cScatter" class="chart"></div></div>
   </div>
 
-  <div class="sec-title">综合排名总表 <small>Composite Master Table · 点击任意院校查看四榜画像</small></div>
+  <div class="sec-title">综合排名总表 <small>Composite Master Table · 点击任意院校查看四榜画像 ｜ 点「综合分 / 各榜名次 / 入榜数 / σ」列头可按该列排序，再点切换升降序</small></div>
   <div class="panel" style="padding-bottom:16px">
     <div class="controls">
       <input id="q" type="search" placeholder="搜索院校 Search 清华 / Tsinghua …">
@@ -218,9 +219,9 @@ footer a{color:var(--sub);text-decoration:none}
     <div class="tbl-scroll">
       <table id="tbl">
         <thead><tr>
-          <th>综合<br>排名</th><th>大学 University</th><th>国家/地区</th><th>综合分<br>Score</th>
-          <th>QS 2027</th><th>THE 2026</th><th>USNews 26-27</th><th>ARWU 2026</th>
-          <th>入榜数</th><th>四榜离散度<br>σ↓更稳</th>
+          <th>综合<br>排名</th><th>大学 University</th><th>国家/地区</th><th class="s sortable" data-s="comp">综合分<br>Score<span class="ar"></span></th>
+          <th class="s sortable" data-s="qs">QS 2027<span class="ar"></span></th><th class="s sortable" data-s="the">THE 2026<span class="ar"></span></th><th class="s sortable" data-s="us">USNews 26-27<span class="ar"></span></th><th class="s sortable" data-s="arw">ARWU 2026<span class="ar"></span></th>
+          <th class="s sortable" data-s="appear">入榜数<span class="ar"></span></th><th class="s sortable" data-s="spread">四榜离散度<br>σ↓更稳<span class="ar"></span></th>
         </tr></thead>
         <tbody id="tb"></tbody>
       </table>
@@ -350,13 +351,29 @@ function chip(list, r){
 }
 function appearPill(n){ const t={4:"四榜",3:"三榜",2:"双榜"}[n]; const c={4:"a4",3:"a3",2:"a2"}[n]; return `<span class="app ${c}">${t}</span>`; }
 let FQ="", FC="", FAP=0;
+let MSORT="comp", MORD=-1;   // 综合榜排序列 + 方向(-1 优者在前)
+function mVal(r){  // 当前排序列的可比值: 源列优先精确名次d(升序=优), 缺该榜→Infinity(排末尾)
+  if(MSORT==="comp") return {k:-r.comp};
+  if(MSORT==="appear") return {k:-r.appear*1000 - r.comp};
+  if(MSORT==="spread") return {k:r.spread};
+  const v=r[KEYMAP[MSORT]];
+  if(!v) return {k:Infinity};
+  return {k:(typeof v.d==="number")?v.d:(10000-v.pct)};
+}
+function mSortCmp(a,b){ const x=mVal(a).k,y=mVal(b).k; if(x!==y) return x-y; return a.r-b.r; }
+function mHead(){
+  document.querySelectorAll("#tbl thead th.sortable").forEach(th=>{
+    const on=th.dataset.s===MSORT; th.classList.toggle("on",on);
+    th.querySelector(".ar").textContent = on ? (MORD<0?" ▼":" ▲") : "";
+  });
+}
 function render(){
   const rows = FINAL.filter(r=>{
     if(FC && r.country!==FC) return false;
     if(FAP && r.appear!==FAP) return false;
     if(FQ){ const s=(r.zh+r.en+r.country).toLowerCase(); if(!s.includes(FQ)) return false; }
     return true;
-  });
+  }).slice().sort(mSortCmp);
   $("#cnt").textContent = `显示 ${rows.length} / ${FINAL.length}`;
   tb.innerHTML = rows.map(r=>{
     const medal = r.r<=3 ? `<span class="medal m${r.r}">${r.r}</span>` : r.r;
@@ -371,7 +388,14 @@ function render(){
     </tr>`;
   }).join("");
   tb.querySelectorAll("tr").forEach(tr=>tr.addEventListener("click",()=>openM(+tr.dataset.r)));
+  mHead();
 }
+$("#tbl thead").addEventListener("click",e=>{
+  const th=e.target.closest("th.sortable"); if(!th) return;
+  const col=th.dataset.s;
+  if(MSORT===col){ MORD=-MORD; } else { MSORT=col; MORD=(col==="spread")?1:-1; }
+  render();
+});
 $("#q").addEventListener("input",e=>{FQ=e.target.value.trim().toLowerCase();render();});
 const cOpts = Object.keys(byCountry).sort((a,b)=>byCountry[b]-byCountry[a]);
 $("#fc").innerHTML += cOpts.map(c=>`<option value="${c}">${c} (${byCountry[c]})</option>`).join("");
@@ -380,6 +404,9 @@ document.querySelectorAll(".fbtn").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll(".fbtn").forEach(x=>x.classList.remove("on"));
   b.classList.add("on"); FAP=+b.dataset.ap; render();
 }));
+(function(){ const sp=new URLSearchParams(location.search), sc=sp.get("sort");
+  if(sc && ["comp","appear","spread","qs","the","us","arw"].includes(sc)){ MSORT=sc; MORD=(sp.get("order")==="asc")?1:-1; if(sc==="spread"&&sp.get("order")!=="desc")MORD=1; }
+})();
 render();
 
 /* ---------- special list ---------- */

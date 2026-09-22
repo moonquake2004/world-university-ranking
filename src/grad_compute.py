@@ -94,13 +94,38 @@ loaders = {"leiden": load_leiden(), "ni": load_ni(), "hici": load_hici()}
 pcts = {s: percentile(loaders[s]) for s in loaders}
 
 # ---- 综合榜显示信息复用 ----
-GLOBAL = {}
+GLOBAL = {}   # 按 stage1 存储键
+GALIAS = {}   # 按「扩展 norm_key(en)」重建, 与 grad 侧键口径一致
 try:
     stage = json.load(open(BASE / "stage1.json", encoding="utf-8"))
     for row in stage["data"]:
         GLOBAL[row["key"]] = {"en": row["en"], "zh": row["zh"], "country": row["country"]}
+        ek = nk(row["en"])                          # 用当前(含缩写扩展)的 norm_key 重建别名
+        GALIAS.setdefault(ek, {"en": row["en"], "zh": row["zh"], "country": row["country"]})
 except Exception as e:
     print("stage1 not loaded:", e)
+
+# 主榜未覆盖 / 带校区名 / 科研院所等, 精确中文兜底 (键为 grad 侧 nk)
+ZH_NAME = {
+    "michigan university": "密歇根大学",
+    "federal institute swiss technology zurich": "苏黎世联邦理工学院",
+    "beijing china science technology university": "北京科技大学",
+    "berkeley laboratory lawrence national": "劳伦斯伯克利国家实验室",
+    "nanjing technology university": "南京工业大学",
+    "academy agricultural chinese sciences": "中国农业科学院",
+    "clinic mayo": "梅奥诊所",
+    "association leibniz": "德国莱布尼茨学会",
+    "jersey new rutgers state university": "罗格斯大学",
+    "university yeungnam": "岭南大学（韩国）",
+    "cancer center kettering memorial sloan": "纪念斯隆凯特琳癌症中心",
+    "qingdao science technology university": "青岛科技大学",
+    "riken": "日本理化学研究所",
+    "normal northeast university": "东北师范大学",
+    "technology texas university": "得克萨斯理工大学",
+    "toledo university": "托莱多大学",
+    "padova university": "帕多瓦大学",
+}
+
 
 ZH_ORG = {  # 重要科研院所/机构的通行中文译名兜底
     "chinese academy sciences": "中国科学院",
@@ -142,8 +167,8 @@ for k in allkeys:
             if "(" in e:
                 en = e; break
     en = en or loaders[next(iter(present))][k]["en"]
-    g = GLOBAL.get(k)
-    zh = g["zh"] if g else ZH_ORG.get(k, en)
+    g = GLOBAL.get(k) or GALIAS.get(k)
+    zh = g["zh"] if g else (ZH_NAME.get(k) or ZH_ORG.get(k) or en)
     country = g["country"] if g else None
     if not country:
         if k in loaders["hici"]:
@@ -180,6 +205,10 @@ for x in rows[:20]:
           f"L={x['ranks']['leiden'] and x['ranks']['leiden']['d']} N={x['ranks']['ni'] and x['ranks']['ni']['d']} H={x['ranks']['hici'] and x['ranks']['hici']['d']}")
 tail = [x for x in rows[-3:]]
 print("TAIL3:", [(x["r"], x["zh"], x["comp"], x["appear"]) for x in tail])
+import re as _re
+still = [x for x in rows if not _re.search(r'[\u4e00-\u9fff]', x["zh"])]
+print(f"中文名仍缺失(Top{len(rows)}): {len(still)}", [(x['r'], x['zh']) for x in still])
+
 
 out = {"weights": {s: SRC[s][1] for s in SRC},
        "labels": {s: SRC[s][0] for s in SRC},

@@ -15,7 +15,13 @@ try:
     _lmap = json.load(open(BASE / "logo_map.json", encoding="utf-8"))
 except Exception:
     _lmap = {}
-def _logo(en): return _lmap.get(_nk(en))
+try:
+    _fmap = json.load(open(BASE / "favicon_map.json", encoding="utf-8"))
+except Exception:
+    _fmap = {}
+def _logo(en):
+    k = _nk(en)
+    return _lmap.get(k) or _fmap.get(k)
 # 扁平化: ranks 嵌套合并到行对象顶层 (qs/the/usnews/arwu)
 final = []
 for row in d["final"]:

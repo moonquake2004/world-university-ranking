@@ -10,11 +10,11 @@ BASE = Path(__file__).parent
 spec = importlib.util.spec_from_file_location("fl", BASE / "fetch_logos.py")
 fl = importlib.util.module_from_spec(spec); spec.loader.exec_module(fl)
 
-def gj(url, tries=2):
+def gj(url, tries=3):
     for _ in range(tries):
         try:
-            r = subprocess.run(["curl", "-sS", "-m", "10", "-A", "Mozilla/5.0 (logo)", url],
-                               capture_output=True, text=True, timeout=14)
+            r = subprocess.run(["curl", "-sS", "-m", "12", "-A", "Mozilla/5.0 (logo)", url],
+                               capture_output=True, text=True, timeout=16)
         except Exception:
             continue
         if r.returncode == 0 and r.stdout.strip().startswith("{"):
@@ -50,7 +50,7 @@ def main():
         lm = json.load(open(p, encoding="utf-8"))
     todo = [(k, en) for k, en in order if k not in lm]
     print(f"全榜 distinct 院校 {len(order)}, 已覆盖 {len(order)-len(todo)}, 待补 {len(todo)}")
-    t0 = time.time(); BUDGET = 420; added = 0
+    t0 = time.time(); BUDGET = 900; added = 0
     for k, en in todo:
         if time.time() - t0 > BUDGET:
             print("时间到, 停止"); break

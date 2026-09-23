@@ -50,7 +50,7 @@ def batch_pageimages(titles):
             redir[rd["from"].lower()] = rd["to"].lower()
     return orig, redir
 
-LOGO_RE = re.compile(r"\|\s*(?:logo|image|shield|coat_of_arms|crest)\s*=\s*([^\n|]+)", re.I)
+LOGO_RE = re.compile(r"\|\s*(?:logo|image|shield|coat_of_arms|coat\s*of\s*arms|crest|symbol|emblem|flag|university_logo)\s*=\s*([^\n|]+)", re.I)
 def url_of_file(f):
     f = f.strip().removeprefix("File:").removeprefix("Image:")
     if not re.search(r"\.(png|jpe?g|svg|gif)$", f, re.I): return None

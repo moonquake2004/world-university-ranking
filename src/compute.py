@@ -16,7 +16,7 @@ BASE = Path(__file__).parent
 WEIGHTS = {"the": 0.30, "usnews": 0.25, "arwu": 0.25, "qs": 0.20}
 EDITIONS = {
     "qs":     {"name": "QS World University Rankings 2027",        "pub": "2026-06"},
-    "the":    {"name": "THE World University Rankings 2026",       "pub": "2025-10"},
+    "the":    {"name": "THE World University Rankings 2027",       "pub": "2026-09"},
     "usnews": {"name": "U.S. News Best Global Universities 2026-27","pub": "2026-06"},
     "arwu":   {"name": "软科 ARWU 2026",                            "pub": "2026-08"},
 }

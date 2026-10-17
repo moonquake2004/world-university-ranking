@@ -242,7 +242,7 @@ footer a{color:var(--sub);text-decoration:none}
       <table id="tbl">
         <thead><tr>
           <th>综合<br>排名</th><th>大学 University</th><th>国家/地区</th><th class="s sortable" data-s="comp">综合分<br>Score<span class="ar"></span></th>
-          <th class="s sortable" data-s="qs">QS 2027<span class="ar"></span></th><th class="s sortable" data-s="the">THE 2026<span class="ar"></span></th><th class="s sortable" data-s="us">USNews 26-27<span class="ar"></span></th><th class="s sortable" data-s="arw">ARWU 2026<span class="ar"></span></th>
+          <th class="s sortable" data-s="qs">QS 2027<span class="ar"></span></th><th class="s sortable" data-s="the">THE 2027<span class="ar"></span></th><th class="s sortable" data-s="us">USNews 26-27<span class="ar"></span></th><th class="s sortable" data-s="arw">ARWU 2026<span class="ar"></span></th>
           <th class="s sortable" data-s="appear">入榜数<span class="ar"></span></th><th class="s sortable" data-s="spread">四榜离散度<br>σ↓更稳<span class="ar"></span></th>
         </tr></thead>
         <tbody id="tb"></tbody>
@@ -327,13 +327,13 @@ function applyThemeVars(){ LC = isLight()?LC_L:LC_D; SC = isLight()?SC_L:SC_D; }
   if(t==="light") document.documentElement.dataset.theme="light"; })();
 if(isLight())LC=LC_L;
 const LNAME = {qs:"QS", the:"THE", us:"US News", arw:"ARWU 软科"};
-const LFULL = {qs:"QS World University Rankings 2027", the:"THE World University Rankings 2026", us:"U.S. News Best Global Universities 2026-27", arw:"软科世界大学学术排名 ARWU 2026"};
+const LFULL = {qs:"QS World University Rankings 2027", the:"THE World University Rankings 2027", us:"U.S. News Best Global Universities 2026-27", arw:"软科世界大学学术排名 ARWU 2026"};
 const LW = {qs:0.20, the:0.30, us:0.25, arw:0.25};
 const KEYMAP = {qs:"qs", the:"the", us:"usnews", arw:"arwu"};
 const $ = s => document.querySelector(s);
 
 /* ---------- editions badges ---------- */
-const SHORT = {qs:"QS 2027 · Top500", the:"THE 2026 · Top500", us:"U.S. News 2026-27 · Top500", arw:"软科 ARWU 2026 · Top500"};
+const SHORT = {qs:"QS 2027 · Top500", the:"THE 2027 · Top500", us:"U.S. News 2026-27 · Top500", arw:"软科 ARWU 2026 · Top500"};
 function buildBadges(){$("#editions").innerHTML = [["qs","QS"],["the","THE"],["us","U.S. News"],["arw","软科 ARWU"]].map(([k,l])=>{
   const e = META.editions[KEYMAP[k]];
   return `<span class="badge"><b style="color:${LC[k]}">${SHORT[k]}</b> · ${e.pub} 发布</span>`;
@@ -434,7 +434,7 @@ render();
 /* ---------- special list ---------- */
 $("#spIntro").innerHTML = $("#spIntro").innerHTML.replace("Top 500，","Top 500（共 "+META.n_single+" 所），");
 function buildSpecial(){$("#tb2").innerHTML = SPECIAL.map(s=>{
-  const ln = {qs:"QS 2027",the:"THE 2026",usnews:"U.S. News 2026-27",arwu:"软科 ARWU 2026"}[s.list];
+  const ln = {qs:"QS 2027",the:"THE 2027",usnews:"U.S. News 2026-27",arwu:"软科 ARWU 2026"}[s.list];
   return `<tr><td><b>${s.zh}</b> <span style="color:var(--faint);font-size:11.5px">${s.en}</span></td><td style="color:var(--sub)">${s.country}</td><td style="color:${LC[KEYMAP[s.list]]}">${ln}</td><td>No.${s.d}</td><td>${s.comp.toFixed(1)}</td></tr>`;
 }).join("");}
 buildSpecial();
@@ -448,7 +448,7 @@ const steps = [
  ["断位与稳健性披露","综合分并列时按 覆盖榜数 → THE 均位 → U.S. News 均位 → 字母序 断位；同时公布每校四榜百分位标准差 σ，供使用者自行评估名次背后的一致性/分歧度。","Tie-breakers & dispersion metric σ."]
 ];
 $("#steps").innerHTML = steps.map((s,i)=>`<div class="step"><div class="no"></div><div><b>${i+1}. ${s[0]}</b><p>${s[1]} <span class="en">${s[2]}</span></p></div></div>`).join("");
-function buildWt(){$("#wt").innerHTML = [["the","THE 2026","五维度均衡：教学/研究/引用/国际化/产业，引用指标分数化处理，方法透明"],
+function buildWt(){$("#wt").innerHTML = [["the","THE 2027","五维度均衡：教学/研究/引用/国际化/产业，引用指标分数化处理，方法透明"],
   ["us","U.S. News 26-27","13 项文献计量指标（Scopus/WoS），全球+区域声誉仅占 25%，客观可复核，但无教学维度"],
   ["arw","ARWU 2026","诺奖校友/教师、高被引科学家、NSF 高分期刊论文等硬指标，抗刷分能力最强，但严重偏理科"],
   ["qs","QS 2027","学术声誉 40%+雇主声誉等，反映全球认可度与国际化，但问卷主导、易受品牌惯性影响"]
@@ -456,7 +456,7 @@ function buildWt(){$("#wt").innerHTML = [["the","THE 2026","五维度均衡：�
 buildWt();
 
 /* ---------- footer ---------- */
-$("#foot").innerHTML = `数据来源：QS 2027（2026-06 发布）· THE 2026（2025-10 发布）· U.S. News Best Global Universities 2026-27（2026-06 发布）· 软科 ARWU 2026（2026-08 发布）。名次与原始分均取自各榜官方公开发布（U.S. News 官方总分未公开可得，仅采用其名次）。101-500 区间：THE 取自官方页面内嵌数据库（201 名后为官方区间）；QS 取自官方数据双源交叉；U.S. News 官方存在同率并列跳号，按官方显示顺序连续编号；软科 101 名后为官方区间名单。<br>
+$("#foot").innerHTML = `数据来源：QS 2027（2026-06 发布）· THE 2027（2026-09 发布）· U.S. News Best Global Universities 2026-27（2026-06 发布）· 软科 ARWU 2026（2026-08 发布）。名次与原始分均取自各榜官方公开发布（U.S. News 官方总分未公开可得，仅采用其名次）。101-500 区间：THE 名次与分数取自官方页面内嵌数据库（尾部为官方区间名次）；QS 取自官方数据双源交叉；U.S. News 官方存在同率并列跳号，按官方显示顺序连续编号；软科 101 名后为官方区间名单。<br>
 Data sources: topuniversities.com · timeshighereducation.com · usnews.com Best Global Universities · shanghairanking.com. 中文译名为通行译法。<br>
 <b style="color:var(--sub)">免责声明</b>：本看板为独立研究性综合评估，方法论与权重由评估机构设定，不代表任何官方立场；排名仅供比较参考，不构成升学/资助决策依据。生成时间 Generated: __GENDATE__<br>
 <b style="color:var(--sub)">学科榜数据源</b>：CSRankings 2026（DBLP 顶会发表口径，2016-2026 窗口）· QS/THE/U.S. News/软科 2026 学科排名（CS 五源、AI 三源交叉；传播学仅 QS+软科两源——THE 无独立传播学学科榜、U.S. News 世界学科榜不覆盖该领域）。学科榜方法论与综合榜一致，详见各子榜页首说明。`;
@@ -531,7 +531,7 @@ const LIST_N = META.topn;
 let mChart=null;
 function openM(rk){
   const r = FINAL.find(x=>x.r===rk); if(!r) return;
-  const rows = [["the","THE 2026"],["us","U.S. News 26-27"],["arw","软科 ARWU 2026"],["qs","QS 2027"]].map(([k,l])=>{
+  const rows = [["the","THE 2027"],["us","U.S. News 26-27"],["arw","软科 ARWU 2026"],["qs","QS 2027"]].map(([k,l])=>{
     const v=r[KEYMAP[k]]; 
     return `<tr><td style="white-space:nowrap"><span class="dot" style="background:${LC[k]}"></span>${l}</td>
       <td>${v?("第 "+v.d+" 名"):'<span style="color:var(--faint)">未入该榜百强</span>'}</td>
